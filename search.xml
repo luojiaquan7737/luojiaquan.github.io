@@ -9,16 +9,21 @@
 <p>博客被分为两个版本，分别为国际版和国内版</p>
 <p>下面分别说明两者的差别！</p>
 </blockquote>
+<a id="more"></a>
 <hr>
-<h3 id="国际版"><a href="#国际版" class="headerlink" title="国际版"></a>国际版</h3><p>####评论插件：<strong><a href="https://x.com/" target="_blank" rel="external">DISQUS</a></strong></p>
-<p><img src="http://images.ijiangjia.com/17-10-22/36260213.jpg" alt=""></p>
+<h3 id="国际版"><a href="#国际版" class="headerlink" title="国际版"></a>国际版</h3><h4 id="评论插件：-DISQUS"><a href="#评论插件：-DISQUS" class="headerlink" title="评论插件： DISQUS"></a>评论插件： <strong><a href="https://x.com/" target="_blank" rel="external">DISQUS</a></strong></h4><p><img src="http://images.ijiangjia.com/17-10-22/36260213.jpg" alt=""></p>
 <p>该插件是国外很多博客使用的评论插件，当然我也不能免俗！</p>
 <h4 id="搭载平台：-Github-pages"><a href="#搭载平台：-Github-pages" class="headerlink" title="搭载平台： Github pages"></a>搭载平台： <strong>Github pages</strong></h4><blockquote>
 <p>Github  平台处于美国地域，大陆用户时常有时候会出现打不开的时候。</p>
 </blockquote>
-<h3 id="国内版"><a href="#国内版" class="headerlink" title="国内版"></a>国内版</h3><h4 id="评论插件：-畅言"><a href="#评论插件：-畅言" class="headerlink" title="评论插件： 畅言"></a>评论插件： <strong><a href="http://changyan.kuaizhan.com" target="_blank" rel="external">畅言</a></strong></h4><h4 id="搭载平台：Coding-pages"><a href="#搭载平台：Coding-pages" class="headerlink" title="搭载平台：Coding pages"></a>搭载平台：<strong>Coding pages</strong></h4><blockquote>
+<h3 id="国内版"><a href="#国内版" class="headerlink" title="国内版"></a>国内版</h3><h4 id="评论插件：-畅言"><a href="#评论插件：-畅言" class="headerlink" title="评论插件： 畅言"></a>评论插件： <strong><a href="http://changyan.kuaizhan.com" target="_blank" rel="external">畅言</a></strong></h4><p><img src="http://images.ijiangjia.com/17-10-22/11200697.jpg" alt=""></p>
+<h4 id="搭载平台：Coding-pages"><a href="#搭载平台：Coding-pages" class="headerlink" title="搭载平台：Coding pages"></a>搭载平台：<strong>Coding pages</strong></h4><blockquote>
 <p>Coding 平台处于大陆地域，也算是Github平台的分身</p>
+<p>如何区分国内版还是国际版？</p>
+<p>电脑：博客左上角有写国际版，那就是国际版。否则就是国内版。<br>手机：博客首页上方写有国内版，那就是国内版。否则就是国际版。</p>
 </blockquote>
+<p><a href="https://blog.ijiangjia.com/" target="_blank" rel="external">点击这里</a>直达国内版博客</p>
+<p><a href="https://www.ijiangjia.com">点击这里</a>直达国际版博客</p>
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><blockquote>
 <p>无论博客是国际版还是国内版，博客内容实际还是一样的，就是评论和一些小部分不一样而已！也可以算是热备份，即使有一个网站访问不了，也可以瞬间转移到可以正常访问的网站上！尤其对以后的升级迁移网站的时候。</p>
 </blockquote>
