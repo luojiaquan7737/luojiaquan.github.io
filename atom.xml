@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.ijiangjia.com/"/>
-  <updated>2017-10-22T08:15:15.548Z</updated>
+  <updated>2017-10-22T09:55:10.977Z</updated>
   <id>http://www.ijiangjia.com/</id>
   
   <author>
@@ -21,11 +21,13 @@
     <link href="http://www.ijiangjia.com/2017/51385.html"/>
     <id>http://www.ijiangjia.com/2017/51385.html</id>
     <published>2017-10-22T08:11:07.000Z</published>
-    <updated>2017-10-22T08:15:15.548Z</updated>
+    <updated>2017-10-22T09:55:10.977Z</updated>
     
     <summary type="html">
     
     </summary>
+    
+      <category term="meitu" scheme="http://www.ijiangjia.com/categories/meitu/"/>
     
     
   </entry>
