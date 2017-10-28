@@ -3,13 +3,26 @@
   
     
     <entry>
-      <title><![CDATA[test1]]></title>
-      <url>/2017/51385.html</url>
-      <content type="html"></content>
+      <title><![CDATA[博客进展]]></title>
+      <url>/2017/29772.html</url>
+      <content type="html"><![CDATA[<h1 id="博客发展历程"><a href="#博客发展历程" class="headerlink" title="博客发展历程"></a>博客发展历程</h1><p>以下文章皆为倒序。作者：斜月<br><code>斜月三星洞</code>以我的理解是<code>心</code>！</p>
+<a id="more"></a>
+<h3 id="2017年10月28号"><a href="#2017年10月28号" class="headerlink" title="2017年10月28号"></a>2017年10月28号</h3><p>博客从最初搭建到现在差不多已经有了半个多月，期间停停等等的更新。</p>
+<h3 id="2017年10月24号"><a href="#2017年10月24号" class="headerlink" title="2017年10月24号"></a>2017年10月24号</h3><p>昨天 首次为<code>www.ijiangjia.com</code>域名ICP备案，之前有备案是找人帮忙备案的！当天的凌晨提交备案申请，下午接到了阿里云的备案客服电话通知说：网站名称违反相关规定以及其他也不符合要求给予不通过叫我修正提交！因此 博客从<code>启点博客</code>变成了<code>斜月三星洞</code>！！！<br>今天 特地去照相馆打印<code>个人网站承诺备案书</code>填写拍照提交，当天就通过了初审，现在等待着十个工作日后最终的结果！</p>
+<h3 id="2017年10月20号"><a href="#2017年10月20号" class="headerlink" title="2017年10月20号"></a>2017年10月20号</h3><p>博客采用的是免费https安全方式。考虑到Git Pages只有免费250兆左右的容量。</p>
+<blockquote>
+<p>昨天晚上刷到了静态网站如何提高网站打开速度相关的技术贴看见了推荐图床来储存图片，因为博客占容量的也就是图片也会拖慢打开网站的速度！</p>
+</blockquote>
+<p>当时就看中了帖子首推荐的<code>七牛云</code>的免费10g免费储存空间，找到官网进去稍微看了一下，储存空间不建议使用自带的三级域名提示说充值10元即可自定义域名，而且需要域名的ICP备案和公安备案，那时域名ICP备案还在，以为不需要公安备案就充值10元开通了自定义域名：<code>images.ijiangjia.com</code>，正常用了几天后七牛云给我邮箱发了域名冻结提醒，上去七牛云提交工单才知道原来域名备案没了，当时心里一片暗沉，付钱开通七牛云的自定义域名居然把我的备案弄掉了，就连畅言评论系统也不能使用必须域名备案，真是造孽啊！</p>
+<h3 id="2017年10月19号"><a href="#2017年10月19号" class="headerlink" title="2017年10月19号"></a>2017年10月19号</h3><p>评论系统的纠结：</p>
+<p>Github Pages托管服务空间在国外，这会出现大陆用户有时访问慢或者无法访问的情况。起初用facebook的评论系统，但是大陆用户无法加载！用畅言评论系统国外貌似也加载不出来！最后解决方法是使用国内的<code>Coding</code>托管服务空间并且同步更新，这方法还算可以，麻烦就是文件一直需要一式两份提交！</p>
+<h3 id="2017年10月17号"><a href="#2017年10月17号" class="headerlink" title="2017年10月17号"></a>2017年10月17号</h3><p>开始踏上个人博客之路！</p>
+<p>采用<code>hexo</code>程序和<code>Github Pages</code>空间搭建而成。<br><code>斜月三星洞</code>博客初成！</p>
+]]></content>
       
         <categories>
             
-            <category> meitu </category>
+            <category> 个人杂谈 </category>
             
         </categories>
         
