@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.ijiangjia.com/"/>
-  <updated>2017-10-31T10:07:42.973Z</updated>
+  <updated>2017-11-01T13:31:43.125Z</updated>
   <id>http://www.ijiangjia.com/</id>
   
   <author>
@@ -17,16 +17,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>sublime</title>
+    <title>Ubuntu16.04从安装到优化Sublime系列教程 安装篇</title>
     <link href="http://www.ijiangjia.com/2017/40337.html"/>
     <id>http://www.ijiangjia.com/2017/40337.html</id>
     <published>2017-10-31T10:02:32.000Z</published>
-    <updated>2017-10-31T10:07:42.973Z</updated>
+    <updated>2017-11-01T13:31:43.125Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>发现文章不足之处，欢迎指正。<br>本系列教程针对对Sublime Text 不熟悉的新手</p><h3 id="Sublime-Text-介绍"><a href="#Sublime-Text-介绍" class="headerlink" title="Sublime Text 介绍"></a>Sublime Text 介绍</h3><a id="more"></a><p>开始之前，介绍一下我们接下来要安装的 Sublime Text</p><blockquote><p>Sublime Text 是一个代码编辑器（Sublime Text 2是收费软件，但可以无限期试用），<br>也是HTML和散文先进的文本编辑器。Sublime Text是由程序员Jon Skinner于2008年1月<br>份所开发出来，它最初被设计为一个具有丰富扩展功能的Vim。</p><p>Sublime Text具有漂亮的用户界面和强大的功能，例如代码缩略图，Python的插件，<br>代码段等。还可自定义键绑定，菜单和工具栏。Sublime Text 的主要功能包括：拼写<br>检查，书签，完整的 Python API ， Goto 功能，即时项目切换，多选择，多窗口等等。<br>Sublime Text 是一个跨平台的编辑器，同时支持Windows、Linux、Mac OS X等操作系统。</p></blockquote><h3 id="安装Sublime-Text-3"><a href="#安装Sublime-Text-3" class="headerlink" title="安装Sublime Text 3"></a>安装Sublime Text 3</h3><p>首先打开Ubuntu终端 快捷键：Ctrl + Alt + T<br>添加sublime text 3的仓库：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository ppa:webupd8team/sublime-text-3</div></pre></td></tr></table></figure><p>根据提示按ENTER 继续，建立信任数据库<br>更新软件库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div></pre></td></tr></table></figure></p><p>安装Sublime Text 3<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install sublime-text-installer</div></pre></td></tr></table></figure></p><p>等待软件安装成功<br>然后在终端输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">subl</div></pre></td></tr></table></figure></p><p>能打开就代表安装成功！</p><h3 id="安装-包管理器-Package-Control"><a href="#安装-包管理器-Package-Control" class="headerlink" title="安装 包管理器 Package Control"></a>安装 包管理器 Package Control</h3><p><code>Package Control</code>是为Sublime Text 安装强大的插件的包管理器，相当于苹果手机的应用商店！</p><p> 使用<code>Ctrl+</code>` 快捷键或者通过<code>View-&gt;Show Console</code>菜单</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">import urllib.request,os,hashlib; h = &apos;6f4c264a24d933ce70df5dedcf1dcaee&apos; + &apos;ebe013ee18cced0ef93d5f746d80ef60&apos;; pf = &apos;Package Control.sublime-package&apos;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &apos;http://packagecontrol.io/&apos; + pf.replace(&apos; &apos;, &apos;%20&apos;)).read(); dh = hashlib.sha256(by).hexdigest(); print(&apos;Error validating download (got %s instead of %s), please try manual install&apos; % (dh, h)) if dh != h else open(os.path.join( ipp, pf), &apos;wb&apos; ).write(by)</div></pre></td></tr></table></figure><p>将其上方的代码输入进控制台，并单击回车。<br>等待安装完成后，完全退出Sublime Text 并重新打开。</p><blockquote><p>怎么判断安装完成呢？有两个方法：<br>第一种：在控制台输入代码回车后查看Sublime Text 软件右下角有东西跑来跑去就是正在安装，否则安装完成！<br>第二种： 在控制台输入代码回车等五分钟即可，然后重启Sublime Text  </p></blockquote><p>此时就可以在<code>Preferences</code>菜单下看到<code>Package Settings</code>和<code>Package Control</code>两个菜单了。</p><blockquote><p>注意：如果安装报错，比如连接远程服务器失败之类的，请设置wbond.net的host，相关host如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt; 50.116.33.29        sublime.wbond.net</div><div class="line">&gt;</div></pre></td></tr></table></figure></p></blockquote><p>这里就不展示手动安装<code>PCIP -Package Control</code></p><p>本次教程结束！需要继续看接下来的文章请移步到<strong>分类</strong>查看sublime 即可找到！</p><p>教程参考：<br><a href="http://www.jianshu.com/p/ecc241f22ed5" target="_blank" rel="external">作者：MR<em>LP__</em>李鹏</a></p>]]></content>
     
     <summary type="html">
     
+      &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;发现文章不足之处，欢迎指正。&lt;br&gt;本系列教程针对对Sublime Text 不熟悉的新手&lt;/p&gt;
+&lt;h3 id=&quot;Sublime-Text-介绍&quot;&gt;&lt;a href=&quot;#Sublime-Text-介绍&quot; class=&quot;headerlink&quot; title=&quot;Sublime Text 介绍&quot;&gt;&lt;/a&gt;Sublime Text 介绍&lt;/h3&gt;
+    
     </summary>
     
+      <category term="sublime" scheme="http://www.ijiangjia.com/categories/sublime/"/>
+    
+    
+      <category term="sublime" scheme="http://www.ijiangjia.com/tags/sublime/"/>
+    
+      <category term="ubuntu" scheme="http://www.ijiangjia.com/tags/ubuntu/"/>
+    
+      <category term="开发工具" scheme="http://www.ijiangjia.com/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
