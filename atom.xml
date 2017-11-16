@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.ijiangjia.com/"/>
-  <updated>2017-10-21T07:05:49.385Z</updated>
+  <updated>2017-11-16T05:21:57.714Z</updated>
   <id>http://www.ijiangjia.com/</id>
   
   <author>
@@ -17,9 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>博客镜像以及百度谷歌收录</title>
+    <link href="http://www.ijiangjia.com/posts/53294/"/>
+    <id>http://www.ijiangjia.com/posts/53294/</id>
+    <published>2017-11-15T12:09:02.000Z</published>
+    <updated>2017-11-16T05:21:57.714Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>前几天因为系统（Linux）崩溃，所以导致最近一直坐在电脑屏幕前面</p></blockquote><p>今天可谓是伤心至极<br>起先还大言不惭以为可以恢复博客，可是没想到<code>国内版</code> <code>国际版</code>这两个版本的博客居然不可以共存，同一个系统都不可以。难道我<a id="more"></a>还有什么东西冲突不成？折腾大半天还是放弃了，差不多快将所有东西换掉了都不能，恰巧这时候<code>国内版</code>的<code>Coding</code>代码托管平台网站突然打不开！<br><img src="http://tu-img-1.aixinxi.net/o_1buvt60b81pfr2mgu6f4v5ijea.png" alt="Coding"><br>但平台检测实际情况是这样的：<br><img src="http://tu-img-1.aixinxi.net/o_1buvtav4e1jiccdk10451qu21sua.png" alt="Coding"><br>狗血不狗血。。。而且好像就是这系统有问题。。。。。<br>好吧好吧，不管是不是系统还是网络问题我打算将国内博客无限期停办下去。关于为啥一开始搭建网站镜像文末有说明。<br>确定了放弃<code>国内版</code>，下一步计划当然是让搜索引擎收录我的博客啦！<br>本来高高兴兴去<code>谷歌</code>和<code>百度</code>的搜索引擎添加站点的<br>将站点添加完之后，测试抓取结果如下：<br>谷歌抓取数据：<br><img src="http://tu-img-1.aixinxi.net/o_1bv1i07o51rhf1ds39rs1vnr128ta.png" alt="谷歌"><br>百度抓取数据：<br><img src="http://tu-img-1.aixinxi.net/o_1bv1i2v2hedn13j71fo74si17uja.png" alt="百度"><br>由上图发现百度除了移动端没问题外，其他都不能正常抓取。<br>经过一系列百度，google得知<code>Github</code>屏蔽了百度的爬虫，也就是说明百度可能收录不了搭载<code>Github</code>的博客。。。</p><p>又折腾一番，找到在搜索引擎检测是否被收录的情况：<code>site:域名</code><br>我的博客检测如下：<br>百度搜索引擎：<br><img src="http://tu-img-1.aixinxi.net/o_1bv1iqigs1n6h1bgibpl18v0es9a.png" alt="百度搜索引擎"><br>谷歌搜索引擎：<br><img src="http://tu-img-1.aixinxi.net/o_1bv1iu2fb1bnvtgqavp1m5ndupa.png" alt="谷歌搜索引擎"></p><p>百度的第一个是博客的站点，第二个是之前搭建网站被百度收录的结果。<br>谷歌就有点牛逼了，完全可以全部抓取，但是属于半收录情况！<br><em>截图的结果是前一天晚上提交过网站地图的</em>论收录感觉还是谷歌牛掰！</p><p>百度的爬虫不能爬取<code>Github</code>的静态博客，那么可以爬取与<code>Github</code>提供相同功能的<code>Coding</code>吗？<br>答案是肯定可以的，但是我Linux系统还是打不开<code>Coding</code>官网。。。</p><blockquote><p>以上就是我一开始将博客分为<code>国际版</code>和<code>国内版</code>的初衷，由于国内版停办，打算考虑将国内的畅言评论系统将本博客的DISQUS评论系统换下去，<br>有些人在全站是找不到评论的地方的，因为你被墙了！！<br>下图是 DISQUS<br><img src="http://tu-img-1.aixinxi.net/o_1bv1k2ra21ujlj4jds017gi64a.png" alt="评论系统"></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;前几天因为系统（Linux）崩溃，所以导致最近一直坐在电脑屏幕前面&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;今天可谓是伤心至极&lt;br&gt;起先还大言不惭以为可以恢复博客，可是没想到&lt;code&gt;国内版&lt;/code&gt; &lt;code&gt;国际版&lt;/code&gt;这两个版本的博客居然不可以共存，同一个系统都不可以。难道我
+    
+    </summary>
+    
+      <category term="日常吹牛" scheme="http://www.ijiangjia.com/categories/%E6%97%A5%E5%B8%B8%E5%90%B9%E7%89%9B/"/>
+    
+    
+      <category term="博客" scheme="http://www.ijiangjia.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="收录" scheme="http://www.ijiangjia.com/tags/%E6%94%B6%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
-    <link href="http://www.ijiangjia.com/2017/16107.html"/>
-    <id>http://www.ijiangjia.com/2017/16107.html</id>
+    <link href="http://www.ijiangjia.com/posts/16107/"/>
+    <id>http://www.ijiangjia.com/posts/16107/</id>
     <published>2017-11-12T11:38:28.347Z</published>
     <updated>2017-10-21T07:05:49.385Z</updated>
     
@@ -36,8 +63,8 @@
   
   <entry>
     <title>Ubuntu16.04从安装到优化Sublime系列教程 安装篇</title>
-    <link href="http://www.ijiangjia.com/2017/40337.html"/>
-    <id>http://www.ijiangjia.com/2017/40337.html</id>
+    <link href="http://www.ijiangjia.com/posts/40337/"/>
+    <id>http://www.ijiangjia.com/posts/40337/</id>
     <published>2017-10-31T10:02:32.000Z</published>
     <updated>2017-11-01T13:31:43.125Z</updated>
     
@@ -63,12 +90,12 @@
   
   <entry>
     <title>博客进展</title>
-    <link href="http://www.ijiangjia.com/2017/29772.html"/>
-    <id>http://www.ijiangjia.com/2017/29772.html</id>
+    <link href="http://www.ijiangjia.com/posts/29772/"/>
+    <id>http://www.ijiangjia.com/posts/29772/</id>
     <published>2017-10-28T04:03:08.000Z</published>
-    <updated>2017-11-08T12:41:52.526Z</updated>
+    <updated>2017-11-15T13:26:42.271Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="博客发展历程"><a href="#博客发展历程" class="headerlink" title="博客发展历程"></a>博客发展历程</h1><p>为了防止以后更新文章，伙伴们找不到本文章入口，我特地在<code>关于</code>页面加了超链接指向这里！<br>内容时间排序皆为倒序<br><code>斜月三星洞</code>以我的理解是<code>心</code>！<br><a id="more"></a></p><h3 id="2017年11月8号"><a href="#2017年11月8号" class="headerlink" title="2017年11月8号"></a>2017年11月8号</h3><p>决定了开始踏上<code>网站建设之路</code>，为了早点完成期末作业来继续写技术文档，当然网页制作工具依旧是<code>Sublime</code>也会一同写下踩坑填坑的教程！</p><h3 id="2017年11月6号"><a href="#2017年11月6号" class="headerlink" title="2017年11月6号"></a>2017年11月6号</h3><p>由于本人是学生党，更新博客文章可能会出现停更或者断更现象纯属正常，我想让博客以及小伙伴们一起见证我学习以来的成就！<br>今天也就是6号，<code>网站制作与建设</code>的任课老师提前八周说了期末的作业要求，要求如图：</p><p>但还不知道几时踏上制作网页的路！因为<code>Sublime</code>配置教程还没写完，好烦！</p><h3 id="2017年11月1号"><a href="#2017年11月1号" class="headerlink" title="2017年11月1号"></a>2017年11月1号</h3><p>域名<code>www.ijiangjia.com</code>已进行<code>ICP备案</code>成功，第一时间立刻进行了第二步<code>公安备案</code>。</p><p><img src="https://tu-img-1.aixinxi.net/o_1bu8e30ja1b341ubadi416a0m1ja.png" alt="ICP备案"></p><h3 id="2017年10月28号"><a href="#2017年10月28号" class="headerlink" title="2017年10月28号"></a>2017年10月28号</h3><p>博客从最初搭建到现在差不多已经有了半个多月，期间停停等等的更新。<br>由于备案还没下来，而且七牛云依旧还不能使用自定义域名。所以暂时使用免费个人的图床，而且还是免费使用https的外链。这让用户在任意一个网页浏览器的地址栏始终保存绿锁状态！我也考虑过七牛云的https外链图片，资费如下：</p><p><img src="https://tu-img-1.aixinxi.net/o_1bthi233tsi71i4i17i3pt89qa.png" alt="七牛云流量资费"></p><p>但是对于我的个人非营利博客是耗不起的！</p><h3 id="2017年10月24号"><a href="#2017年10月24号" class="headerlink" title="2017年10月24号"></a>2017年10月24号</h3><p>昨天 首次为<code>www.ijiangjia.com</code>域名ICP备案，之前有备案是找人帮忙备案的！当天的凌晨提交备案申请，下午接到了阿里云的备案客服电话通知说：网站名称违反相关规定以及其他也不符合要求给予不通过叫我修正提交！因此 博客从<code>启点博客</code>变成了<code>斜月三星洞</code>！！！<br>今天 特地去照相馆打印<code>个人网站承诺备案书</code>填写拍照提交，当天就通过了初审，现在等待着十个工作日后最终的结果！</p><h3 id="2017年10月20号"><a href="#2017年10月20号" class="headerlink" title="2017年10月20号"></a>2017年10月20号</h3><p>博客采用的是免费https安全方式。考虑到Git Pages只有免费250兆左右的容量。</p><blockquote><p>昨天晚上刷到了静态网站如何提高网站打开速度相关的技术贴看见了推荐图床来储存图片，因为博客占容量的也就是图片也会拖慢打开网站的速度！</p></blockquote><p>当时就看中了帖子首推荐的<code>七牛云</code>的免费10g免费储存空间，找到官网进去稍微看了一下，储存空间不建议使用自带的三级域名提示说充值10元即可自定义域名，而且需要域名的ICP备案和公安备案，那时域名ICP备案还在，以为不需要公安备案就充值10元开通了自定义域名：<code>images.ijiangjia.com</code>，正常用了几天后七牛云给我邮箱发了域名冻结提醒，上去七牛云提交工单才知道原来域名备案没了，当时心里一片暗沉，付钱开通七牛云的自定义域名居然把我的备案弄掉了，就连畅言评论系统也不能使用必须域名备案，真是造孽啊！</p><h3 id="2017年10月19号"><a href="#2017年10月19号" class="headerlink" title="2017年10月19号"></a>2017年10月19号</h3><p>评论系统的纠结：</p><p>Github Pages托管服务空间在国外，这会出现大陆用户有时访问慢或者无法访问的情况。起初用facebook的评论系统，但是大陆用户无法加载！用畅言评论系统国外貌似也加载不出来！最后解决方法是使用国内的<code>Coding</code>托管服务空间并且同步更新，这方法还算可以，麻烦就是文件一直需要一式两份提交！</p><h3 id="2017年10月17号"><a href="#2017年10月17号" class="headerlink" title="2017年10月17号"></a>2017年10月17号</h3><p>开始踏上个人博客之路！</p><p>采用<code>hexo</code>程序和<code>Github Pages</code>空间搭建而成。<br><code>斜月三星洞</code>博客初成！</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="博客发展历程"><a href="#博客发展历程" class="headerlink" title="博客发展历程"></a>博客发展历程</h1><p>为了防止以后更新文章，伙伴们找不到本文章入口，我特地在<code>关于</code>页面加了超链接指向这里！<br>内容时间排序皆为倒序<br><code>斜月三星洞</code>以我的理解是<code>心</code>！<br><a id="more"></a></p><h2 id="2017年11月14号"><a href="#2017年11月14号" class="headerlink" title="2017年11月14号"></a>2017年11月14号</h2><p>当天下午，我博客公安备案短信通知审核通过了，情绪很激动但也有一丝丝的忧愁，当时博客程序还没安装，就怕博客的数据不能恢复，幸好皇天不负有心人，文档数据完好无损，就是有些博客插件忘记了，故此博客可能会有些BUG！博客公安备案附图：<br><img src="http://tu-img-1.aixinxi.net/o_1buvsj3451seco6uufn1fg81t9oa.png" alt="公安备案"></p><h3 id="2017年11月11号"><a href="#2017年11月11号" class="headerlink" title="2017年11月11号"></a>2017年11月11号</h3><p>在大家过着单身狗和购物狂的时候，我因为纠结于Linux系统的拾色器（当时网页的颜色实在猜不出来）安装打开不了导致系统崩溃，只能删除分区系统重新再来，用了Ubuntu liveCD进/HOME目录备份了一些资料数据，但是大多数数据已经丢失完全找不回来了！</p><h3 id="2017年11月8号"><a href="#2017年11月8号" class="headerlink" title="2017年11月8号"></a>2017年11月8号</h3><p>开始踏上<code>网站建设之路</code>，为了早点完成期末作业来继续写技术文档，当然网页制作工具依旧是<code>Sublime</code>也会一同写下踩坑填坑的教程！</p><h3 id="2017年11月6号"><a href="#2017年11月6号" class="headerlink" title="2017年11月6号"></a>2017年11月6号</h3><p>由于本人是学生党，更新博客文章可能会出现停更或者断更现象纯属正常，我想让博客以及小伙伴们一起见证我学习以来的成就！<br>今天也就是6号，<code>网站制作与建设</code>的任课老师提前八周说了期末的作业要求，要求如图：<br><img src="http://tu-img-1.aixinxi.net/o_1buvrii051r6ak94ns9stclmsa.png" alt="作业"><br>但还不知道几时踏上制作网页的路！因为<code>Sublime</code>配置教程还没写完，好烦！</p><h3 id="2017年11月1号"><a href="#2017年11月1号" class="headerlink" title="2017年11月1号"></a>2017年11月1号</h3><p>域名<code>www.ijiangjia.com</code>已进行<code>ICP备案</code>成功，第一时间立刻进行了第二步<code>公安备案</code>。</p><p><img src="https://tu-img-1.aixinxi.net/o_1bu8e30ja1b341ubadi416a0m1ja.png" alt="ICP备案"></p><h3 id="2017年10月28号"><a href="#2017年10月28号" class="headerlink" title="2017年10月28号"></a>2017年10月28号</h3><p>博客从最初搭建到现在差不多已经有了半个多月，期间停停等等的更新。<br>由于备案还没下来，而且七牛云依旧还不能使用自定义域名。所以暂时使用免费个人的图床，而且还是免费使用https的外链。这让用户在任意一个网页浏览器的地址栏始终保存绿锁状态！我也考虑过七牛云的https外链图片，资费如下：</p><p><img src="https://tu-img-1.aixinxi.net/o_1bthi233tsi71i4i17i3pt89qa.png" alt="七牛云流量资费"></p><p>但是对于我的个人非营利博客是耗不起的！</p><h3 id="2017年10月24号"><a href="#2017年10月24号" class="headerlink" title="2017年10月24号"></a>2017年10月24号</h3><p>昨天 首次为<code>www.ijiangjia.com</code>域名ICP备案，之前有备案是找人帮忙备案的！当天的凌晨提交备案申请，下午接到了阿里云的备案客服电话通知说：网站名称违反相关规定以及其他也不符合要求给予不通过叫我修正提交！因此 博客从<code>启点博客</code>变成了<code>斜月三星洞</code>！！！<br>今天 特地去照相馆打印<code>个人网站承诺备案书</code>填写拍照提交，当天就通过了初审，现在等待着十个工作日后最终的结果！</p><h3 id="2017年10月20号"><a href="#2017年10月20号" class="headerlink" title="2017年10月20号"></a>2017年10月20号</h3><p>博客采用的是免费https安全方式。考虑到Git Pages只有免费250兆左右的容量。</p><blockquote><p>昨天晚上刷到了静态网站如何提高网站打开速度相关的技术贴看见了推荐图床来储存图片，因为博客占容量的也就是图片也会拖慢打开网站的速度！</p></blockquote><p>当时就看中了帖子首推荐的<code>七牛云</code>的免费10g免费储存空间，找到官网进去稍微看了一下，储存空间不建议使用自带的三级域名提示说充值10元即可自定义域名，而且需要域名的ICP备案和公安备案，那时域名ICP备案还在，以为不需要公安备案就充值10元开通了自定义域名：<code>images.ijiangjia.com</code>，正常用了几天后七牛云给我邮箱发了域名冻结提醒，上去七牛云提交工单才知道原来域名备案没了，当时心里一片暗沉，付钱开通七牛云的自定义域名居然把我的备案弄掉了，就连畅言评论系统也不能使用必须域名备案，真是造孽啊！</p><h3 id="2017年10月19号"><a href="#2017年10月19号" class="headerlink" title="2017年10月19号"></a>2017年10月19号</h3><p>评论系统的纠结：</p><p>Github Pages托管服务空间在国外，这会出现大陆用户有时访问慢或者无法访问的情况。起初用facebook的评论系统，但是大陆用户无法加载！用畅言评论系统国外貌似也加载不出来！最后解决方法是使用国内的<code>Coding</code>托管服务空间并且同步更新，这方法还算可以，麻烦就是文件一直需要一式两份提交！</p><h3 id="2017年10月17号"><a href="#2017年10月17号" class="headerlink" title="2017年10月17号"></a>2017年10月17号</h3><p>开始踏上个人博客之路！</p><p>采用<code>hexo</code>程序和<code>Github Pages</code>空间搭建而成。<br><code>斜月三星洞</code>博客初成！</p>]]></content>
     
     <summary type="html">
     
@@ -83,8 +110,8 @@
   
   <entry>
     <title>关于博客版本区别说明</title>
-    <link href="http://www.ijiangjia.com/2017/64403.html"/>
-    <id>http://www.ijiangjia.com/2017/64403.html</id>
+    <link href="http://www.ijiangjia.com/posts/64403/"/>
+    <id>http://www.ijiangjia.com/posts/64403/</id>
     <published>2017-10-21T12:33:25.000Z</published>
     <updated>2017-10-27T15:09:08.490Z</updated>
     
