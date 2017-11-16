@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.ijiangjia.com/"/>
-  <updated>2017-11-16T10:35:38.918Z</updated>
+  <updated>2017-11-16T10:36:05.510Z</updated>
   <id>http://www.ijiangjia.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://www.ijiangjia.com/posts/18763/"/>
     <id>http://www.ijiangjia.com/posts/18763/</id>
     <published>2017-11-16T10:15:25.000Z</published>
-    <updated>2017-11-16T10:35:38.918Z</updated>
+    <updated>2017-11-16T10:36:05.510Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote><p>FileZilla是一个免费而且开源的FTP客户端软件，共有两种版本：客户端版本、服务器版本。FileZilla有条理的界面和管理多站点的简化方式使得FileZilla Client成为一个方便高效的FTP客户端工具。本文介绍的是Ubuntu下FileZilla的安装</p></blockquote><p>先放一个界面图：<br><img src="http://tu-img-1.aixinxi.net/o_1bv25fi5r19vsj68195584bjs7a.png" alt="FTP"></p><p>FileZilla Client 非常好用，以下是安装步骤。<br>安装filezilla ：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install filezilla</div></pre></td></tr></table></figure></p><p>再装个语言包：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install filezilla-locales</div></pre></td></tr></table></figure></p><p>我装这个没成功。。。。这个是语言包的。</p><p>安装成功后，如果出现./filezilla/filezilla.xml、./filezilla/layout.xml等文件不允许些或者说不能够读，可能是权限问题。</p><p>然后，把这些文件赋予合适的权限就成功了。</p><blockquote><p>参考教程：<a href="http://blog.csdn.net/stubbornness1219/article/details/50909760" target="_blank" rel="external">点击跳转</a></p></blockquote>]]></content>
     
