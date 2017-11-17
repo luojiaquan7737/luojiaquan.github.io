@@ -3,7 +3,7 @@
   
     
     <entry>
-      <title><![CDATA[ftptool]]></title>
+      <title><![CDATA[Ubuntu安装FTP工具]]></title>
       <url>/posts/18763/</url>
       <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>FileZilla是一个免费而且开源的FTP客户端软件，共有两种版本：客户端版本、服务器版本。FileZilla有条理的界面和管理多站点的简化方式使得FileZilla Client成为一个方便高效的FTP客户端工具。本文介绍的是Ubuntu下FileZilla的安装<br><a id="more"></a><br>先放一个界面图：<br><img src="http://tu-img-1.aixinxi.net/o_1bv25fi5r19vsj68195584bjs7a.png" alt="FTP"></p>
