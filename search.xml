@@ -17,7 +17,7 @@
 <li>“Sorry, Ubuntu XX.XX has experienced an internal error.”</li>
 <li>“对不起，Ubuntu XX.XX 发生了一个内部错误。”</li>
 <li>“System program problem detected.”</li>
-<li>“检测到系统程序问题。”<br>![内部错误]（<a href="http://tu-img-1.aixinxi.net/o_1bvcogglu8tltkp1dsn16bb11pka.png-w.jpg" target="_blank" rel="external">http://tu-img-1.aixinxi.net/o_1bvcogglu8tltkp1dsn16bb11pka.png-w.jpg</a>)</li>
+<li>“检测到系统程序问题。”<br><img src="http://tu-img-1.aixinxi.net/o_1bvcogglu8tltkp1dsn16bb11pka.png-w.jpg" alt="内部错误"></li>
 </ul>
 <p>也许因为应用一直崩溃，频繁的错误报告会使人心烦。也许你担心Apport会收集和上传你的Ubuntu系统的敏感信息。无论什么原因，你想关掉Apport的错误报告功能。</p>
 <h3 id="临时关闭apport错误报告"><a href="#临时关闭apport错误报告" class="headerlink" title="临时关闭apport错误报告"></a>临时关闭apport错误报告</h3><p>如果你想要临时关闭Apport，使用下列命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo service apport stop</div></pre></td></tr></table></figure></p>
