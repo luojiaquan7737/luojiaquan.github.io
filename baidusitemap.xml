@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://www.ijiangjia.com/posts/40337/</loc>
+    <lastmod>2017-11-20T13:38:23.051Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04从安装到优化Sublime系列教程 安装篇</title>
+        <pubTime>2017-10-31T10:02:32.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+        <tag>sublime</tag>
+         
+        <tag>开发工具</tag>
+         
+         
+           
+             
+              <breadCrumb title="sublime" url="http://www.ijiangjia.com/categories/sublime/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.ijiangjia.com/posts/53294/</loc>
     <lastmod>2017-11-20T13:35:04.674Z</lastmod>
     <data>
@@ -131,30 +155,6 @@
 
     
   <url>
-    <loc>http://www.ijiangjia.com/posts/40337/</loc>
-    <lastmod>2017-11-01T13:31:43.125Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04从安装到优化Sublime系列教程 安装篇</title>
-        <pubTime>2017-10-31T10:02:32.000Z</pubTime>
-        
-        <tag>sublime</tag>
-         
-        <tag>ubuntu</tag>
-         
-        <tag>开发工具</tag>
-         
-         
-           
-             
-              <breadCrumb title="sublime" url="http://www.ijiangjia.com/categories/sublime/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.ijiangjia.com/posts/64403/</loc>
     <lastmod>2017-10-27T15:09:08.490Z</lastmod>
     <data>
@@ -170,19 +170,4 @@
 
     
     
-    
-  <url>
-    <loc>http://www.ijiangjia.com/posts/16107/</loc>
-    <lastmod>2017-10-21T07:05:49.385Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2017-11-12T11:38:28.347Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
 </urlset>
