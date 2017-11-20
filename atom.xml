@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.ijiangjia.com/"/>
-  <updated>2017-11-19T14:20:00.600Z</updated>
+  <updated>2017-11-20T13:22:22.224Z</updated>
   <id>http://www.ijiangjia.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu16.04出现内部错误</title>
+    <link href="http://www.ijiangjia.com/posts/9080/"/>
+    <id>http://www.ijiangjia.com/posts/9080/</id>
+    <published>2017-11-20T12:44:58.000Z</published>
+    <updated>2017-11-20T13:22:22.224Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Linux出现内部错误不仅只有Ubuntu才会有，其他Linux的桌面发行版也会出现，但是我只用过centos7.x和Ubuntu16.04桌面发行版本，如有错误欢迎指正！</p></blockquote><a id="more"></a><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>在桌面版Ubuntu中，我经常遇到一些弹窗窗口，警告我Ubuntu发生了内部错误，问我要不要发送错误报告。每次软件崩溃都要烦扰我，我如何才能关掉这个错误报告功能呢？而我再一次重装系统又出现这个问题，这次顺便写下来记录，方便以后查证！</p><p>Ubuntu桌面版预装了Apport，它是一个错误收集系统，会收集软件崩溃、未处理异常和其他，包括程序bug，并为调试目的生成崩溃报告。当一个应用程序崩溃或者出现Bug时候，Apport就会通过弹窗警告用户并且询问用户是否提交崩溃报告。你也许也看到过下面的消息。</p><ul><li>“Sorry, the application XXXX has closed unexpectedly.”</li><li>“对不起，应用程序XXXX意外关闭了。”</li><li>“Sorry, Ubuntu XX.XX has experienced an internal error.”</li><li>“对不起，Ubuntu XX.XX 发生了一个内部错误。”</li><li>“System program problem detected.”</li><li>“检测到系统程序问题。”<br>[内部错误]（<a href="http://tu-img-1.aixinxi.net/o_1bvcogglu8tltkp1dsn16bb11pka.png-w.jpg" target="_blank" rel="external">http://tu-img-1.aixinxi.net/o_1bvcogglu8tltkp1dsn16bb11pka.png-w.jpg</a>)</li></ul><p>也许因为应用一直崩溃，频繁的错误报告会使人心烦。也许你担心Apport会收集和上传你的Ubuntu系统的敏感信息。无论什么原因，你想关掉Apport的错误报告功能。</p><h3 id="临时关闭apport错误报告"><a href="#临时关闭apport错误报告" class="headerlink" title="临时关闭apport错误报告"></a>临时关闭apport错误报告</h3><p>如果你想要临时关闭Apport，使用下列命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo service apport stop</div></pre></td></tr></table></figure></p><p><strong>注意</strong>：重启Ubuntu系统会继续自动开启</p><h3 id="永久关闭Apport错误报告"><a href="#永久关闭Apport错误报告" class="headerlink" title="永久关闭Apport错误报告"></a>永久关闭Apport错误报告</h3><p>为了永久关闭Apport，编辑/etc/default/apport，修改下列参数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo gedit /etc/default/apport</div></pre></td></tr></table></figure></p><p><a href="http://tu-img-1.aixinxi.net/o_1bvcp5lbq9be114qmch6ns1r8da.png-w.jpg" target="_blank" rel="external">apport</a><br>将图中的<code>enabled=1</code>改为<code>enabled=0</code>这样就是关闭了<br>下次重启你的Ubuntu系统，Apport将会自动关闭</p><h3 id="永久移除apport"><a href="#永久移除apport" class="headerlink" title="永久移除apport"></a>永久移除apport</h3><p>如果你再也不会用Apport，有一种简单的方法完全移除它<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get --purge apport</div></pre></td></tr></table></figure></p><p>此方法不建议使用，慎重！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Linux出现内部错误不仅只有Ubuntu才会有，其他Linux的桌面发行版也会出现，但是我只用过centos7.x和Ubuntu16.04桌面发行版本，如有错误欢迎指正！&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Ubuntu" scheme="http://www.ijiangjia.com/categories/Ubuntu/"/>
+    
+    
+      <category term="Ubuntu" scheme="http://www.ijiangjia.com/tags/Ubuntu/"/>
+    
+  </entry>
   
   <entry>
     <title>Ubuntu16.04安装Nodejs和npm</title>
