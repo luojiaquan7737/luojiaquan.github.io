@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.ijiangjia.com/"/>
-  <updated>2017-11-20T13:22:22.224Z</updated>
+  <updated>2017-11-20T13:23:04.062Z</updated>
   <id>http://www.ijiangjia.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://www.ijiangjia.com/posts/9080/"/>
     <id>http://www.ijiangjia.com/posts/9080/</id>
     <published>2017-11-20T12:44:58.000Z</published>
-    <updated>2017-11-20T13:22:22.224Z</updated>
+    <updated>2017-11-20T13:23:04.062Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>Linux出现内部错误不仅只有Ubuntu才会有，其他Linux的桌面发行版也会出现，但是我只用过centos7.x和Ubuntu16.04桌面发行版本，如有错误欢迎指正！</p></blockquote><a id="more"></a><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>在桌面版Ubuntu中，我经常遇到一些弹窗窗口，警告我Ubuntu发生了内部错误，问我要不要发送错误报告。每次软件崩溃都要烦扰我，我如何才能关掉这个错误报告功能呢？而我再一次重装系统又出现这个问题，这次顺便写下来记录，方便以后查证！</p><p>Ubuntu桌面版预装了Apport，它是一个错误收集系统，会收集软件崩溃、未处理异常和其他，包括程序bug，并为调试目的生成崩溃报告。当一个应用程序崩溃或者出现Bug时候，Apport就会通过弹窗警告用户并且询问用户是否提交崩溃报告。你也许也看到过下面的消息。</p><ul><li>“Sorry, the application XXXX has closed unexpectedly.”</li><li>“对不起，应用程序XXXX意外关闭了。”</li><li>“Sorry, Ubuntu XX.XX has experienced an internal error.”</li><li>“对不起，Ubuntu XX.XX 发生了一个内部错误。”</li><li>“System program problem detected.”</li><li>“检测到系统程序问题。”<br>[内部错误]（<a href="http://tu-img-1.aixinxi.net/o_1bvcogglu8tltkp1dsn16bb11pka.png-w.jpg" target="_blank" rel="external">http://tu-img-1.aixinxi.net/o_1bvcogglu8tltkp1dsn16bb11pka.png-w.jpg</a>)</li></ul><p>也许因为应用一直崩溃，频繁的错误报告会使人心烦。也许你担心Apport会收集和上传你的Ubuntu系统的敏感信息。无论什么原因，你想关掉Apport的错误报告功能。</p><h3 id="临时关闭apport错误报告"><a href="#临时关闭apport错误报告" class="headerlink" title="临时关闭apport错误报告"></a>临时关闭apport错误报告</h3><p>如果你想要临时关闭Apport，使用下列命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo service apport stop</div></pre></td></tr></table></figure></p><p><strong>注意</strong>：重启Ubuntu系统会继续自动开启</p><h3 id="永久关闭Apport错误报告"><a href="#永久关闭Apport错误报告" class="headerlink" title="永久关闭Apport错误报告"></a>永久关闭Apport错误报告</h3><p>为了永久关闭Apport，编辑/etc/default/apport，修改下列参数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo gedit /etc/default/apport</div></pre></td></tr></table></figure></p><p><a href="http://tu-img-1.aixinxi.net/o_1bvcp5lbq9be114qmch6ns1r8da.png-w.jpg" target="_blank" rel="external">apport</a><br>将图中的<code>enabled=1</code>改为<code>enabled=0</code>这样就是关闭了<br>下次重启你的Ubuntu系统，Apport将会自动关闭</p><h3 id="永久移除apport"><a href="#永久移除apport" class="headerlink" title="永久移除apport"></a>永久移除apport</h3><p>如果你再也不会用Apport，有一种简单的方法完全移除它<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get --purge apport</div></pre></td></tr></table></figure></p><p>此方法不建议使用，慎重！</p>]]></content>
     
@@ -122,16 +122,16 @@
     <link href="http://www.ijiangjia.com/posts/53294/"/>
     <id>http://www.ijiangjia.com/posts/53294/</id>
     <published>2017-11-15T12:09:02.000Z</published>
-    <updated>2017-11-16T05:21:57.714Z</updated>
+    <updated>2017-11-20T13:35:04.674Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>前几天因为系统（Linux）崩溃，所以导致最近一直坐在电脑屏幕前面</p></blockquote><p>今天可谓是伤心至极<br>起先还大言不惭以为可以恢复博客，可是没想到<code>国内版</code> <code>国际版</code>这两个版本的博客居然不可以共存，同一个系统都不可以。难道我<a id="more"></a>还有什么东西冲突不成？折腾大半天还是放弃了，差不多快将所有东西换掉了都不能，恰巧这时候<code>国内版</code>的<code>Coding</code>代码托管平台网站突然打不开！<br><img src="http://tu-img-1.aixinxi.net/o_1buvt60b81pfr2mgu6f4v5ijea.png" alt="Coding"><br>但平台检测实际情况是这样的：<br><img src="http://tu-img-1.aixinxi.net/o_1buvtav4e1jiccdk10451qu21sua.png" alt="Coding"><br>狗血不狗血。。。而且好像就是这系统有问题。。。。。<br>好吧好吧，不管是不是系统还是网络问题我打算将国内博客无限期停办下去。关于为啥一开始搭建网站镜像文末有说明。<br>确定了放弃<code>国内版</code>，下一步计划当然是让搜索引擎收录我的博客啦！<br>本来高高兴兴去<code>谷歌</code>和<code>百度</code>的搜索引擎添加站点的<br>将站点添加完之后，测试抓取结果如下：<br>谷歌抓取数据：<br><img src="http://tu-img-1.aixinxi.net/o_1bv1i07o51rhf1ds39rs1vnr128ta.png" alt="谷歌"><br>百度抓取数据：<br><img src="http://tu-img-1.aixinxi.net/o_1bv1i2v2hedn13j71fo74si17uja.png" alt="百度"><br>由上图发现百度除了移动端没问题外，其他都不能正常抓取。<br>经过一系列百度，google得知<code>Github</code>屏蔽了百度的爬虫，也就是说明百度可能收录不了搭载<code>Github</code>的博客。。。</p><p>又折腾一番，找到在搜索引擎检测是否被收录的情况：<code>site:域名</code><br>我的博客检测如下：<br>百度搜索引擎：<br><img src="http://tu-img-1.aixinxi.net/o_1bv1iqigs1n6h1bgibpl18v0es9a.png" alt="百度搜索引擎"><br>谷歌搜索引擎：<br><img src="http://tu-img-1.aixinxi.net/o_1bv1iu2fb1bnvtgqavp1m5ndupa.png" alt="谷歌搜索引擎"></p><p>百度的第一个是博客的站点，第二个是之前搭建网站被百度收录的结果。<br>谷歌就有点牛逼了，完全可以全部抓取，但是属于半收录情况！<br><em>截图的结果是前一天晚上提交过网站地图的</em>论收录感觉还是谷歌牛掰！</p><p>百度的爬虫不能爬取<code>Github</code>的静态博客，那么可以爬取与<code>Github</code>提供相同功能的<code>Coding</code>吗？<br>答案是肯定可以的，但是我Linux系统还是打不开<code>Coding</code>官网。。。</p><blockquote><p>以上就是我一开始将博客分为<code>国际版</code>和<code>国内版</code>的初衷，由于国内版停办，打算考虑将国内的畅言评论系统将本博客的DISQUS评论系统换下去，<br>有些人在全站是找不到评论的地方的，因为你被墙了！！<br>下图是 DISQUS<br><img src="http://tu-img-1.aixinxi.net/o_1bv1k2ra21ujlj4jds017gi64a.png" alt="评论系统"></p></blockquote>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>前几天因为系统（Linux）崩溃，所以导致最近一直坐在电脑屏幕前面</p></blockquote><p>今天可谓是伤心至极<br>起先还大言不惭以为可以恢复博客，<del>可是没想到<code>国内版</code> <code>国际版</code>这两个版本的博客居然不可以共存，同一个系统都不可以</del>。难道我<a id="more"></a>还有什么东西冲突不成？折腾大半天还是放弃了，差不多快将所有东西换掉了都不能，<del>恰巧这时候<code>国内版</code>的<code>Coding</code>代码托管平台网站突然打不开！</del><font color="red"><strong>11月18号：在一次配置hosts文件的时候发现 我强行将一个无效的IP指向coding.net导致不能访问Coding官网。。。我好蠢。。</strong></font><br><img src="http://tu-img-1.aixinxi.net/o_1buvt60b81pfr2mgu6f4v5ijea.png" alt="Coding"><br>但平台检测实际情况是这样的：<br><img src="http://tu-img-1.aixinxi.net/o_1buvtav4e1jiccdk10451qu21sua.png" alt="Coding"><br>狗血不狗血。。。而且好像就是这系统有问题。。。。。<br>好吧好吧，不管是不是系统还是网络问题我打算将国内博客无限期停办下去。关于为啥一开始搭建网站镜像文末有说明。<br>确定了放弃<code>国内版</code>，下一步计划当然是让搜索引擎收录我的博客啦！<br>本来高高兴兴去<code>谷歌</code>和<code>百度</code>的搜索引擎添加站点的<br>将站点添加完之后，测试抓取结果如下：<br>谷歌抓取数据：<br><img src="http://tu-img-1.aixinxi.net/o_1bv1i07o51rhf1ds39rs1vnr128ta.png" alt="谷歌"><br>百度抓取数据：<br><img src="http://tu-img-1.aixinxi.net/o_1bv1i2v2hedn13j71fo74si17uja.png" alt="百度"><br>由上图发现百度除了移动端没问题外，其他都不能正常抓取。<br>经过一系列百度，google得知<code>Github</code>屏蔽了百度的爬虫，也就是说明百度可能收录不了搭载<code>Github</code>的博客。。。</p><p>又折腾一番，找到在搜索引擎检测是否被收录的情况：<code>site:域名</code><br>我的博客检测如下：<br>百度搜索引擎：<br><img src="http://tu-img-1.aixinxi.net/o_1bv1iqigs1n6h1bgibpl18v0es9a.png" alt="百度搜索引擎"><br>谷歌搜索引擎：<br><img src="http://tu-img-1.aixinxi.net/o_1bv1iu2fb1bnvtgqavp1m5ndupa.png" alt="谷歌搜索引擎"></p><p>百度的第一个是博客的站点，第二个是之前搭建网站被百度收录的结果。<br>谷歌就有点牛逼了，完全可以全部抓取，但是属于半收录情况！<br><em>截图的结果是前一天晚上提交过网站地图的</em>论收录感觉还是谷歌牛掰！</p><p>百度的爬虫不能爬取<code>Github</code>的静态博客，那么可以爬取与<code>Github</code>提供相同功能的<code>Coding</code>吗？<br>答案是肯定可以的，但是我Linux系统还是打不开<code>Coding</code>官网。。。</p><blockquote><p>以上就是我一开始将博客分为<code>国际版</code>和<code>国内版</code>的初衷，由于国内版停办，打算考虑将国内的畅言评论系统将本博客的DISQUS评论系统换下去，<br>有些人在全站是找不到评论的地方的，因为你被墙了！！<br>下图是 DISQUS<br><img src="http://tu-img-1.aixinxi.net/o_1bv1k2ra21ujlj4jds017gi64a.png" alt="评论系统"></p></blockquote>]]></content>
     
     <summary type="html">
     
       &lt;blockquote&gt;
 &lt;p&gt;前几天因为系统（Linux）崩溃，所以导致最近一直坐在电脑屏幕前面&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;今天可谓是伤心至极&lt;br&gt;起先还大言不惭以为可以恢复博客，可是没想到&lt;code&gt;国内版&lt;/code&gt; &lt;code&gt;国际版&lt;/code&gt;这两个版本的博客居然不可以共存，同一个系统都不可以。难道我
+&lt;p&gt;今天可谓是伤心至极&lt;br&gt;起先还大言不惭以为可以恢复博客，&lt;del&gt;可是没想到&lt;code&gt;国内版&lt;/code&gt; &lt;code&gt;国际版&lt;/code&gt;这两个版本的博客居然不可以共存，同一个系统都不可以&lt;/del&gt;。难道我
     
     </summary>
     
