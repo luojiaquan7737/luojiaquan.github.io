@@ -1,0 +1,205 @@
+<!DOCTYPE html><!--[if lt IE 7 ]><html class="ie6"><![endif]--><!--[if IE 7 ]><html class="ie7"><![endif]--><!--[if IE 8 ]><html class="ie8"><![endif]--><!--[if IE 9 ]><html class="ie9"><![endif]--><!--[if (gt IE 9)|!(IE)]><!--><html><!--<![endif]--><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>360站长平台</title><link rel="stylesheet" type="text/css" href="/Public/css/index_so.css"><link rel="shortcut icon" href="http://s0.qhimg.com/static/52166db8c450f68d.ico" type="image/x-icon"><style type="text/css">#login .wraper .banner{ width:620px;height:396px;overflow: hidden;cursor: pointer;}</style><style type="text/css">#login .wraper .banner1{background-image:url(http://p0.qhimg.com/t0164c2b80a45e6cea4.png);}.bannerWrap1{background-color:#6CC1F9}#login .wraper .banner2{background-image:url(http://p2.qhimg.com/t01a1922202fa6a8424.png);}.bannerWrap2{background-color:#73A4E0}#login .wraper .banner2{background-image:-webkit-image-set(url(http://p2.qhimg.com/t01a1922202fa6a8424.png) 1x,url(http://p6.qhimg.com/t01958818b757f687bc.png) 2x);}#login .wraper .banner3{background-image:url(http://p9.qhimg.com/t01d808aa80536f347f.png);}.bannerWrap3{background-color:#F5B15C}#login .wraper .banner4{background-image:url(http://p6.qhimg.com/t01578db76341e7318f.png);}.bannerWrap4{background-color:#79C8D8}#login .wraper .banner4{background-image:-webkit-image-set(url(http://p6.qhimg.com/t01578db76341e7318f.png) 1x,url(http://p3.qhimg.com/t0152dacbb194a19a81.png) 2x);}#login .wraper .banner5{background-image:url(http://p4.qhimg.com/t01866e6b69a9b87c08.png);}.bannerWrap5{background-color:#5DC6C9}#login .wraper .banner6{background-image:url(http://p8.qhimg.com/t01c2eafec82e912e5d.png);}.bannerWrap6{background-color:#ADCDE1}#login .wraper .banner6{background-image:-webkit-image-set(url(http://p8.qhimg.com/t01c2eafec82e912e5d.png) 1x,url(http://p4.qhimg.com/t01ba1d17167259a791.png) 2x);}</style></head><body><div id="page"><link rel="stylesheet" type="text/css" href="http://s8.qhres.com/static/08fc9acc54bf983f/common.css"></link><div id="header"><div class="wraper"><div class="header_con clearfix"><div class="logo"><a class="need-login" href="/"></a></div><div class="menu"><ul><li class="curr"><a class="need-login" href='/'>首页</a></li><li class=""><a class="need-login" href="/?m=Site&a=index">站长工具</a></li><li><a target="_blank" href='http://bbs.360.cn/forum.php?mod=forumdisplay&fid=137&filter=typeid&typeid=10580'>站长论坛</a></li><li class=""><a class="need-login" href="/?m=College&a=index">站长学院</a></li><li><a href="http://www.so.com/help/help_3_3.html" class="cb" target="_blank">帮助</a></li></ul></div><div class="user"><a href="/?m=User&a=index" class='uname'></a></div></div></div></div><div id="login" class="bannerWrap1"><div class="wraper"><div class="m-login"><div class='not-login'><h1>欢迎您登录360</h1><div class="tip"><span id="tip-info"></span></div><div id="loginWrap"></div></div><div class="has-login"><h1>360站长平台欢迎您</h1><span></span><div class="enter"><a href="/index.php?m=Index&a=gotosite"></a></div><a href="javascript:;" class="switch-acount">切换帐号？</a></div></div><div class="banner banner1"></div><div class="switcher"><span class="item active" data-link="http://www.so.com/help/help_3_baipishu.html" data-index="1"></span><span class="item " data-link="http://zhanzhang.so.com/index.php?s=/Site/index.html" data-index="2"></span><span class="item " data-link="http://www.so.com/help/struct.html" data-index="3"></span><span class="item " data-link="http://www.so.com/help/help_3_nezha.html" data-index="4"></span><span class="item " data-link="http://www.so.com/help/help_3_houyi2.html" data-index="5"></span><span class="item " data-link="http://www.so.com/help/help_3_14.html" data-index="6"></span></div></div></div><div id='other-links'><div class='wraper'><ul><li><dl><dt>产品动态</dt><dd><label>10-26</label><a target="_blank" href="http://www.so.com/help/help_3_baipishu.html">网页质量白皮书发布上线！</a><!-- <i class="new-icon"></i> --></dd><dd><label>10-26</label><a target="_blank" href="http://www.so.com/help/struct.html">结构化数据接入功能上线</a><!-- <i class="new-icon"></i> --></dd><dd><label>09-20</label><a target="_blank" href="http://www.so.com/help/help_3_nezha.html">360搜索“哪吒算法”上线公告</a><!-- <i class="new-icon"></i> --></dd><dd><label>09-07</label><a target="_blank" href="http://www.so.com/help/help_3_houyi2.html">“后羿算法2.0”升级公告</a><!-- <i class="new-icon"></i> --></dd></dl></li><li><dl><dt>站长工具</dt><dd><a href="/?m=Sitemap" title="提交sitemap和结构化数据将有助于引擎更快更全的收录网站和提升展现">数据提交</a></dd><dd><a href="/?m=Includenum&a=index" title="帮助您了解您的网站在360搜索的数据表现">数据分析</a></dd><dd><a href="/?m=SiteCertification&a=siteVerify" title="明确寻址词下的标注官网有利提升站点的认同度">官网认证</a></dd><dd><a href="/?m=Urlmap&a=index" title="提升网站在360移动搜索中的检索体验，为pc对应的移动页面带来更多展现机会">移动适配</a></dd></dl></li><li><dl><dt>常见问题</dt><dd><a target="_blank" href="http://bbs.360.cn/thread-15052666-1-1.html">官网认证申请一点通</a></dd><dd><a target="_blank" href="http://bbs.360.cn/thread-15081983-1-1.html">什么样的页面不受欢迎</a></dd><dd><a target="_blank" href="http://www.so.com/help/help_3_1.html">360搜索网站收录要求</a></dd><dd><a target="_blank" href="http://www.so.com/help/help_3_8.html">网站身份验证常见问题</a></dd></dl></li><li><dl><dt>站长学院</dt><dd>即将开放，敬请期待</dd><dd>……</dd></dl></li></ul></div></div><div id="footer"><div id="friend-links"><ul class="clearfix"><li class="link-title">友情链接：</li><li><a target="_blank" href="https://fenxi.360.cn/">360分析</a></li><li><a target="_blank" href="http://lianmeng.360.cn/">360导航联盟</a></li><li><a target="_blank" href="http://ssp.360.cn/">360搜索联盟</a></li><li><a target="_blank" href="https://cdn.cloud.360.cn/">360云加速</a></li><li><a target="_blank" href="http://www.chinaz.com/">站长之家</a></li><li><a target="_blank" href="http://zhanzhang.so.com/?m=Contact&a=index">联系我们</a></li></ul></div><div class="wraper">Copyright © 360.CN. All Rights Reserved. 京ICP证080047号 </div></div></div><script src="http://s0.qhimg.com/lib/jquery/183.js" ></script><script src="http://js.passport.qihucdn.com/5.0.3.js" ></script><script src="http://s6.qhres.com/static/a5a507891d856aa3/jquery.dialog.js" ></script><script>(function(){
+var App = {
+    load : function(options){
+        $.Dialog.open({
+            'title' : options['title'],
+            'content' : options['content'],
+            'foot' : options['foot'],
+            'target' : self,
+            'draggable' : true,
+            'hasShade' : true,
+            'autoCenter' : true,
+            'hasReferBtn' : false,
+            'CloseBtn' : '',
+            'css' : {
+                'border' : '1px #C8C8C8 solid',
+                'box-shadow' : '0px 0px 3px #c8c8c8',
+                'padding' : '0',
+                'top' : '50px',
+                'left' : '100px',
+                'width' : options['width']
+            }
+        },function(d){
+            d.setTitleStyle({
+                'width' : '100%'
+            });
+            d.setCloseBtnStyle({
+                'width' : '25px',
+                'height' : '25px',
+                'border' : 'none'
+            });
+            d.shade.dom.bind({
+                'click' : function(){
+                    d._close.call(d);
+                }
+            });
+        });
+    }
+};
+var src = 'pcw_so_zhanzhang';
+var opt = {
+    src: src,
+    signIn: {
+        types: ['normal'],
+        thirdPart: {
+            providers: []
+        }
+    }
+};
+
+/**
+ * showSignInError 处理登录输入框错误变红提示
+ * @param  {Dom} elem 需要处理的元素
+ */
+function showSignInError(elem) {
+    elem.parent('.quc-input-bg').addClass('quc-input-bg-incorrect');
+    // 如果登录错误，取消登录按钮focus状态，即登录中
+    $('.quc-button-sign-in').blur();
+}
+QHPass.init(opt);
+QHPass.events.on('afterShow.signIn', function(e, data) {
+    var regLink = 'http://i.360.cn/reg?src=' + src + '&destUrl=' + encodeURIComponent(location.origin);
+    $('.quc-link-sign-up').attr('href', regLink).unbind('click');
+});
+QHPass.events.on('invalid.signIn', function(e, data){
+    //1030 请输入360帐号
+    //1036 账号不存在
+    //211 请输入密码
+    //220 密码错误
+    //78002 请输入验证码
+    //78000 验证码输入错误
+    var signInWrapper = $('.quc-wrapper'),
+        accountIpt = $('.quc-input-account', signInWrapper),
+        passwordIpt = $('.quc-input-password', signInWrapper),
+        captchaIpt = $('.quc-input-captcha', signInWrapper);
+
+    $('.quc-input-bg', signInWrapper).removeClass('quc-input-bg-incorrect');
+
+    switch (data.errno) {
+        case 1030:
+        case 1036:
+            showSignInError(accountIpt);
+            break;
+        case 211:
+        case 220:
+            showSignInError(passwordIpt);
+            break;
+        case 78002:
+        case 78000:
+            showSignInError(captchaIpt);
+            break;
+    }
+});
+
+var Login = {
+	clear : function(){
+		var timer = setTimeout(function(){
+			$('#tip-info').fadeOut('fast',function(){
+				$('#tip-info').html('');
+			});
+			if(timer){
+				$('#loginSubmit').removeAttr('disabled');
+				clearTimeout(timer);
+			}
+		},2000);
+	},
+    loginSuccess : function(){
+        location.href = '/?m=Index&a=gotosite';
+    },
+	getInfoSuccess : function(data){
+        var username = data.userName.indexOf("360U") == 0 ?
+                       data.nickName || data.login_email :
+                       data.userName,
+            loginWapper = $('#login .has-login'),
+            tips = '<span class="ulogin">您已登陆</span>';
+        $('span',loginWapper).html(tips+username);
+        loginWapper.show().siblings('.not-login').hide();
+	},
+	login : function(){
+        $('#login .not-login').show().siblings('.has-login').hide();
+		QHPass.signIn($('#loginWrap'), Login.loginSuccess);
+	},
+	render : function(){
+		QHPass.getUserInfo(Login.getInfoSuccess, Login.login);
+	},
+    bind : function(){
+        $('#login .switch-acount').on('click',function(){
+            $.ajax({
+                'url' : '/?m=Index&a=logout',
+                'success' : function(){
+                    QHPass.signOut(function(){
+                        window.location.href = '/';
+                    });
+            }});
+        });
+
+        /*点击相关功能时检测是否已经登录*/
+        $('#page a.need-login').on('click',function(e){
+            QHPass.getUserInfo(Login.getInfoSuccess, function(){
+                e.preventDefault();
+                App.load({
+                    'title' : '未登录',
+                    'width' : '280px',
+                    'content' : '<p style="padding:20px;">您好，请先登陆站长平台。</p>'
+                });
+            });
+        });
+    }
+};
+/*渲染登录框*/
+Login.render();
+
+/*登录事件绑定*/
+Login.bind();
+
+//轮播事件
+var $login = $('#login');
+var $banner = $login.find('.banner');
+var index = 1;
+var imgCount = $('.switcher .item').length;
+var cnameList = '', cnameWrapList = '';
+for(var i=0; i<imgCount; i++){
+    cnameList += 'banner'+(i+1)+' ';
+    cnameWrapList += 'bannerWrap'+(i+1)+' ';
+}
+var chBanner = function(){
+    var nextIndex;
+    if(index == imgCount){nextIndex = 1}else{nextIndex = index+1}
+    $login.removeClass(cnameWrapList).addClass('bannerWrap'+nextIndex);
+    $banner.removeClass(cnameList).addClass('banner'+nextIndex).hide().fadeIn();
+    $login.find('.switcher span').removeClass('active').eq(nextIndex-1).addClass('active');
+    if(index == imgCount){ index = 1;} else {index++;}
+};
+
+var inter;
+var interVal = function(){
+    inter = setInterval(function(){
+        chBanner();
+    },5000);
+};
+
+if(!inter){interVal();}
+
+$login.find('.switcher').on('click','span',function(){
+    var $this = $(this);
+    var i = +$this.attr('data-index');
+    if(i == 1){index=imgCount} else {index=i-1;}
+    if($this.hasClass('active')){return;}
+    chBanner();
+    if(inter){
+        clearInterval(inter);
+    }
+    interVal();
+});
+
+$banner.on('click',function(){
+    var $this = $(this);
+    var classname = $(this)[0].className;
+    if(/banner(\d)/gi.test(classname) ){
+        var index = RegExp.$1 - 1;
+        var url = $('#login .switcher .item').eq(index).data('link');
+        window.open(url);
+    }
+    return false;
+});
+})();</script></body></html>
