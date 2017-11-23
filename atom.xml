@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.ijiangjia.com/"/>
-  <updated>2017-11-20T14:31:58.008Z</updated>
+  <updated>2017-11-23T13:51:06.712Z</updated>
   <id>http://www.ijiangjia.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu16.04安装chromium浏览器以及下载器配置</title>
+    <link href="http://www.ijiangjia.com/posts/24648/"/>
+    <id>http://www.ijiangjia.com/posts/24648/</id>
+    <published>2017-11-23T13:50:35.000Z</published>
+    <updated>2017-11-23T13:51:06.712Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>系统自带有火狐浏览器，但我喜欢用谷歌浏览器，所以只装<code>chromium</code>版的浏览器</strong><br>在这里做个解释：<code>chrome浏览器</code>和<code>chromium浏览器</code>都是出于谷歌的！<br>安装谷歌插件那部分需要v。p。n</p><h3 id="安装-chromium浏览器"><a href="#安装-chromium浏览器" class="headerlink" title="安装 chromium浏览器"></a>安装 chromium浏览器</h3><p>在终端依次执行以下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository ppa:a-v-shkop/chromium</div><div class="line"></div><div class="line">sudo apt-get update</div><div class="line"></div><div class="line">sudo apt-get install chromium-browser</div></pre></td></tr></table></figure></p><p>没提示错误的话，<br>按下电脑的<code>win</code>键或者左上角点击ubuntu的logo可以搜索<br><a href="http://tu-img-1.aixinxi.net/o_1bvkg6tahfo7e7h1mpm1f0j86fa.png-w.jpg" target="_blank" rel="external">查看chromium是否安装</a></p><h3 id="uGet替换chromium浏览器默认下载"><a href="#uGet替换chromium浏览器默认下载" class="headerlink" title="uGet替换chromium浏览器默认下载"></a>uGet替换chromium浏览器默认下载</h3><p>不知道你们有没有发现使用<code>chrome浏览器</code>下载东西贼慢，<code>chromium浏览器</code>也不例外！<br>这时第三方的下载插件就有用了！</p><p>uGet是采用aria2作为下载后端，所以两个软件都必须同时安装。</p><ol><li><p>安装uGet</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository ppa:plushuang-tw/uget-stable</div><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install uget</div></pre></td></tr></table></figure></li><li><p>安装aria2</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository ppa:t-tujikawa/ppa</div><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install aria2</div></pre></td></tr></table></figure></li><li><p>配置uGet默认下载插件为aria2<br><a href="http://tu-img-1.aixinxi.net/o_1bvkhf0bh1vcn7846f31j8p1smea.png-w.jpg" target="_blank" rel="external">打开uGet软件</a><br>菜单栏依次打开： <code>编辑</code>》》》<code>设置</code>》》》<code>插件</code><br><a href="http://tu-img-1.aixinxi.net/o_1bvkhksuh179nthf1vnk6041p6ra.png-w.jpg" target="_blank" rel="external">配置</a></p></li><li><p>设置uGet为chromium的下载默认插件<br>安装uget-chrome-wrapper</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository ppa:slgobinath/uget-chrome-wrapper</div><div class="line">sudo apt update</div><div class="line">sudo apt install uget-chrome-wrapper</div></pre></td></tr></table></figure></li></ol><p><a href="https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi?hl=zh-CN" target="_blank" rel="external">安装Chrome插件：</a></p><p>添加uGet扩展后，谷歌浏览器右上角即可显示uGet图标。重启谷歌浏览器，只要点击下载链接，就会自动弹出uGet下载界面、自动添加下载任务。<br>当然，如果对于某些链接，仍要使用谷歌浏览器下载，可以用鼠标右键“链接另存为”。</p><p><font color="red">注意：浏览器添加插件还是用不了uGet下载的话，请查看这里是否为绿色！如下图：</font><br><a href="http://tu-img-1.aixinxi.net/o_1bvki55ek37pcls1jb21c7hsu4a.png-w.jpg" target="_blank" rel="external">对比</a></p><p><a href="http://www.cnblogs.com/EasonJim/p/7119294.html" target="_blank" rel="external">参考教程</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;系统自带有火狐浏览器，但我喜欢用谷歌浏览器，所以只装&lt;code&gt;chromium&lt;/code&gt;版的浏览器&lt;/strong&gt;&lt;br&gt;在这里做个解释：&lt;code&gt;chrome浏览器&lt;/code&gt;和&lt;code&gt;chromium浏览器&lt;/code&gt;都是出于谷歌的！&lt;
+      
+    
+    </summary>
+    
+      <category term="Ubuntu" scheme="http://www.ijiangjia.com/categories/Ubuntu/"/>
+    
+    
+      <category term="chromium" scheme="http://www.ijiangjia.com/tags/chromium/"/>
+    
+  </entry>
   
   <entry>
     <title>Ubuntu16.04出现内部错误</title>
