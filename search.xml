@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[Ubuntu16.04安装chromium浏览器以及下载器配置]]></title>
       <url>/posts/24648/</url>
-      <content type="html"><![CDATA[<p><strong>系统自带有火狐浏览器，但我喜欢用谷歌浏览器，所以只装<code>chromium</code>版的浏览器</strong><br>在这里做个解释：<code>chrome浏览器</code>和<code>chromium浏览器</code>都是出于谷歌的！<br>安装谷歌插件那部分需要v。p。n</p>
+      <content type="html"><![CDATA[<p><strong>系统自带有火狐浏览器，但我喜欢用谷歌浏览器，所以只装<code>chromium</code>版的浏览器</strong><br>在这里做个解释：<code>chrome浏览器</code>和<code>chromium浏览器</code>都是出于谷歌的！<br>安装谷歌插件那部分需要v。p。n<br><a id="more"></a></p>
 <h3 id="安装-chromium浏览器"><a href="#安装-chromium浏览器" class="headerlink" title="安装 chromium浏览器"></a>安装 chromium浏览器</h3><p>在终端依次执行以下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository ppa:a-v-shkop/chromium</div><div class="line"></div><div class="line">sudo apt-get update</div><div class="line"></div><div class="line">sudo apt-get install chromium-browser</div></pre></td></tr></table></figure></p>
 <p>没提示错误的话，<br>按下电脑的<code>win</code>键或者左上角点击ubuntu的logo可以搜索<br><a href="http://tu-img-1.aixinxi.net/o_1bvkg6tahfo7e7h1mpm1f0j86fa.png-w.jpg" target="_blank" rel="external">查看chromium是否安装</a></p>
 <h3 id="uGet替换chromium浏览器默认下载"><a href="#uGet替换chromium浏览器默认下载" class="headerlink" title="uGet替换chromium浏览器默认下载"></a>uGet替换chromium浏览器默认下载</h3><p>不知道你们有没有发现使用<code>chrome浏览器</code>下载东西贼慢，<code>chromium浏览器</code>也不例外！<br>这时第三方的下载插件就有用了！</p>
@@ -108,9 +108,9 @@
         
         <tags>
             
-            <tag> Ubuntu </tag>
-            
             <tag> nodejs </tag>
+            
+            <tag> Ubuntu </tag>
             
         </tags>
         
@@ -263,9 +263,9 @@
         
         <tags>
             
-            <tag> sublime </tag>
-            
             <tag> Ubuntu </tag>
+            
+            <tag> sublime </tag>
             
             <tag> 开发工具 </tag>
             
