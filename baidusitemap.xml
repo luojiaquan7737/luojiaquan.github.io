@@ -4,6 +4,50 @@
 
     
   <url>
+    <loc>http://www.ijiangjia.com/posts/23260/</loc>
+    <lastmod>2017-11-28T04:12:13.676Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu系统安装php7.0以及检测环境</title>
+        <pubTime>2017-11-28T04:11:15.000Z</pubTime>
+        
+        <tag>开发工具</tag>
+         
+        <tag>php</tag>
+         
+         
+           
+             
+              <breadCrumb title="Ubuntu环境" url="http://www.ijiangjia.com/categories/Ubuntu%E7%8E%AF%E5%A2%83/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.ijiangjia.com/posts/30971/</loc>
+    <lastmod>2017-11-28T02:58:48.290Z</lastmod>
+    <data>
+        <display>
+        <title>TeamViewer</title>
+        <pubTime>2017-11-16T08:14:17.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>TeamViewer</tag>
+         
+         
+           
+             
+              <breadCrumb title="Ubuntu" url="http://www.ijiangjia.com/categories/Ubuntu/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.ijiangjia.com/posts/24648/</loc>
     <lastmod>2017-11-23T13:54:58.520Z</lastmod>
     <data>
@@ -33,9 +77,9 @@
         
         <tag>Ubuntu</tag>
          
-        <tag>sublime</tag>
-         
         <tag>开发工具</tag>
+         
+        <tag>sublime</tag>
          
          
            
@@ -145,28 +189,6 @@
            
              
               <breadCrumb title="工具" url="http://www.ijiangjia.com/categories/%E5%B7%A5%E5%85%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.ijiangjia.com/posts/30971/</loc>
-    <lastmod>2017-11-16T10:06:48.191Z</lastmod>
-    <data>
-        <display>
-        <title>TeamViewer</title>
-        <pubTime>2017-11-16T08:14:17.000Z</pubTime>
-        
-        <tag>linux</tag>
-         
-        <tag>TeamViewer</tag>
-         
-         
-           
-             
-              <breadCrumb title="Ubunutu" url="http://www.ijiangjia.com/categories/Ubunutu/"/>
           
         </display>
     </data>

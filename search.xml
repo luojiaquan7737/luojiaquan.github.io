@@ -3,6 +3,80 @@
   
     
     <entry>
+      <title><![CDATA[Ubuntu系统安装php7.0以及检测环境]]></title>
+      <url>/posts/23260/</url>
+      <content type="html"><![CDATA[<blockquote>
+<p>起初是为了帮朋友搭建类似电脑之家的社区网站，在选择网站程序时选择了<code>asp</code>和<code>php</code>格式的程序，前者只能在win系统才能架设，而后者需要在Linux系统下，在操作虚拟空间的时候由于手贱先将原先的PHP环境切换到ASP环境。导致测试完ASP程序之后不能更换操作系统了！要更换操作系统只能等第二天，这当然不能忍了，恰好我系统是Linux安装PHP环境也是几行命令的事</p>
+</blockquote>
+<a id="more"></a>
+<p><img src="http://tu-img-1.aixinxi.net/o_1c00965e915hh1v2alsfk3lbrfa.png-w.jpg" alt="系统提示"></p>
+<p>简单介绍php，<font color="red;">php环境配置apache2+php+mysql  系统为ubuntu16.04</font></p>
+<p>关于php介绍我就不废话了，网上一大堆！直接进主题：</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p><strong>1. 安装 Apache2</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install apache2</div></pre></td></tr></table></figure></p>
+<p><strong>2. 安装php7.0</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository -y ppa:ondrej/php</div><div class="line">sudo apt update</div><div class="line">sudo apt install  php7.0</div></pre></td></tr></table></figure>
+<p><strong>3. 安装Mysql服务端和Mysql客户端</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt install -y mysql-server mysql-client</div></pre></td></tr></table></figure>
+<p>第三步，会提示设置mysql密码并确认密码</p>
+<p><img src="http://tu-img-1.aixinxi.net/o_1c00aej331uj16h7s6bv9v1om1a.png-w.jpg" alt="设置Mysql"></p>
+<p><strong>4. 安装PHP和Mysql关联插件</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install libapache2-mod-php7.0</div><div class="line">sudo apt-get install php7.0-mysql</div><div class="line">sudo apt-get install php7.0-gd</div></pre></td></tr></table></figure>
+<p><strong>5. 安装phpmyadmin</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install phpmyadmin</div></pre></td></tr></table></figure>
+<p>在安装过程中会要求选择Web server：apache2或lighttpd，使用空格键选定apache2，然后确定,下面界面输入你刚才安装Mysql时设置的密码，确定。再确认一次Mysql密码，确定。</p>
+<p><img src="http://tu-img-1.aixinxi.net/o_1c00asfs0198j1at1jhvpk135qa.png-w.jpg" alt="配置"></p>
+<p><img src="http://tu-img-1.aixinxi.net/o_1c00auavc1rmh8cblvch8l29la.png-w.jpg" alt="选择"></p>
+<p><img src="http://tu-img-1.aixinxi.net/o_1c00b0tro1f751b0m17j61daogila.png-w.jpg" alt="输入密码"></p>
+<p><strong>6. 将phpmyadmin与apache2建立连接</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo ln -s /usr/share/phpmyadmin  /var/www/html</div></pre></td></tr></table></figure>
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p><strong>1. 启动apache2</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo /etc/init.d/apache2  restart</div></pre></td></tr></table></figure>
+<p><img src="http://tu-img-1.aixinxi.net/o_1c00b8fhk1i7stb99m9j1r1duca.png-w.jpg" alt="启动Apache2"></p>
+<p><strong>2. 在phptest目录下新建一个PHP 文件:test.php</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo gedit /var/www/html/test.php</div></pre></td></tr></table></figure>
+<p><strong>3. 在gedit 输入下面内容</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">&lt;title&gt;PHP Site&lt;/title&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;p&gt;</div><div class="line">&lt;center&gt;</div><div class="line">&lt;?php</div><div class="line">echo &quot;Hello,This is my first PHP webpage\n&quot;;phpinfo();</div><div class="line">?&gt;</div><div class="line">&lt;/center&gt;</div><div class="line">&lt;/p&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<p>保存退出</p>
+<p><strong>4. 浏览器打开测试</strong></p>
+<p>在浏览器输入<code>http://localhost/test.php</code> 回车查看结果！</p>
+<p><img src="http://tu-img-1.aixinxi.net/o_1c00bh83v1e8e13uff421gohr6ia.png-w.jpg" alt="结果"></p>
+<p>想查看php版本直接在终端输入<code>php -v</code>即可！</p>
+<p>浏览器输入<code>127.0.0.1</code>或者<code>localhost</code>就会看到图下一样!</p>
+<p><img src="http://tu-img-1.aixinxi.net/o_1c00bn4151128c5kvjl1hauin1a.png-w.jpg" alt="localhost"></p>
+<h3 id="拓展篇"><a href="#拓展篇" class="headerlink" title="拓展篇"></a>拓展篇</h3><p><strong>1. 站点目录更改</strong></p>
+<p>Apache2默认站点是在<code>var/www/</code>下，但是有时候又想更换站点，下面这个方法可以帮助您：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo gedit /etc/apache2/apache2.conf</div></pre></td></tr></table></figure>
+<p>找到下图的部分:</p>
+<p>将<code>&lt;Directory /var/www/&gt;</code>改成<code>&lt;Directory “你要设置的目录”&gt;</code></p>
+<p>更改后建议要重新建立Apache2和phpmyadmin链接</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo ln -s /usr/share/phpmyadmin  /var/www/html</div></pre></td></tr></table></figure>
+<p>将后面的<code>/var/www/html</code>改为你对应的目录，执行<code>sudo /etc/init.d/apache2 restart</code>重启生效</p>
+<p><img src="http://tu-img-1.aixinxi.net/o_1c00c58q31rqg56sda718fuq0ja.png-w.jpg" alt="默认站点更改"></p>
+<p><strong>2. 服务管理命令</strong></p>
+<p>apache2 服务管理命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo /etc/init.d/apache2 stop/restart/start</div><div class="line">service apache2 stop/restart/start</div><div class="line">    // 两条令相同</div></pre></td></tr></table></figure>
+<p>mysql 服务管理命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo /etc/init.d/mysql stop/restart/start</div><div class="line">service mysql stop/restart/start</div><div class="line">    // 两条令相同</div></pre></td></tr></table></figure>
+]]></content>
+      
+        <categories>
+            
+            <category> Ubuntu环境 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 开发工具 </tag>
+            
+            <tag> php </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Ubuntu16.04安装chromium浏览器以及下载器配置]]></title>
       <url>/posts/24648/</url>
       <content type="html"><![CDATA[<p><strong>系统自带有火狐浏览器，但我喜欢用谷歌浏览器，所以只装<code>chromium</code>版的浏览器</strong><br>在这里做个解释：<code>chrome浏览器</code>和<code>chromium浏览器</code>都是出于谷歌的！<br>安装谷歌插件那部分需要v。p。n<br><a id="more"></a></p>
@@ -172,7 +246,7 @@
       
         <categories>
             
-            <category> Ubunutu </category>
+            <category> Ubuntu </category>
             
         </categories>
         
@@ -265,9 +339,9 @@
             
             <tag> Ubuntu </tag>
             
-            <tag> sublime </tag>
-            
             <tag> 开发工具 </tag>
+            
+            <tag> sublime </tag>
             
         </tags>
         
