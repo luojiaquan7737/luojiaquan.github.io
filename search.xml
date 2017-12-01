@@ -4,7 +4,7 @@
     
     <entry>
       <title><![CDATA[Ubuntu系统安装php7.0以及检测环境]]></title>
-      <url>/posts/23260/</url>
+      <url>/2017/23260.html</url>
       <content type="html"><![CDATA[<blockquote>
 <p>起初是为了帮朋友搭建类似电脑之家的社区网站，在选择网站程序时选择了<code>asp</code>和<code>php</code>格式的程序，前者只能在win系统才能架设，而后者需要在Linux系统下，在操作虚拟空间的时候由于手贱先将原先的PHP环境切换到ASP环境。导致测试完ASP程序之后不能更换操作系统了！要更换操作系统只能等第二天，这当然不能忍了，恰好我系统是Linux安装PHP环境也是几行命令的事</p>
 </blockquote>
@@ -78,7 +78,7 @@
     
     <entry>
       <title><![CDATA[Ubuntu16.04安装chromium浏览器以及下载器配置]]></title>
-      <url>/posts/24648/</url>
+      <url>/2017/24648.html</url>
       <content type="html"><![CDATA[<p><strong>系统自带有火狐浏览器，但我喜欢用谷歌浏览器，所以只装<code>chromium</code>版的浏览器</strong><br>在这里做个解释：<code>chrome浏览器</code>和<code>chromium浏览器</code>都是出于谷歌的！<br>安装谷歌插件那部分需要v。p。n<br><a id="more"></a></p>
 <h3 id="安装-chromium浏览器"><a href="#安装-chromium浏览器" class="headerlink" title="安装 chromium浏览器"></a>安装 chromium浏览器</h3><p>在终端依次执行以下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository ppa:a-v-shkop/chromium</div><div class="line"></div><div class="line">sudo apt-get update</div><div class="line"></div><div class="line">sudo apt-get install chromium-browser</div></pre></td></tr></table></figure></p>
 <p>没提示错误的话，<br>按下电脑的<code>win</code>键或者左上角点击ubuntu的logo可以搜索<br><a href="http://tu-img-1.aixinxi.net/o_1bvkg6tahfo7e7h1mpm1f0j86fa.png-w.jpg" target="_blank" rel="external">查看chromium是否安装</a></p>
@@ -120,7 +120,7 @@
     
     <entry>
       <title><![CDATA[Ubuntu16.04出现内部错误]]></title>
-      <url>/posts/9080/</url>
+      <url>/2017/9080.html</url>
       <content type="html"><![CDATA[<blockquote>
 <p>Linux出现内部错误不仅只有Ubuntu才会有，其他Linux的桌面发行版也会出现，但是我只用过centos7.x和Ubuntu16.04桌面发行版本，如有错误欢迎指正！</p>
 </blockquote>
@@ -161,7 +161,7 @@
     
     <entry>
       <title><![CDATA[Ubuntu16.04安装Nodejs和npm]]></title>
-      <url>/posts/13731/</url>
+      <url>/2017/13731.html</url>
       <content type="html"><![CDATA[<blockquote>
 <p>Linux 很多软件或者开发工具是离不开Nodejs的</p>
 </blockquote>
@@ -192,7 +192,7 @@
     
     <entry>
       <title><![CDATA[Ubuntu安装FTP工具]]></title>
-      <url>/posts/18763/</url>
+      <url>/2017/18763.html</url>
       <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <p>FileZilla是一个免费而且开源的FTP客户端软件，共有两种版本：客户端版本、服务器版本。FileZilla有条理的界面和管理多站点的简化方式使得FileZilla Client成为一个方便高效的FTP客户端工具。本文介绍的是Ubuntu下FileZilla的安装<br><a id="more"></a><br>先放一个界面图：<br><img src="http://tu-img-1.aixinxi.net/o_1bv25fi5r19vsj68195584bjs7a.png" alt="FTP"></p>
 </blockquote>
@@ -225,7 +225,7 @@
     
     <entry>
       <title><![CDATA[TeamViewer]]></title>
-      <url>/posts/30971/</url>
+      <url>/2017/30971.html</url>
       <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote>
 <p>Teamviewer 是一个远程协助软件，个人使用是免费的。如果对方的电脑也安装了 TeamViewer，那么你只需要输入对方的 TeamViewer ID号就能远程控制对方电脑了。<br>安装时若出现问题的麻烦评论反馈，方便后来的朋友参考，谢谢！<br>现在任何操作系统我都会第一时间安装上<code>TeamViewer</code>程序，几乎所有平台他都支持！<br><img src="http://tu-img-1.aixinxi.net/o_1bv1v5erp1r35drkh931saj1m7ma.png" alt="TeamViewer系统支持"><br>本篇文章只写<code>Ubuntu 16.04</code>的，理论兼容<code>Ubuntu</code>所有版本<br><a id="more"></a></p>
 <h3 id="下载TeamViewer"><a href="#下载TeamViewer" class="headerlink" title="下载TeamViewer"></a>下载TeamViewer</h3><p>首先前往<code>TeamViewer</code>的官网下载deb包<br><a href="https://www.teamviewer.com/en/download/linux/" target="_blank" rel="external">TeamViewer国际版</a> | <a href="https://www.teamviewer.com/zhcn/download/linux/" target="_blank" rel="external">TeamViewer国内版</a><br><img src="http://tu-img-1.aixinxi.net/o_1bv1vfgnkq2h19291h4aeqtis2a.png" alt="TeamViewer"><br>这是一个32位的deb包。Debian 6/Ubuntu 10等旧发行版本可以下载64位deb包，因为它们没有Multiarch多架构功能。对于Ubuntu 16.04，我们可以下载32位deb包，因为Ubuntu 16.04具备多架构功能，即使是64位的Ubuntu 16.04系统也能安装32位的deb包。</p>
@@ -263,7 +263,7 @@
     
     <entry>
       <title><![CDATA[博客镜像以及百度谷歌收录]]></title>
-      <url>/posts/53294/</url>
+      <url>/2017/53294.html</url>
       <content type="html"><![CDATA[<blockquote>
 <p>前几天因为系统（Linux）崩溃，所以导致最近一直坐在电脑屏幕前面</p>
 </blockquote>
@@ -295,7 +295,7 @@
     
     <entry>
       <title><![CDATA[Ubuntu16.04从安装到优化Sublime系列教程 安装篇]]></title>
-      <url>/posts/40337/</url>
+      <url>/2017/40337.html</url>
       <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>发现文章不足之处，欢迎指正。<br>本系列教程针对对Sublime Text 不熟悉的新手</p>
 <h3 id="Sublime-Text-介绍"><a href="#Sublime-Text-介绍" class="headerlink" title="Sublime Text 介绍"></a>Sublime Text 介绍</h3><a id="more"></a>
 <p>开始之前，介绍一下我们接下来要安装的 Sublime Text</p>
@@ -349,7 +349,7 @@
     
     <entry>
       <title><![CDATA[博客进展]]></title>
-      <url>/posts/29772/</url>
+      <url>/2017/29772.html</url>
       <content type="html"><![CDATA[<h1 id="博客发展历程"><a href="#博客发展历程" class="headerlink" title="博客发展历程"></a>博客发展历程</h1><p>为了防止以后更新文章，伙伴们找不到本文章入口，我特地在<code>关于</code>页面加了超链接指向这里！<br>内容时间排序皆为倒序<br><code>斜月三星洞</code>以我的理解是<code>心</code>！<br><a id="more"></a></p>
 <h3 id="2017年11月18号"><a href="#2017年11月18号" class="headerlink" title="2017年11月18号"></a>2017年11月18号</h3><p>恢复了镜像<code>国内版</code>博客，<code>国际版</code>博客继续作为主力！实现了百度收录<code>国内版</code>博客，谷歌收录<code>国际版</code>博客！完美。。。<br><a href="http://tu-img-1.aixinxi.net/o_1bvcqr7acs2i12n01r1v13c7gcda.png-w.jpg" target="_blank" rel="external">百度</a><br><a href="http://tu-img-1.aixinxi.net/o_1bvcr24v41vvktgs1r5h1lahb57a.png-w.jpg" target="_blank" rel="external">谷歌</a><br>emmmm..收录又出现问题。。</p>
 <h3 id="2017年11月14号"><a href="#2017年11月14号" class="headerlink" title="2017年11月14号"></a>2017年11月14号</h3><p>当天下午，我博客公安备案短信通知审核通过了，情绪很激动但也有一丝丝的忧愁，当时博客程序还没安装，就怕博客的数据不能恢复，幸好皇天不负有心人，文档数据完好无损，就是有些博客插件忘记了，故此博客可能会有些BUG！博客公安备案附图：<br><img src="http://tu-img-1.aixinxi.net/o_1buvsj3451seco6uufn1fg81t9oa.png" alt="公安备案"></p>
@@ -384,7 +384,7 @@
     
     <entry>
       <title><![CDATA[关于博客版本区别说明]]></title>
-      <url>/posts/64403/</url>
+      <url>/2017/64403.html</url>
       <content type="html"><![CDATA[<blockquote>
 <p>博客被分为两个版本，分别为国际版和国内版</p>
 <p>下面分别说明两者的差别！</p>
