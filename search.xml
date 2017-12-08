@@ -3,6 +3,66 @@
   
     
     <entry>
+      <title><![CDATA[树莓派系列教程-起步篇]]></title>
+      <url>/2017/59858.html</url>
+      <content type="html"><![CDATA[<blockquote>
+<p>教程环境：</p>
+<p>树莓派3B和新烧录好的<code>raspbain</code>系统为准！<br><a id="more"></a></p>
+<h3 id="连接树莓派"><a href="#连接树莓派" class="headerlink" title="连接树莓派"></a>连接树莓派</h3></blockquote>
+<p><strong>准备工具</strong> ：putty 、网线、路由器、电脑</p>
+<p>将树莓派插上电源和SD卡，并插入网线，网线的另一端连到路由器。同时，笔记本（电脑）也连到该路由器上。进入路由器后台查看树莓派IP，笔记本（电脑）打开putty，在主机名称（或IP地址）中输入树莓派IP地址。</p>
+<p><img src="http://tu-img-1.aixinxi.net/o_1c0qt4eq3q9jv5n1hmtf42li4a.png-w.jpg" alt=""></p>
+<p>没路由器怎么办？别急，请参考<a href="http://shumeipai.nxez.com/2013/10/15/raspberry-pi-and-a-network-cable-directly-connected-laptop.html" target="_blank" rel="external">电脑直连树莓派</a> 推荐使用笔记本电脑，毕竟这样可以让树莓派有网络！步骤执行到教程的第二大点的第三小点就可以，无需继续！</p>
+<p><strong>SSH连接问题</strong></p>
+<p>有些版本新烧录好的系统的<code>/boot</code>分区并没有<code>ssh</code>文件，会导致连接失败、连接被拒接等问题出现，解决办法：将内存卡放进读卡器并插入电脑，然后在根目录新建名称<code>ssh</code>的文件名！<strong>注意：</strong>文件名称没有任何后缀，否则一样也会失败！</p>
+<p>首次连接ssh会提示警告信息，选择<code>是</code>即可，后面会出现登陆界面：</p>
+<p>输入用户名：pi  密码：raspberry（输入密码的过程中，密码是看不到的）</p>
+<p>回车确认，就连接上了树莓派。</p>
+<h3 id="初始化设置"><a href="#初始化设置" class="headerlink" title="初始化设置"></a>初始化设置</h3><p>终端输入<code>sudo raspi-config</code>会出现类似下图的界面！</p>
+<p><img src="http://tu-img-1.aixinxi.net/o_1c0qu09ho50021f160j1s6t19gja.png-w.jpg" alt="raspi-config配置"></p>
+<p><strong>1. 时间问题：</strong>由于时区不同造成树莓派时间比北京时间慢了整整8个小时。</p>
+<p>​    查看当前时间命令<code>date</code>  终端输入<code>sudo raspi-config</code> 进入树莓派配置页面，（回车即可选择进入）依次进入<code>Localisation Optuions</code>&gt;&gt;&gt;<code>Change Timezone</code>选择Asia – Chongqing（或shanghai）重启即可生效！</p>
+<p><strong>2. 语言设置：</strong>系统默认是英语，这对不太懂英语的小伙伴是一个很大障碍！</p>
+<p>​    同样终端输入<code>sudo raspi-config</code> 进入树莓派配置页面，（回车即可选择进入）依次进入<code>Localisation Optuions</code>&gt;&gt;&gt;<code>Change Locale</code> 选择en_US.UTF-8和zh_CN.UTF-8 按空格键可以选中和取消！重启生效</p>
+<p><strong>3. 系统默热密码：</strong>通常系统默认密码是建议修改的，为了防止他人串改！</p>
+<p>​    同样终端输入<code>sudo raspi-config</code> 进入树莓派配置页面，（回车即可选择进入）选择<code>Change User Password</code>即可设置密码，还有一个更简便的方法，终端输入<code>passwd</code>即可完成修改密码！</p>
+<h3 id="桌面控制"><a href="#桌面控制" class="headerlink" title="桌面控制"></a>桌面控制</h3><p>字符界面不会用？来来来，教你装远程桌面客户端</p>
+<p><strong>XRDP</strong>远程桌面（局域网必备）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install xrdp #安装XRDP</div><div class="line">sudo systemctl enable xrdp #设置开机启动</div><div class="line">sudo reboot #重启树莓派</div><div class="line">ifconfig #查看ip</div></pre></td></tr></table></figure>
+<p><img src="http://tu-img-1.aixinxi.net/o_1c0r06620ih1s4k1kad16h1ja2a.png-w.jpg" alt="ip"></p>
+<p>框里面是ip，这是网线连接的，如果是无线连接，那么就是<code>wlan0</code>的</p>
+<p>然后可以使用电脑内置的远程桌面程序连接！</p>
+<p><strong>Teamviewer</strong>几乎支持任何设备的安装 （外网可以远程连接）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">wget http://download.teamviewer.com/download/linux/version_11x/teamviewer-host_armhf.deb</div><div class="line">sudo dpkg -i teamviewer-host_armhf.deb #第一次安装会报错，执行下面的命令之后在执行该命令即可安装成功</div><div class="line">sudo apt-get -f install</div></pre></td></tr></table></figure>
+<p> <strong>桌面环境</strong><br>受控端直接运行TeamViewer即可，在控制端输入ID和密码。</p>
+<p><strong>命令行终端环境</strong><br>我一般使用SSH远程登录树莓派，没有显示器。而TeamViewer支持headless模式操作。</p>
+<p>注：在接受license的步骤存在一个坑，在安装TeamViewer的时候，认为你是以界面形式安装的，所以，会弹出一个对话框，提醒你接受license，但是，由于你用ssh登录的，所以，这个对话框你看不到，自然也不会去接受协议，从而导致在使用时连接失败。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo teamviewer --daemon stop</div><div class="line">sudo nano /opt/teamviewer/config/global.conf</div></pre></td></tr></table></figure>
+<p>文件末尾添加：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[int32] EulaAccepted = 1 </div><div class="line">[int32] EulaAcceptedRevision = 6</div></pre></td></tr></table></figure>
+<p>然后<code>Ctrl</code>+ <code>X</code>输入<code>Y</code>回车即可保存，继续执行启动命令<code>sudo teamviewer --daemon start</code></p>
+<p>*<em>开启TeamViewer服务随机启动*</em></p>
+<p><code>sudo teamviewer --daemon enable</code></p>
+<p><strong>查看帮助信息</strong></p>
+<p><code>teamviewer help</code></p>
+<p><strong>查看本机ID</strong></p>
+<p><code>teamviewer info</code></p>
+<p><strong>设置本机密码</strong></p>
+<p><code>teamviewer passwd [你的密码]</code></p>
+<h3 id="参考教材"><a href="#参考教材" class="headerlink" title="参考教材"></a>参考教材</h3><p><a href="https://www.cnblogs.com/xuanxiaochen/p/5840402.html" target="_blank" rel="external">树莓派笔记——初始化及系统设置 </a></p>
+<p><a href="http://blog.csdn.net/qianchenglenger/article/details/51885122" target="_blank" rel="external">通过SSH在Ubuntu下安装TeamViewer软件</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> 树莓派 </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Ubuntu系统安装php7.0以及检测环境]]></title>
       <url>/2017/23260.html</url>
       <content type="html"><![CDATA[<blockquote>
@@ -29,6 +89,9 @@
 <p><img src="http://tu-img-1.aixinxi.net/o_1c00b0tro1f751b0m17j61daogila.png-w.jpg" alt="输入密码"></p>
 <p><strong>6. 将phpmyadmin与apache2建立连接</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo ln -s /usr/share/phpmyadmin  /var/www/html</div></pre></td></tr></table></figure>
+<p><strong>7. 修改php配置文件</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo vim /etc/php/7.0/apache/php/ini</div></pre></td></tr></table></figure>
+<p>display_errors = On(显示错误日志，出现两次，都要改，不然无效)<br>extension=php_mbstring.dll (开启mbstring)</p>
 <h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p><strong>1. 启动apache2</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo /etc/init.d/apache2  restart</div></pre></td></tr></table></figure>
 <p><img src="http://tu-img-1.aixinxi.net/o_1c00b8fhk1i7stb99m9j1r1duca.png-w.jpg" alt="启动Apache2"></p>
@@ -49,7 +112,7 @@
 <p>找到下图的部分:</p>
 <p>将<code>&lt;Directory /var/www/&gt;</code>改成<code>&lt;Directory “你要设置的目录”&gt;</code></p>
 <p>更改后建议要重新建立Apache2和phpmyadmin链接</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo ln -s /usr/share/phpmyadmin  /var/www/html</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo ln -s /usr/share/phpmyadmin  /var/www/html/phpmyadmin</div></pre></td></tr></table></figure>
 <p>将后面的<code>/var/www/html</code>改为你对应的目录，执行<code>sudo /etc/init.d/apache2 restart</code>重启生效</p>
 <p><img src="http://tu-img-1.aixinxi.net/o_1c00c58q31rqg56sda718fuq0ja.png-w.jpg" alt="默认站点更改"></p>
 <p><strong>2. 服务管理命令</strong></p>
@@ -57,6 +120,13 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo /etc/init.d/apache2 stop/restart/start</div><div class="line">service apache2 stop/restart/start</div><div class="line">    // 两条令相同</div></pre></td></tr></table></figure>
 <p>mysql 服务管理命令</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo /etc/init.d/mysql stop/restart/start</div><div class="line">service mysql stop/restart/start</div><div class="line">    // 两条令相同</div></pre></td></tr></table></figure>
+<font color="red">2017年12月1号：</font>
+
+<p>如果浏览器打开<code>phpmyadmin</code>提示<code>The [*mbstring*](http://127.0.0.1/phpmyadmin/url.php?url=http%3A%2F%2Fphp.net%2Fmanual%2Fen%2Fbook.mbstring.php) extension is missing. Please check your PHP configuration.</code></p>
+<p>就是缺少mbstring文件，首先确认当前php版本 <code>php -v</code>Ubuntu16.04默认安装的是php7.0</p>
+<p>先安装php7.0的mbstring</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install php7.0-mbstring</div><div class="line">service apache2 restart #重启apache2</div></pre></td></tr></table></figure>
+<p>没出现提示就对了，如果还出现重新执行上面的命令，并命令的<code>7.0</code>改为当前版本！</p>
 ]]></content>
       
         <categories>
