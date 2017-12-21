@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://www.ijiangjia.com/2017/13731.html</loc>
+    <lastmod>2017-12-21T04:17:45.203Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04安装Nodejs和npm</title>
+        <pubTime>2017-11-19T13:01:10.000Z</pubTime>
+        
+        <tag>nodejs</tag>
+         
+        <tag>Ubuntu</tag>
+         
+         
+           
+             
+              <breadCrumb title="Ubuntu 环境" url="http://www.ijiangjia.com/categories/Ubuntu-%E7%8E%AF%E5%A2%83/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.ijiangjia.com/2017/24648.html</loc>
     <lastmod>2017-12-19T04:18:41.596Z</lastmod>
     <data>
@@ -187,28 +209,6 @@
            
              
               <breadCrumb title="日常吹牛" url="http://www.ijiangjia.com/categories/%E6%97%A5%E5%B8%B8%E5%90%B9%E7%89%9B/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.ijiangjia.com/2017/13731.html</loc>
-    <lastmod>2017-11-19T14:20:00.600Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04安装Nodejs和npm</title>
-        <pubTime>2017-11-19T13:01:10.000Z</pubTime>
-        
-        <tag>nodejs</tag>
-         
-        <tag>Ubuntu</tag>
-         
-         
-           
-             
-              <breadCrumb title="Ubuntu 环境" url="http://www.ijiangjia.com/categories/Ubuntu-%E7%8E%AF%E5%A2%83/"/>
           
         </display>
     </data>
