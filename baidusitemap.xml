@@ -4,6 +4,116 @@
 
     
   <url>
+    <loc>http://www.ijiangjia.com/2017/40337.html</loc>
+    <lastmod>2018-01-29T11:20:37.092Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04从安装到优化Sublime系列教程 安装篇</title>
+        <pubTime>2017-10-31T10:02:32.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+        <tag>开发工具</tag>
+         
+        <tag>sublime</tag>
+         
+         
+           
+             
+              <breadCrumb title="sublime" url="http://www.ijiangjia.com/categories/sublime/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.ijiangjia.com/2017/53294.html</loc>
+    <lastmod>2018-01-29T11:19:15.969Z</lastmod>
+    <data>
+        <display>
+        <title>博客镜像以及百度谷歌收录</title>
+        <pubTime>2017-11-15T12:09:02.000Z</pubTime>
+        
+        <tag>博客</tag>
+         
+        <tag>收录</tag>
+         
+         
+           
+             
+              <breadCrumb title="日常吹牛" url="http://www.ijiangjia.com/categories/%E6%97%A5%E5%B8%B8%E5%90%B9%E7%89%9B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.ijiangjia.com/2017/13731.html</loc>
+    <lastmod>2018-01-29T11:16:34.995Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04安装Nodejs和npm</title>
+        <pubTime>2017-11-19T13:01:10.000Z</pubTime>
+        
+        <tag>nodejs</tag>
+         
+        <tag>Ubuntu</tag>
+         
+         
+           
+             
+              <breadCrumb title="Ubuntu 环境" url="http://www.ijiangjia.com/categories/Ubuntu-%E7%8E%AF%E5%A2%83/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.ijiangjia.com/2017/23260.html</loc>
+    <lastmod>2018-01-29T11:15:56.793Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu系统安装php7.0以及检测环境</title>
+        <pubTime>2017-11-28T04:11:15.000Z</pubTime>
+        
+        <tag>开发工具</tag>
+         
+        <tag>php</tag>
+         
+         
+           
+             
+              <breadCrumb title="Ubuntu 环境" url="http://www.ijiangjia.com/categories/Ubuntu-%E7%8E%AF%E5%A2%83/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.ijiangjia.com/2017/59858.html</loc>
+    <lastmod>2018-01-29T11:11:22.407Z</lastmod>
+    <data>
+        <display>
+        <title>树莓派系列教程-起步篇</title>
+        <pubTime>2017-12-08T12:28:55.000Z</pubTime>
+        
+        <tag>raspbain</tag>
+         
+         
+           
+             
+              <breadCrumb title="树莓派" url="http://www.ijiangjia.com/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.ijiangjia.com/2017/24648.html</loc>
     <lastmod>2018-01-29T09:15:14.544Z</lastmod>
     <data>
@@ -19,26 +129,6 @@
            
              
               <breadCrumb title="Linux" url="http://www.ijiangjia.com/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.ijiangjia.com/2017/59858.html</loc>
-    <lastmod>2018-01-29T08:35:17.766Z</lastmod>
-    <data>
-        <display>
-        <title>树莓派系列教程-起步篇</title>
-        <pubTime>2017-12-08T12:28:55.000Z</pubTime>
-        
-        <tag>raspbain</tag>
-         
-         
-           
-             
-              <breadCrumb title="树莓派" url="http://www.ijiangjia.com/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
           
         </display>
     </data>
@@ -68,50 +158,6 @@
 
     
   <url>
-    <loc>http://www.ijiangjia.com/2017/13731.html</loc>
-    <lastmod>2017-12-21T04:17:45.203Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04安装Nodejs和npm</title>
-        <pubTime>2017-11-19T13:01:10.000Z</pubTime>
-        
-        <tag>nodejs</tag>
-         
-        <tag>Ubuntu</tag>
-         
-         
-           
-             
-              <breadCrumb title="Ubuntu 环境" url="http://www.ijiangjia.com/categories/Ubuntu-%E7%8E%AF%E5%A2%83/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.ijiangjia.com/2017/23260.html</loc>
-    <lastmod>2017-12-01T06:35:52.607Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu系统安装php7.0以及检测环境</title>
-        <pubTime>2017-11-28T04:11:15.000Z</pubTime>
-        
-        <tag>开发工具</tag>
-         
-        <tag>php</tag>
-         
-         
-           
-             
-              <breadCrumb title="Ubuntu环境" url="http://www.ijiangjia.com/categories/Ubuntu%E7%8E%AF%E5%A2%83/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.ijiangjia.com/2017/30971.html</loc>
     <lastmod>2017-11-28T02:58:48.290Z</lastmod>
     <data>
@@ -127,30 +173,6 @@
            
              
               <breadCrumb title="Ubuntu" url="http://www.ijiangjia.com/categories/Ubuntu/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.ijiangjia.com/2017/40337.html</loc>
-    <lastmod>2017-11-21T05:20:38.425Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04从安装到优化Sublime系列教程 安装篇</title>
-        <pubTime>2017-10-31T10:02:32.000Z</pubTime>
-        
-        <tag>Ubuntu</tag>
-         
-        <tag>开发工具</tag>
-         
-        <tag>sublime</tag>
-         
-         
-           
-             
-              <breadCrumb title="sublime" url="http://www.ijiangjia.com/categories/sublime/"/>
           
         </display>
     </data>
@@ -189,28 +211,6 @@
            
              
               <breadCrumb title="个人杂谈" url="http://www.ijiangjia.com/categories/%E4%B8%AA%E4%BA%BA%E6%9D%82%E8%B0%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.ijiangjia.com/2017/53294.html</loc>
-    <lastmod>2017-11-20T13:35:04.674Z</lastmod>
-    <data>
-        <display>
-        <title>博客镜像以及百度谷歌收录</title>
-        <pubTime>2017-11-15T12:09:02.000Z</pubTime>
-        
-        <tag>博客</tag>
-         
-        <tag>收录</tag>
-         
-         
-           
-             
-              <breadCrumb title="日常吹牛" url="http://www.ijiangjia.com/categories/%E6%97%A5%E5%B8%B8%E5%90%B9%E7%89%9B/"/>
           
         </display>
     </data>
