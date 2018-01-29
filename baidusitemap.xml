@@ -4,30 +4,8 @@
 
     
   <url>
-    <loc>http://www.ijiangjia.com/2017/13731.html</loc>
-    <lastmod>2017-12-21T04:17:45.203Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04安装Nodejs和npm</title>
-        <pubTime>2017-11-19T13:01:10.000Z</pubTime>
-        
-        <tag>nodejs</tag>
-         
-        <tag>Ubuntu</tag>
-         
-         
-           
-             
-              <breadCrumb title="Ubuntu 环境" url="http://www.ijiangjia.com/categories/Ubuntu-%E7%8E%AF%E5%A2%83/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.ijiangjia.com/2017/24648.html</loc>
-    <lastmod>2017-12-19T04:18:41.596Z</lastmod>
+    <lastmod>2018-01-29T09:15:14.544Z</lastmod>
     <data>
         <display>
         <title>Ubuntu16.04安装chromium浏览器以及下载器配置</title>
@@ -49,12 +27,14 @@
     
   <url>
     <loc>http://www.ijiangjia.com/2017/59858.html</loc>
-    <lastmod>2017-12-09T13:28:54.096Z</lastmod>
+    <lastmod>2018-01-29T08:35:17.766Z</lastmod>
     <data>
         <display>
         <title>树莓派系列教程-起步篇</title>
         <pubTime>2017-12-08T12:28:55.000Z</pubTime>
         
+        <tag>raspbain</tag>
+         
          
            
              
@@ -67,7 +47,7 @@
     
   <url>
     <loc>http://www.ijiangjia.com/2017/46998.html</loc>
-    <lastmod>2017-12-09T06:54:33.368Z</lastmod>
+    <lastmod>2018-01-29T08:11:05.107Z</lastmod>
     <data>
         <display>
         <title>树莓派系列教程-内网穿透篇</title>
@@ -81,6 +61,28 @@
            
              
               <breadCrumb title="树莓派" url="http://www.ijiangjia.com/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.ijiangjia.com/2017/13731.html</loc>
+    <lastmod>2017-12-21T04:17:45.203Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04安装Nodejs和npm</title>
+        <pubTime>2017-11-19T13:01:10.000Z</pubTime>
+        
+        <tag>nodejs</tag>
+         
+        <tag>Ubuntu</tag>
+         
+         
+           
+             
+              <breadCrumb title="Ubuntu 环境" url="http://www.ijiangjia.com/categories/Ubuntu-%E7%8E%AF%E5%A2%83/"/>
           
         </display>
     </data>
