@@ -3,6 +3,42 @@
   
     
     <entry>
+      <title><![CDATA[子进程已安装 post-installation 脚本 返回错误状态 1（2）解决办法]]></title>
+      <url>/2018/20433.html</url>
+      <content type="html"><![CDATA[<blockquote>
+<p>在安装或者卸载软件提示 子进程已安装 post-installation 脚本 返回错误状态 1（2）<img src="http://t1.aixinxi.net/o_1c50lkihm78f1bag1kis18ofp8sa.jpg-j.jpg" alt="子进程已安装 post-installation 脚本 返回错误状态 1"></p>
+</blockquote>
+<a id="more"></a>
+<h3 id="分析原因："><a href="#分析原因：" class="headerlink" title="分析原因："></a>分析原因：</h3><p>导致出现这个无非是有三点：</p>
+<ol>
+<li>不正确安装软件</li>
+<li>不正确卸载软件</li>
+<li>未知</li>
+</ol>
+<h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><p>在终端执行以下语句：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">sudo mv /var/lib/dpkg/info /var/lib/dpkg/info_old </div><div class="line">sudo mkdir /var/lib/dpkg/info </div><div class="line">sudo apt-get update</div><div class="line">sudo apt-get -f install</div><div class="line">sudo mv /var/lib/dpkg/info/* /var/lib/dpkg/info_old</div><div class="line">sudo rm -rf /var/lib/dpkg/info</div><div class="line">sudo mv /var/lib/dpkg/info_old /var/lib/dpkg/info</div></pre></td></tr></table></figure>
+<p>参考：</p>
+<p><a href="http://blog.csdn.net/u012000056/article/details/54927925" target="_blank" rel="external">mkchiny</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> Ubuntu </category>
+            
+            <category> Linux </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 常见问题 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[树莓派系列教程-内网穿透篇]]></title>
       <url>/2017/46998.html</url>
       <content type="html"><![CDATA[<blockquote>
