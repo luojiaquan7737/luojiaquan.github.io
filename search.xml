@@ -3,6 +3,93 @@
   
     
     <entry>
+      <title><![CDATA[Linux更换内核]]></title>
+      <url>/2018/28595.html</url>
+      <content type="html"><![CDATA[<blockquote>
+<p>更换内核无非是更新内核版本&amp;以前使用的内核版本损坏。</p>
+<p>这里仅说明ubuntu进不了桌面的方法，其他仅作为参考</p>
+</blockquote>
+<a id="more"></a>
+<h3 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h3><p>以前可以正常进入桌面，最近却卡在紫色logo或者卡在登陆界面却输入不了密码！</p>
+<h3 id="问题分析："><a href="#问题分析：" class="headerlink" title="问题分析："></a>问题分析：</h3><p>在grub引导界面的<code>高级选项</code>中的旧内核可以进去，那就是默认启动的内核有问题（或者根本和这没关系）</p>
+<p>也有可能是显卡驱动导致，不过无论是什么，只要你能进旧内核就可以继续下一步操作！</p>
+<h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><blockquote>
+<p>文中以<code>linux-image-4.13.0-32-generic</code>内核损坏，更换到<code>linux-image-4.13.0-31-generic</code>内核启动过程！</p>
+</blockquote>
+<ol>
+<li><p>在grub引导项选择<code>高级选项</code>然后选择较旧的内核进去 （不懂的话，选择倒数第三，第六依次测试）</p>
+</li>
+<li><p>登陆系统并打开终端，保持机器联网</p>
+</li>
+<li><p>查看当前使用的内核：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">uname -r</div></pre></td></tr></table></figure>
+</li>
+<li><p>查看本地内核列表并记录坏的内核版本号（默认启动最高的内核版本）：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo dpkg --get-selections |grep linux-image</div></pre></td></tr></table></figure>
+<p><img src="http://t1.aixinxi.net/o_1c53cg4hk1ill2tftv2nhu1hha.png-j.jpg" alt=""></p>
+</li>
+<li><p>卸载损坏的内核：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt remove linux-image-4.13.0-32-generic</div></pre></td></tr></table></figure>
+</li>
+<li><p>不想麻烦可以跳过到第十步！！！</p>
+</li>
+<li><p>查看可获取的内核：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-cache search linux | grep linux-headers-*</div></pre></td></tr></table></figure>
+</li>
+<li><p>安装<code>4.13.0-31-generic</code>版本的内核</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt install linux-heasers-4.13.0-31-generic linux-image-4.13.0-31-generic</div></pre></td></tr></table></figure>
+</li>
+<li><p>重启然后查看是否是你需要的内核版本，如果不是你需要在grub引导界面点击<code>高级选项</code>并选择你安装的内核！重启之后你无需再次设置。（仅适于你安装的内核版本是你系统中最高的内核版本）</p>
+</li>
+<li><p>终端执行：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo apt update</div><div class="line">sudo apt upgrade #等待更新完成</div><div class="line">sudo dpkg --get-selections |grep linux-image #查看是否有更高的版本，如果有可以重启机器！</div></pre></td></tr></table></figure>
+<p>​</p>
+</li>
+</ol>
+<p>注意：因为我这里是<code>linux-image-4.13.0-32-generic</code>降级到31,并且卸载32版本的内核情况下，重启默认是启动31版本的！但是，以后使用<code>sudo apt update , sudo apt upgrade</code>命令的话他是默认更新内核并启用的，其他内核不能用或者你只想要指定的内核请往下看！</p>
+<h3 id="降级内核"><a href="#降级内核" class="headerlink" title="降级内核"></a>降级内核</h3><ol>
+<li><p>显示内核的顺序</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">grep 'menuentry' /boot/grub/grub.cfg</div></pre></td></tr></table></figure>
+<p><img src="http://t1.aixinxi.net/o_1c539itbf128ggrm7tn1ntup0qa.png-j.jpg" alt=""><br>以图为例，青蓝色画出的<code>$menuentry_id_option</code>字段复制后面单引号里面<code>gnulinux-advanced-dc69089e-d04e-4994-a193-ea4d78b3d29a</code>就是我们需要的信息，然后第二个红框画出来的是我们要启动的内核<code>menuentry &#39;Ubuntu，Linux x.x.x-x-generic&#39;</code>在这个里面同样有一个<code>$menuentry_id_option</code>字段也是一样复制后面单引号里面的内容<code>gnulinux-4.13.0-31-generic-advanced-dc69089e-d04e-4994-a193-ea4d78b3d29a</code> <font color="red">需要注意的是一个内核基本有三个差不多一样的，注意看清就能分辨，另外单引号里面的内容不是同一台机器可能不是一样的！</font></p>
+</li>
+<li><p>编辑/etc/default/grub文件中的<code>GRUB_DEFAULT</code> 图1</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo vim /etc/default/grub</div><div class="line"><span class="meta">#</span>格式: "高级设置ID&gt;内核ID"</div></pre></td></tr></table></figure>
+<p><img src="http://t1.aixinxi.net/o_1c53bo51un3ahmtpab2iv4hea.png-j.jpg" alt=""><br> 注意格式！将<code>0</code>改为<code>&quot;高级设置ID&gt;内核ID&quot;</code>然后保存退出</p>
+</li>
+<li><p>更新引导</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo update-grub</div></pre></td></tr></table></figure>
+<p><img src="http://t1.aixinxi.net/o_1c53c8fln1ofl1l8n4mkl5c1lu0a.png-j.jpg" alt=""></p>
+</li>
+<li><p>重启后，使用命令uname -r查看，内核即为你想要的内核</p>
+</li>
+</ol>
+<p>参考：</p>
+<p><a href="http://blog.mtkfan.com/?p=431" target="_blank" rel="external">http://blog.mtkfan.com/?p=431</a></p>
+<p><a href="http://blog.csdn.net/zs15yy/article/details/77188030" target="_blank" rel="external">http://blog.csdn.net/zs15yy/article/details/77188030</a></p>
+<p><a href="http://blog.csdn.net/u011304615/article/details/70919711" target="_blank" rel="external">http://blog.csdn.net/u011304615/article/details/70919711</a></p>
+<p><a href="http://blog.csdn.net/u011304615/article/details/70919711" target="_blank" rel="external">http://blog.csdn.net/u011304615/article/details/70919711</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> Linux </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Ubuntu </tag>
+            
+            <tag> Linux </tag>
+            
+            <tag> 常见问题 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[子进程已安装 post-installation 脚本 返回错误状态 1（2）解决办法]]></title>
       <url>/2018/20433.html</url>
       <content type="html"><![CDATA[<blockquote>
