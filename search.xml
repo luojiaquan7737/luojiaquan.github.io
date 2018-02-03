@@ -3,6 +3,42 @@
   
     
     <entry>
+      <title><![CDATA[Ubuntu系统切换Python默认版本]]></title>
+      <url>/2018/43109.html</url>
+      <content type="html"><![CDATA[<blockquote>
+<p>该篇文章是转载！原文：<a href="https://www.aizheteng.net/ubuntu-python-version.html" target="_blank" rel="external">链接</a></p>
+</blockquote>
+<p>最近学习python，因为学习的是python3，但是目前所有的linux系统默认版本都是python2，故百度了一下，找到一个不错的方法。</p>
+<p>此方法适用于ubuntu和debian其他发行版本没有测试。正常情况基于ubuntu与debian开发的发行版本都支持</p>
+<p>打开终端分别输入下面两条命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 100</div><div class="line">sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 150</div></pre></td></tr></table></figure>
+<p>然后再终端输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">python -V</div></pre></td></tr></table></figure>
+<p>如果无误，此时python版本应该切换到默认的python3了。</p>
+<p>如果需要重新切换回python只需要在终端输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo update-alternatives --config python</div></pre></td></tr></table></figure>
+<p>然后选者你需要的python版本，输入序号回车即可</p>
+<p>因为系统很多程序依赖于python2，如需要升级系统或者安装系统更新的时候，建议先切换到系统的默认版本python2否则可能出现依赖无法安装问题。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> LInux </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Ubuntu </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Linux更换内核]]></title>
       <url>/2018/28595.html</url>
       <content type="html"><![CDATA[<blockquote>
@@ -111,8 +147,6 @@
         <categories>
             
             <category> Ubuntu </category>
-            
-            <category> Linux </category>
             
         </categories>
         
@@ -451,9 +485,9 @@
         
         <tags>
             
-            <tag> nodejs </tag>
-            
             <tag> Ubuntu </tag>
+            
+            <tag> nodejs </tag>
             
         </tags>
         

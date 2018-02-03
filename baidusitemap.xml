@@ -4,8 +4,50 @@
 
     
   <url>
+    <loc>http://www.ijiangjia.com/2018/43109.html</loc>
+    <lastmod>2018-02-03T12:28:39.834Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu系统切换Python默认版本</title>
+        <pubTime>2018-02-03T12:25:37.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="LInux" url="http://www.ijiangjia.com/categories/LInux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.ijiangjia.com/2018/20433.html</loc>
+    <lastmod>2018-02-03T12:10:08.389Z</lastmod>
+    <data>
+        <display>
+        <title>子进程已安装 post-installation 脚本 返回错误状态 1（2）解决办法</title>
+        <pubTime>2018-01-29T11:25:04.000Z</pubTime>
+        
+        <tag>常见问题</tag>
+         
+         
+           
+             
+              <breadCrumb title="Ubuntu" url="http://www.ijiangjia.com/categories/Ubuntu/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.ijiangjia.com/2018/28595.html</loc>
-    <lastmod>2018-01-30T12:16:29.594Z</lastmod>
+    <lastmod>2018-01-30T12:18:08.537Z</lastmod>
     <data>
         <display>
         <title>Linux更换内核</title>
@@ -21,29 +63,6 @@
            
              
               <breadCrumb title="Linux" url="http://www.ijiangjia.com/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.ijiangjia.com/2018/20433.html</loc>
-    <lastmod>2018-01-29T11:43:47.308Z</lastmod>
-    <data>
-        <display>
-        <title>子进程已安装 post-installation 脚本 返回错误状态 1（2）解决办法</title>
-        <pubTime>2018-01-29T11:25:04.000Z</pubTime>
-        
-        <tag>常见问题</tag>
-         
-         
-           
-             
-              <breadCrumb title="Ubuntu" url="http://www.ijiangjia.com/categories/Ubuntu/"/>
-          
-             
-              <breadCrumb title="Linux" url="http://www.ijiangjia.com/categories/Ubuntu/Linux/"/>
           
         </display>
     </data>
@@ -104,9 +123,9 @@
         <title>Ubuntu16.04安装Nodejs和npm</title>
         <pubTime>2017-11-19T13:01:10.000Z</pubTime>
         
-        <tag>nodejs</tag>
-         
         <tag>Ubuntu</tag>
+         
+        <tag>nodejs</tag>
          
          
            
