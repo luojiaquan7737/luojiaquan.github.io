@@ -3,6 +3,68 @@
   
     
     <entry>
+      <title><![CDATA[Ubuntu系统美化教程]]></title>
+      <url>/2018/30871.html</url>
+      <content type="html"><![CDATA[<blockquote>
+<p>是不是觉得Ubuntu默认的桌面太丑？没关系点进来教你如何将ubuntu系统美化！两种美化效果哦！</p>
+</blockquote>
+<a id="more"></a>
+<h3 id="美化类型选择"><a href="#美化类型选择" class="headerlink" title="美化类型选择"></a>美化类型选择</h3><ol>
+<li>第一种：<br><img src="http://t1.aixinxi.net/o_1c6aanmqc19l31aa418oprjg1r7ea.png-j.jpg" alt="tupian"><br>​</li>
+<li>第二种：第二种就是默认启动器在左侧的。。。</li>
+</ol>
+<p><em>两者区别一个启动器在下面，一个在左侧！</em></p>
+<h3 id="第一种方法"><a href="#第一种方法" class="headerlink" title="第一种方法"></a>第一种方法</h3><ol>
+<li><p>调整 Unity 桌面环境，推荐使用Unity Tweak Tool，这是一个非常好用的 Unity 图形化管理工具，可以修改工作区数量、热区等。 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install unity-tweak-tool -y</div></pre></td></tr></table></figure>
+</li>
+<li><p>安装 Paper GTK主题</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository ppa:snwh/pulp</div><div class="line">sudo apt-get update &amp;&amp; sudo apt-get install paper-gtk-theme</div></pre></td></tr></table></figure>
+</li>
+<li><p>安装 Numix 图标</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-add-repository ppa:numix/ppa</div><div class="line">sudo apt-get update &amp;&amp; sudo apt-get install numix-icon-theme-circle</div></pre></td></tr></table></figure>
+</li>
+<li><p>安装 Docky 启动栏</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt update</div><div class="line">sudo apt install docky -y</div></pre></td></tr></table></figure>
+</li>
+<li><p>上面没报错就继续下一步，如果报错，提示缺少依赖问题请执行<code>sudo apt install -f</code> 提示子进程错误的请参考我另外的文章</p>
+</li>
+<li><p>打开安装好的<code>Unity-Tweak-Tool</code> 不知道怎么打开的 按下<code>win</code>键 搜索<code>tool</code>就出来了。什么？不知道什么是<code>win</code>键？<a href="https://baike.baidu.com/item/Windows%E9%94%AE/7124478?fr=aladdin&amp;fromid=3393055&amp;fromtitle=Win%E9%94%AE" target="_blank" rel="external">请点击这里</a></p>
+<p><img src="http://t1.aixinxi.net/o_1c6a8g2hb10le148913s1avia7a.png-j.jpg" alt="图片"></p>
+</li>
+<li><p>在Unity-Tweak-Tool下 <code>主题</code>下选择<code>Paper</code>  <code>图标</code>下选择<code>Numix-circle</code> 选择之后是不是有变化啦？继续来</p>
+</li>
+<li><p>按下<code>win</code>键 搜索<code>docky</code>打开之后，基本重启电脑都会自己打开了。下方选中<code>docky</code>图标鼠标右击，选择<code>设置</code>参考下图配置，也可自定义<br><img src="http://t1.aixinxi.net/o_1c6aa4crv1hpdp6gb73nbq96ja.png-j.jpg" alt="tupian"><br>​</p>
+</li>
+<li><p>下方的启动器出来了，但是左侧的启动器怎么隐藏呢？先打开你需要固定到下方启动器的软件，和固定在左侧启动器一样的方法：<code>锁定到dock</code><br>依次打开<code>系统设置</code>&gt;<code>外观</code>&gt;<code>行为</code>  先开启<code>自动隐藏启动</code>然后关闭再次开启。之后将<code>显示灵敏度</code>调到最低！<br><img src="http://t1.aixinxi.net/o_1c6aa8m201q941s2tiqp1kem1pjna.png-j.jpg" alt="tupian"></p>
+</li>
+</ol>
+<p>教程完成！！</p>
+<p>壁纸：</p>
+<p><img src="http://t1.aixinxi.net/o_1c6aafeqiqss16o1g3a7cdikpa.jpg-j.jpg" alt="www"></p>
+<p>题外话：</p>
+<p>需要显示网速小插件的执行下面的命令，一样是开机自启！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository ppa:fixnix/netspeed -y</div><div class="line">sudo apt update &amp;&amp; sudo apt install indicator-netspeed-unity -y</div></pre></td></tr></table></figure>
+<h3 id="第二种方法"><a href="#第二种方法" class="headerlink" title="第二种方法"></a>第二种方法</h3><p>由于这类方法我也是按照原作者弄的，所以就不献丑了<br>原文： <a href="https://zhuanlan.zhihu.com/p/27052046" target="_blank" rel="external">Ubuntu 美化及超 NB 的 zsh 配置</a></p>
+<p>提供插件由<a href="https://www.v2ex.com/member/ipchy" target="_blank" rel="external">ipchy</a>介绍</p>
+]]></content>
+      
+        <categories>
+            
+            <category> Ubuntu </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 美化 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Ubuntu系统切换Python默认版本]]></title>
       <url>/2018/43109.html</url>
       <content type="html"><![CDATA[<blockquote>
