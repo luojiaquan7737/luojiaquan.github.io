@@ -3,7 +3,7 @@
   
     
     <entry>
-      <title><![CDATA[博客再次拥抱https并全站启用hhtps+CDN加速]]></title>
+      <title><![CDATA[博客再次拥抱https并全站启用https+CDN加速]]></title>
       <url>/2018/29668.html</url>
       <content type="html"><![CDATA[<p>昨晚参加了腾讯云的360元6年半的云主机，考虑到托管到国内coding pages服务稍微有点慢。</p>
 <p>就有了将国内的博客站点迁移至腾讯云新购的云主机上！但是由于github pages原因不能部署https，所以在海外的游客还是一样访问http站点</p>
