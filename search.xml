@@ -255,46 +255,46 @@
     <entry>
       <title><![CDATA[树莓派系列教程-内网穿透篇]]></title>
       <url>/2017/46998.html</url>
-      <content type="html"><![CDATA[<blockquote>
-<p>这里只说FRP内网穿透，关于ngrok，据说已经开始商业化，具体我也不清楚，毕竟我FRP弄成功了！注意：文中frp目录<code>frp1</code>请将此当作<code>frp</code>目录即可，请用pi用户操作！在此感谢提供免费frp服务的大神们！</p>
-</blockquote>
+      <content type="html"><![CDATA[<p>linux内网穿透都可以参考  这里只说树莓派FRP内网穿透，关于Ngrok，据说已经开始商业化，具体我也不清楚，毕竟我FRP弄成功了！注意：文中frp目录<code>frp1</code>请将此当作<code>frp</code>目录即可，请用pi用户操作！在此感谢提供免费frp服务的大神们！</p>
 <a id="more"></a>
-<h3 id="下载frp"><a href="#下载frp" class="headerlink" title="下载frp"></a>下载frp</h3><p>废话不哆嗦，直接一大段命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">wget https://github.com/fatedier/frp/releases/download/v0.14.0/frp_0.14.0_linux_arm.tar.gz #下载文件</div><div class="line">tar -zxvf frp_0.14.0_linux_arm.tar.gz #解压</div><div class="line">mv -f frp_0.14.0_linux_arm frp #重命名文件夹</div><div class="line">cd frp #进入frp目录</div><div class="line">sudo apt-get install screen #scree命令行终端</div></pre></td></tr></table></figure>
-<p>基本完成了，编辑前<strong><a href="http://frpzj.lu8.win:7500/" target="_blank" rel="external">点击跳转</a></strong>查询隧道是否存在，查询帐号和密码均为：admin</p>
-<p>如图所示：<img src="http://t1.aixinxi.net/o_1c0stnfk07r1cej11ugmip1f2oa.png-w.jpg" alt=""></p>
-<p>首先查看<code>name</code>（名称）字段和<code>port</code>（端口）字段是否存在，端口范围：50000-60000 这里推荐用浏览器搜索功能，快捷键：<code>Ctrl</code>+<code>F</code></p>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><strong>2018-03-19 更新</strong>由于frp有两个版本 <code>9.x</code>和<code>14.x</code> </p>
+<p>这里只说<code>14.x</code> 下文图中出现是<code>frpzj.lu8.win</code>请当作<code>frps.lu8.win</code>，原因是免费开放的作者改域名</p>
+<p>另外我有点想免费开放一个frp服务端！</p>
+<p>下载frp命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">wget https://github.com/fatedier/frp/releases/download/v0.14.1/frp_0.14.1_linux_arm.tar.gz #下载文件</div><div class="line">tar -zxvf frp_0.14.1_linux_arm.tar.gz #解压</div><div class="line">mv -f frp_0.14.1_linux_arm frp #重命名文件夹</div><div class="line">cd frp #进入frp目录</div><div class="line">sudo apt-get install screen #scree命令行终端</div></pre></td></tr></table></figure>
+<p>基本完成了，编辑前<strong><a href="http://frps.lu8.win:7600/" target="_blank" rel="external">点击跳转</a></strong>查询隧道是否存在，查询帐号和密码均为：admin</p>
+<p>如图所示：<img src="https://t1.aixinxi.net/o_1c0stnfk07r1cej11ugmip1f2oa.png-w.jpg" alt=""></p>
+<p>首先查看<code>name</code>（名称）字段和<code>port</code>（端口）字段是否存在，端口范围：<code>1000-65535</code> 这里推荐用浏览器搜索功能，快捷键：<code>Ctrl</code>+<code>F</code></p>
 <p>我这里查看到名称<code>test00</code>和端口<code>55551</code>没有存在，也就是没人使用！这里我就使用这个演示！</p>
 <h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>完成上面的就可以继续下一步：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nano frpc.ini #用nano 编辑frp配置文件</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">#配置文件：</div><div class="line">[common] #该字段配置不需要更改</div><div class="line">server_addr = frpzj.lu8.win #服务器ip或者域名</div><div class="line">server_port = 7000 #服务器端口</div><div class="line">log_file = ./frpc.log #日志文件</div><div class="line">log_level = info</div><div class="line">log_max_days = 3 #日志记录为最近三天</div><div class="line">privilege_token = frp888 #特权密码</div><div class="line"></div><div class="line">[test00] #隧道名称，必改</div><div class="line">privilege_mode = true</div><div class="line">type = tcp #连接类型</div><div class="line">local_ip = 127.0.0.1 #本机ip，不需要改</div><div class="line">local_port = 22 #本地端口，不需要改</div><div class="line">remote_port = 55551 #远程端口，必改</div><div class="line">custom_domains = xxx.ijiangjia.com #绑定自定义域名,不需要建议删掉</div></pre></td></tr></table></figure>
-<p><img src="http://t1.aixinxi.net/o_1c0stu5661jt0jsf16lo1082978a.png-w.jpg" alt="配置文件"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">#配置文件：</div><div class="line">[common] #该字段配置不需要更改</div><div class="line">server_addr = frps.lu8.win #服务器ip或者域名</div><div class="line">server_port = 7100 #服务器端口</div><div class="line">log_file = ./frpc.log #日志文件</div><div class="line">log_level = info</div><div class="line">log_max_days = 3 #日志记录为最近三天</div><div class="line">privilege_token = frp888 #特权密码</div><div class="line"></div><div class="line">[test00] #隧道名称，必改</div><div class="line">privilege_mode = true</div><div class="line">type = tcp #连接类型</div><div class="line">local_ip = 127.0.0.1 #本机ip，不需要改</div><div class="line">local_port = 22 #本地端口，不需要改</div><div class="line">remote_port = 55551 #远程端口，必改</div><div class="line">custom_domains = xxx.ijiangjia.com #绑定自定义域名,不需要建议删掉</div></pre></td></tr></table></figure>
 <p>复制该配置文件请删除注释，否则运行会出错！</p>
 <p>按快捷键<code>Ctrl</code>+ <code>X</code> 输入<code>Y</code>回车存盘退出！</p>
 <p>终端执行：<code>./frpc -c ./frpc.ini</code></p>
-<p><img src="http://t1.aixinxi.net/o_1c0su652afcoip8u51177f1fsra.png-w.jpg" alt="运行结果"></p>
+<p><img src="https://t1.aixinxi.net/o_1c0su652afcoip8u51177f1fsra.png-w.jpg" alt="运行结果"></p>
 <p>启动ssh工具：<strong>windows</strong>：putty  <strong>linux</strong>:终端或者自带的ssh工具</p>
 <p>我的电脑是<strong>linux</strong>，所以我选择系统自带工具ssh连接</p>
-<p>连接： <code>frpzj.lu8.win:xxxxx</code>其中x为端口号</p>
-<p><img src="http://t1.aixinxi.net/o_1c0suiomgfke14j822bn9g1ddea.png-w.jpg" alt="1"></p>
-<p><img src="http://t1.aixinxi.net/o_1c0sul3vrd8a19c716sd140h13jma.png-w.jpg" alt="2"></p>
-<p> 输入树莓派密码即可进入！如果设置自定义域名的，需要将域名以<code>cname</code>记录解析到frpzj.lu8.win，即可使用自己的域名！<img src="http://t1.aixinxi.net/o_1c0svfokq1iph1eedb4a2ra1posa.png-w.jpg" alt="3"></p>
+<p>连接： <code>frps.lu8.win:xxxxx</code>其中x为你自己设置端口号</p>
+<p><img src="https://t1.aixinxi.net/o_1c0suiomgfke14j822bn9g1ddea.png-w.jpg" alt="1"></p>
+<p><img src="https://t1.aixinxi.net/o_1c0sul3vrd8a19c716sd140h13jma.png-w.jpg" alt="2"></p>
+<p> 输入树莓派密码即可进入！如果设置自定义域名的，需要将域名以<code>cname</code>记录解析到frps.lu8.win，即可使用自己的域名！</p>
 <p>关闭终端后发现又连接不上了？</p>
 <p>进入frp目录执行命令<code>screen ./frpc -c ./frpc.ini</code>执行后，按快捷键<code>Ctrl</code>+<code>A</code>再按<code>Ctrl</code>+ <code>D</code>即可最小化，只要不将树莓派重启都可以随时连接！</p>
 <h3 id="终极配置"><a href="#终极配置" class="headerlink" title="终极配置"></a>终极配置</h3><p>什么？家里突然断电然后又来电，这时又在外面想连接树莓派管理怎么办？</p>
 <p>别急，这里解决这个问题:</p>
 <p>进入frp目录执行<code>pwd</code>查看当前目录</p>
-<p><img src="http://t1.aixinxi.net/o_1c0t0cq1u1cd28rv15n612nkll5a.png-w.jpg" alt="4"></p>
+<p><img src="https://t1.aixinxi.net/o_1c0t0cq1u1cd28rv15n612nkll5a.png-w.jpg" alt="4"></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update #更新</div><div class="line">sudo apt-get install -y supervisor #安装supervisor</div><div class="line">sudo nano /etc/supervisor/conf.d/frp.conf #新建frp配置文件并编辑</div></pre></td></tr></table></figure>
 <p>配置内容：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">[program:frp]</div><div class="line">user=pi</div><div class="line">command=/home/pi/frp/frpc -c /home/pi/frp/frpc.ini</div><div class="line">startsecs=1</div><div class="line">startretries=100</div><div class="line">autorstart=true</div><div class="line">autorestart=true</div><div class="line">stderr_logfile=/tmp/err-frps.log</div><div class="line">stderr_logfile_maxbytes=50MB</div><div class="line">stderr_logfile_backups=10</div><div class="line">stdout_logfile=/tmp/out-frps.log</div><div class="line">stdout_logfile_maxbytes=50MB</div><div class="line">stdout_logfile_backups=10</div></pre></td></tr></table></figure>
 <p><code>command</code>那一行输入frpc所在目录即可！如果是按照我的步骤做的话，无需改动！</p>
 <p>按快捷键<code>Ctrl</code>+ <code>X</code> 输入<code>Y</code>回车存盘退出！</p>
-<p>#重启supervisor</p>
+<p># 重启supervisor</p>
 <p>sudo systemctl restart supervisor</p>
 <p># 查看supervisor运行状态</p>
 <p>sudo supervisorctl status</p>
-<p><img src="http://t1.aixinxi.net/o_1c0t0eimb8ua7dj16r0i7vgo8a.png-w.jpg" alt="5"></p>
+<p><img src="https://t1.aixinxi.net/o_1c0t0eimb8ua7dj16r0i7vgo8a.png-w.jpg" alt="5"></p>
 <p><code>frp</code>后面跟着<code>RUNNING</code>就代表正在运行啦，执行<code>sudo reboot</code>完成重启</p>
 <p>再次查看supervisor运行状态，如果在运行状态那就是完成啦！</p>
 ]]></content>
@@ -578,9 +578,9 @@
         
         <tags>
             
-            <tag> Ubuntu </tag>
-            
             <tag> nodejs </tag>
+            
+            <tag> Ubuntu </tag>
             
         </tags>
         
@@ -733,9 +733,9 @@
         
         <tags>
             
-            <tag> Ubuntu </tag>
-            
             <tag> 开发工具 </tag>
+            
+            <tag> Ubuntu </tag>
             
             <tag> sublime </tag>
             

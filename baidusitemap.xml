@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://www.ijiangjia.com/2017/46998.html</loc>
+    <lastmod>2018-03-19T12:38:35.269Z</lastmod>
+    <data>
+        <display>
+        <title>树莓派系列教程-内网穿透篇</title>
+        <pubTime>2017-12-09T06:51:46.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>内网穿透</tag>
+         
+         
+           
+             
+              <breadCrumb title="树莓派" url="http://www.ijiangjia.com/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.ijiangjia.com/2018/29668.html</loc>
     <lastmod>2018-03-09T07:56:06.641Z</lastmod>
     <data>
@@ -157,9 +179,9 @@
         <title>Ubuntu16.04从安装到优化Sublime系列教程 安装篇</title>
         <pubTime>2017-10-31T10:02:32.000Z</pubTime>
         
-        <tag>Ubuntu</tag>
-         
         <tag>开发工具</tag>
+         
+        <tag>Ubuntu</tag>
          
         <tag>sublime</tag>
          
@@ -181,9 +203,9 @@
         <title>Ubuntu16.04安装Nodejs和npm</title>
         <pubTime>2017-11-19T13:01:10.000Z</pubTime>
         
-        <tag>Ubuntu</tag>
-         
         <tag>nodejs</tag>
+         
+        <tag>Ubuntu</tag>
          
          
            
@@ -253,28 +275,6 @@
            
              
               <breadCrumb title="Linux" url="http://www.ijiangjia.com/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.ijiangjia.com/2017/46998.html</loc>
-    <lastmod>2018-01-29T08:11:05.107Z</lastmod>
-    <data>
-        <display>
-        <title>树莓派系列教程-内网穿透篇</title>
-        <pubTime>2017-12-09T06:51:46.000Z</pubTime>
-        
-        <tag>linux</tag>
-         
-        <tag>内网穿透</tag>
-         
-         
-           
-             
-              <breadCrumb title="树莓派" url="http://www.ijiangjia.com/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
           
         </display>
     </data>
