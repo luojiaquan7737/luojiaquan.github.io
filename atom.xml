@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>斜月三星洞</title>
   
-  <subtitle>国际版</subtitle>
+  <subtitle>海外版</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.ijiangjia.com/"/>
@@ -390,9 +390,9 @@
       <category term="sublime" scheme="http://www.ijiangjia.com/categories/sublime/"/>
     
     
-      <category term="开发工具" scheme="http://www.ijiangjia.com/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-    
       <category term="Ubuntu" scheme="http://www.ijiangjia.com/tags/Ubuntu/"/>
+    
+      <category term="开发工具" scheme="http://www.ijiangjia.com/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
     
       <category term="sublime" scheme="http://www.ijiangjia.com/tags/sublime/"/>
     
