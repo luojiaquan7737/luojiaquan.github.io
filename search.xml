@@ -667,6 +667,7 @@
 <p>又折腾一番，找到在搜索引擎检测是否被收录的情况：<code>site:域名</code><br>我的博客检测如下：<br>百度搜索引擎：<br><img src="http://tu-img-1.aixinxi.net/o_1bv1iqigs1n6h1bgibpl18v0es9a.png" alt="百度搜索引擎"><br>谷歌搜索引擎：<br><img src="http://tu-img-1.aixinxi.net/o_1bv1iu2fb1bnvtgqavp1m5ndupa.png" alt="谷歌搜索引擎"></p>
 <p>百度的第一个是博客的站点，第二个是之前搭建网站被百度收录的结果。<br>谷歌就有点牛逼了，完全可以全部抓取，但是属于半收录情况！<br><em>截图的结果是前一天晚上提交过网站地图的</em>论收录感觉还是谷歌牛掰！</p>
 <p>百度的爬虫不能爬取<code>Github</code>的静态博客，那么可以爬取与<code>Github</code>提供相同功能的<code>Coding</code>吗？<br>答案是肯定可以的.</p>
+<p>&gt;</p>
 <blockquote>
 <p>有些人在全站是找不到评论的地方的，因为你被墙了！！<br>下图是 DISQUS<br><img src="http://tu-img-1.aixinxi.net/o_1bv1k2ra21ujlj4jds017gi64a.png" alt="评论系统"></p>
 </blockquote>

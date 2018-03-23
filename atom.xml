@@ -5,9 +5,9 @@
   <subtitle>海外版</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://www.ijiangjia.com/"/>
-  <updated>2018-03-09T07:56:06.641Z</updated>
-  <id>http://www.ijiangjia.com/</id>
+  <link href="https://www.ijiangjia.com/"/>
+  <updated>2018-03-23T05:50:33.513Z</updated>
+  <id>https://www.ijiangjia.com/</id>
   
   <author>
     <name>洞主</name>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>博客再次拥抱https并全站启用https+CDN加速</title>
-    <link href="http://www.ijiangjia.com/2018/29668.html"/>
-    <id>http://www.ijiangjia.com/2018/29668.html</id>
+    <link href="https://www.ijiangjia.com/2018/29668.html"/>
+    <id>https://www.ijiangjia.com/2018/29668.html</id>
     <published>2018-03-07T06:17:49.000Z</published>
-    <updated>2018-03-09T07:56:06.641Z</updated>
+    <updated>2018-03-23T05:50:33.513Z</updated>
     
     <content type="html"><![CDATA[<p>昨晚参加了腾讯云的360元6年半的云主机，考虑到托管到国内coding pages服务稍微有点慢。</p><p>就有了将国内的博客站点迁移至腾讯云新购的云主机上！但是由于github pages原因不能部署https，所以在海外的游客还是一样访问http站点</p><p><img src="https://t1.aixinxi.net/o_1c7vh91e1vcq1rr31ht911houd5a.png-j.jpg" alt=""></p><a id="more"></a><p><img src="https://t1.aixinxi.net/o_1c7vgu1p11cnl3nc1e8516f12oga.png-j.jpg" alt="云主机"></p><p>360元买的六年半的1核1G看着还可以。平均每个月花4.5元，起码比虚拟空间便宜一点！</p><p><img src="https://t1.aixinxi.net/o_1c7vhd07e14ahba71ve1qnv2kua.png-j.jpg" alt="CDN"></p><p>腾讯云新用户送6个月的50G CDN流量包</p><p><img src="https://t1.aixinxi.net/o_1c7vhhr8s7njkb1is218kl1iqca.png-j.jpg" alt=""></p><p>最后当然是配置全部之后的延迟啦。</p>]]></content>
     
@@ -33,19 +33,19 @@
     
     </summary>
     
-      <category term="个人杂谈" scheme="http://www.ijiangjia.com/categories/%E4%B8%AA%E4%BA%BA%E6%9D%82%E8%B0%88/"/>
+      <category term="个人杂谈" scheme="https://www.ijiangjia.com/categories/%E4%B8%AA%E4%BA%BA%E6%9D%82%E8%B0%88/"/>
     
     
-      <category term="博客" scheme="http://www.ijiangjia.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="https://www.ijiangjia.com/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu系统美化教程</title>
-    <link href="http://www.ijiangjia.com/2018/30871.html"/>
-    <id>http://www.ijiangjia.com/2018/30871.html</id>
+    <link href="https://www.ijiangjia.com/2018/30871.html"/>
+    <id>https://www.ijiangjia.com/2018/30871.html</id>
     <published>2018-02-14T14:22:00.000Z</published>
-    <updated>2018-02-14T14:24:00.548Z</updated>
+    <updated>2018-03-23T05:52:33.338Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>是不是觉得Ubuntu默认的桌面太丑？没关系点进来教你如何将ubuntu系统美化！两种美化效果哦！</p></blockquote><a id="more"></a><h3 id="美化类型选择"><a href="#美化类型选择" class="headerlink" title="美化类型选择"></a>美化类型选择</h3><ol><li>第一种：<br><img src="http://t1.aixinxi.net/o_1c6aanmqc19l31aa418oprjg1r7ea.png-j.jpg" alt="tupian"><br>​</li><li>第二种：第二种就是默认启动器在左侧的。。。</li></ol><p><em>两者区别一个启动器在下面，一个在左侧！</em></p><h3 id="第一种方法"><a href="#第一种方法" class="headerlink" title="第一种方法"></a>第一种方法</h3><ol><li><p>调整 Unity 桌面环境，推荐使用Unity Tweak Tool，这是一个非常好用的 Unity 图形化管理工具，可以修改工作区数量、热区等。 </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install unity-tweak-tool -y</div></pre></td></tr></table></figure></li><li><p>安装 Paper GTK主题</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository ppa:snwh/pulp</div><div class="line">sudo apt-get update &amp;&amp; sudo apt-get install paper-gtk-theme</div></pre></td></tr></table></figure></li><li><p>安装 Numix 图标</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-add-repository ppa:numix/ppa</div><div class="line">sudo apt-get update &amp;&amp; sudo apt-get install numix-icon-theme-circle</div></pre></td></tr></table></figure></li><li><p>安装 Docky 启动栏</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt update</div><div class="line">sudo apt install docky -y</div></pre></td></tr></table></figure></li><li><p>上面没报错就继续下一步，如果报错，提示缺少依赖问题请执行<code>sudo apt install -f</code> 提示子进程错误的请参考我另外的文章</p></li><li><p>打开安装好的<code>Unity-Tweak-Tool</code> 不知道怎么打开的 按下<code>win</code>键 搜索<code>tool</code>就出来了。什么？不知道什么是<code>win</code>键？<a href="https://baike.baidu.com/item/Windows%E9%94%AE/7124478?fr=aladdin&amp;fromid=3393055&amp;fromtitle=Win%E9%94%AE" target="_blank" rel="external">请点击这里</a></p><p><img src="http://t1.aixinxi.net/o_1c6a8g2hb10le148913s1avia7a.png-j.jpg" alt="图片"></p></li><li><p>在Unity-Tweak-Tool下 <code>主题</code>下选择<code>Paper</code>  <code>图标</code>下选择<code>Numix-circle</code> 选择之后是不是有变化啦？继续来</p></li><li><p>按下<code>win</code>键 搜索<code>docky</code>打开之后，基本重启电脑都会自己打开了。下方选中<code>docky</code>图标鼠标右击，选择<code>设置</code>参考下图配置，也可自定义<br><img src="http://t1.aixinxi.net/o_1c6aa4crv1hpdp6gb73nbq96ja.png-j.jpg" alt="tupian"><br>​</p></li><li><p>下方的启动器出来了，但是左侧的启动器怎么隐藏呢？先打开你需要固定到下方启动器的软件，和固定在左侧启动器一样的方法：<code>锁定到dock</code><br>依次打开<code>系统设置</code>&gt;<code>外观</code>&gt;<code>行为</code>  先开启<code>自动隐藏启动</code>然后关闭再次开启。之后将<code>显示灵敏度</code>调到最低！<br><img src="http://t1.aixinxi.net/o_1c6aa8m201q941s2tiqp1kem1pjna.png-j.jpg" alt="tupian"></p></li></ol><p>教程完成！！</p><p>壁纸：</p><p><img src="http://t1.aixinxi.net/o_1c6aafeqiqss16o1g3a7cdikpa.jpg-j.jpg" alt="www"></p><p>题外话：</p><p>需要显示网速小插件的执行下面的命令，一样是开机自启！</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository ppa:fixnix/netspeed -y</div><div class="line">sudo apt update &amp;&amp; sudo apt install indicator-netspeed-unity -y</div></pre></td></tr></table></figure><h3 id="第二种方法"><a href="#第二种方法" class="headerlink" title="第二种方法"></a>第二种方法</h3><p>由于这类方法我也是按照原作者弄的，所以就不献丑了<br>原文： <a href="https://zhuanlan.zhihu.com/p/27052046" target="_blank" rel="external">Ubuntu 美化及超 NB 的 zsh 配置</a></p><p>提供插件由<a href="https://www.v2ex.com/member/ipchy" target="_blank" rel="external">ipchy</a>介绍</p>]]></content>
     
@@ -57,19 +57,19 @@
     
     </summary>
     
-      <category term="Ubuntu" scheme="http://www.ijiangjia.com/categories/Ubuntu/"/>
+      <category term="Ubuntu" scheme="https://www.ijiangjia.com/categories/Ubuntu/"/>
     
     
-      <category term="美化" scheme="http://www.ijiangjia.com/tags/%E7%BE%8E%E5%8C%96/"/>
+      <category term="美化" scheme="https://www.ijiangjia.com/tags/%E7%BE%8E%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu系统切换Python默认版本</title>
-    <link href="http://www.ijiangjia.com/2018/43109.html"/>
-    <id>http://www.ijiangjia.com/2018/43109.html</id>
+    <link href="https://www.ijiangjia.com/2018/43109.html"/>
+    <id>https://www.ijiangjia.com/2018/43109.html</id>
     <published>2018-02-03T12:25:37.000Z</published>
-    <updated>2018-02-03T12:34:07.508Z</updated>
+    <updated>2018-03-23T05:51:50.884Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>该篇文章是转载！原文：<a href="https://www.aizheteng.net/ubuntu-python-version.html" target="_blank" rel="external">链接</a></p></blockquote><p>最近学习python，因为学习的是python3，但是目前所有的linux系统默认版本都是python2，故百度了一下，找到一个不错的方法。</p><a id="more"></a><p>此方法适用于ubuntu和debian其他发行版本没有测试。正常情况基于ubuntu与debian开发的发行版本都支持</p><p>打开终端分别输入下面两条命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 100</div><div class="line">sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 150</div></pre></td></tr></table></figure><p>然后再终端输入：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">python -V</div></pre></td></tr></table></figure><p>如果无误，此时python版本应该切换到默认的python3了。</p><p>如果需要重新切换回python只需要在终端输入：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo update-alternatives --config python</div></pre></td></tr></table></figure><p>然后选者你需要的python版本，输入序号回车即可</p><p>因为系统很多程序依赖于python2，如需要升级系统或者安装系统更新的时候，建议先切换到系统的默认版本python2否则可能出现依赖无法安装问题。</p>]]></content>
     
@@ -82,21 +82,21 @@
     
     </summary>
     
-      <category term="LInux" scheme="http://www.ijiangjia.com/categories/LInux/"/>
+      <category term="LInux" scheme="https://www.ijiangjia.com/categories/LInux/"/>
     
     
-      <category term="Ubuntu" scheme="http://www.ijiangjia.com/tags/Ubuntu/"/>
+      <category term="Ubuntu" scheme="https://www.ijiangjia.com/tags/Ubuntu/"/>
     
-      <category term="Python" scheme="http://www.ijiangjia.com/tags/Python/"/>
+      <category term="Python" scheme="https://www.ijiangjia.com/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>Linux更换内核</title>
-    <link href="http://www.ijiangjia.com/2018/28595.html"/>
-    <id>http://www.ijiangjia.com/2018/28595.html</id>
+    <link href="https://www.ijiangjia.com/2018/28595.html"/>
+    <id>https://www.ijiangjia.com/2018/28595.html</id>
     <published>2018-01-30T12:06:37.000Z</published>
-    <updated>2018-01-30T12:18:08.537Z</updated>
+    <updated>2018-03-23T05:51:30.807Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>更换内核无非是更新内核版本&amp;以前使用的内核版本损坏。</p><p>这里仅说明ubuntu进不了桌面的方法，其他仅作为参考</p></blockquote><a id="more"></a><h3 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h3><p>以前可以正常进入桌面，最近却卡在紫色logo或者卡在登陆界面却输入不了密码！</p><h3 id="问题分析："><a href="#问题分析：" class="headerlink" title="问题分析："></a>问题分析：</h3><p>在grub引导界面的<code>高级选项</code>中的旧内核可以进去，那就是默认启动的内核有问题（或者根本和这没关系）</p><p>也有可能是显卡驱动导致，不过无论是什么，只要你能进旧内核就可以继续下一步操作！</p><h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><blockquote><p>文中以<code>linux-image-4.13.0-32-generic</code>内核损坏，更换到<code>linux-image-4.13.0-31-generic</code>内核启动过程！</p></blockquote><ol><li><p>在grub引导项选择<code>高级选项</code>然后选择较旧的内核进去 （不懂的话，选择倒数第三，第六依次测试）</p></li><li><p>登陆系统并打开终端，保持机器联网</p></li><li><p>查看当前使用的内核：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">uname -r</div></pre></td></tr></table></figure></li><li><p>查看本地内核列表并记录坏的内核版本号（默认启动最高的内核版本）：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo dpkg --get-selections |grep linux-image</div></pre></td></tr></table></figure><p><img src="http://t1.aixinxi.net/o_1c53cg4hk1ill2tftv2nhu1hha.png-j.jpg" alt=""></p></li><li><p>卸载损坏的内核：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt remove linux-image-4.13.0-32-generic</div></pre></td></tr></table></figure></li><li><p>不想麻烦可以跳过到第十步！！！</p></li><li><p>查看可获取的内核：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-cache search linux | grep linux-headers-*</div></pre></td></tr></table></figure></li><li><p>安装<code>4.13.0-31-generic</code>版本的内核</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt install linux-heasers-4.13.0-31-generic linux-image-4.13.0-31-generic</div></pre></td></tr></table></figure></li><li><p>重启然后查看是否是你需要的内核版本，如果不是你需要在grub引导界面点击<code>高级选项</code>并选择你安装的内核！重启之后你无需再次设置。（仅适于你安装的内核版本是你系统中最高的内核版本）</p></li><li><p>终端执行：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo apt update</div><div class="line">sudo apt upgrade #等待更新完成</div><div class="line">sudo dpkg --get-selections |grep linux-image #查看是否有更高的版本，如果有可以重启机器！</div></pre></td></tr></table></figure><p>​</p></li></ol><p>注意：因为我这里是<code>linux-image-4.13.0-32-generic</code>降级到31,并且卸载32版本的内核情况下，重启默认是启动31版本的！但是，以后使用<code>sudo apt update , sudo apt upgrade</code>命令的话他是默认更新内核并启用的，其他内核不能用或者你只想要指定的内核请往下看！</p><h3 id="降级内核"><a href="#降级内核" class="headerlink" title="降级内核"></a>降级内核</h3><ol><li><p>显示内核的顺序</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">grep 'menuentry' /boot/grub/grub.cfg</div></pre></td></tr></table></figure><p><img src="http://t1.aixinxi.net/o_1c539itbf128ggrm7tn1ntup0qa.png-j.jpg" alt=""><br>以图为例，青蓝色画出的<code>$menuentry_id_option</code>字段复制后面单引号里面<code>gnulinux-advanced-dc69089e-d04e-4994-a193-ea4d78b3d29a</code>就是我们需要的信息，然后第二个红框画出来的是我们要启动的内核<code>menuentry &#39;Ubuntu，Linux x.x.x-x-generic&#39;</code>在这个里面同样有一个<code>$menuentry_id_option</code>字段也是一样复制后面单引号里面的内容<code>gnulinux-4.13.0-31-generic-advanced-dc69089e-d04e-4994-a193-ea4d78b3d29a</code> <font color="red">需要注意的是一个内核基本有三个差不多一样的，注意看清就能分辨，另外单引号里面的内容不是同一台机器可能不是一样的！</font></p></li><li><p>编辑/etc/default/grub文件中的<code>GRUB_DEFAULT</code> 图1</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo vim /etc/default/grub</div><div class="line"><span class="meta">#</span>格式: "高级设置ID&gt;内核ID"</div></pre></td></tr></table></figure><p><img src="http://t1.aixinxi.net/o_1c53bo51un3ahmtpab2iv4hea.png-j.jpg" alt=""><br> 注意格式！将<code>0</code>改为<code>&quot;高级设置ID&gt;内核ID&quot;</code>然后保存退出</p></li><li><p>更新引导</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo update-grub</div></pre></td></tr></table></figure><p><img src="http://t1.aixinxi.net/o_1c53c8fln1ofl1l8n4mkl5c1lu0a.png-j.jpg" alt=""></p></li><li><p>重启后，使用命令uname -r查看，内核即为你想要的内核</p></li></ol><p>参考：</p><p><a href="http://blog.mtkfan.com/?p=431" target="_blank" rel="external">http://blog.mtkfan.com/?p=431</a></p><p><a href="http://blog.csdn.net/zs15yy/article/details/77188030" target="_blank" rel="external">http://blog.csdn.net/zs15yy/article/details/77188030</a></p><p><a href="http://blog.csdn.net/u011304615/article/details/70919711" target="_blank" rel="external">http://blog.csdn.net/u011304615/article/details/70919711</a></p><p><a href="http://blog.csdn.net/u011304615/article/details/70919711" target="_blank" rel="external">http://blog.csdn.net/u011304615/article/details/70919711</a></p>]]></content>
     
@@ -109,23 +109,23 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://www.ijiangjia.com/categories/Linux/"/>
+      <category term="Linux" scheme="https://www.ijiangjia.com/categories/Linux/"/>
     
     
-      <category term="Ubuntu" scheme="http://www.ijiangjia.com/tags/Ubuntu/"/>
+      <category term="Ubuntu" scheme="https://www.ijiangjia.com/tags/Ubuntu/"/>
     
-      <category term="Linux" scheme="http://www.ijiangjia.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://www.ijiangjia.com/tags/Linux/"/>
     
-      <category term="常见问题" scheme="http://www.ijiangjia.com/tags/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
+      <category term="常见问题" scheme="https://www.ijiangjia.com/tags/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
     
   </entry>
   
   <entry>
     <title>子进程已安装 post-installation 脚本 返回错误状态 1（2）解决办法</title>
-    <link href="http://www.ijiangjia.com/2018/20433.html"/>
-    <id>http://www.ijiangjia.com/2018/20433.html</id>
+    <link href="https://www.ijiangjia.com/2018/20433.html"/>
+    <id>https://www.ijiangjia.com/2018/20433.html</id>
     <published>2018-01-29T11:25:04.000Z</published>
-    <updated>2018-02-03T12:10:08.389Z</updated>
+    <updated>2018-03-23T05:52:39.198Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>在安装或者卸载软件提示 子进程已安装 post-installation 脚本 返回错误状态 1（2）<img src="http://t1.aixinxi.net/o_1c50lkihm78f1bag1kis18ofp8sa.jpg-j.jpg" alt="子进程已安装 post-installation 脚本 返回错误状态 1"></p></blockquote><a id="more"></a><h3 id="分析原因："><a href="#分析原因：" class="headerlink" title="分析原因："></a>分析原因：</h3><p>导致出现这个无非是有三点：</p><ol><li>不正确安装软件</li><li>不正确卸载软件</li><li>未知</li></ol><h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><p>在终端执行以下语句：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">sudo mv /var/lib/dpkg/info /var/lib/dpkg/info_old </div><div class="line">sudo mkdir /var/lib/dpkg/info </div><div class="line">sudo apt-get update</div><div class="line">sudo apt-get -f install</div><div class="line">sudo mv /var/lib/dpkg/info/* /var/lib/dpkg/info_old</div><div class="line">sudo rm -rf /var/lib/dpkg/info</div><div class="line">sudo mv /var/lib/dpkg/info_old /var/lib/dpkg/info</div></pre></td></tr></table></figure><p>参考：</p><p><a href="http://blog.csdn.net/u012000056/article/details/54927925" target="_blank" rel="external">mkchiny</a></p>]]></content>
     
@@ -137,19 +137,19 @@
     
     </summary>
     
-      <category term="Ubuntu" scheme="http://www.ijiangjia.com/categories/Ubuntu/"/>
+      <category term="Ubuntu" scheme="https://www.ijiangjia.com/categories/Ubuntu/"/>
     
     
-      <category term="常见问题" scheme="http://www.ijiangjia.com/tags/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
+      <category term="常见问题" scheme="https://www.ijiangjia.com/tags/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
     
   </entry>
   
   <entry>
     <title>树莓派系列教程-内网穿透篇</title>
-    <link href="http://www.ijiangjia.com/2017/46998.html"/>
-    <id>http://www.ijiangjia.com/2017/46998.html</id>
+    <link href="https://www.ijiangjia.com/2017/46998.html"/>
+    <id>https://www.ijiangjia.com/2017/46998.html</id>
     <published>2017-12-09T06:51:46.000Z</published>
-    <updated>2018-03-19T12:38:35.269Z</updated>
+    <updated>2018-03-23T05:52:03.772Z</updated>
     
     <content type="html"><![CDATA[<p>linux内网穿透都可以参考  这里只说树莓派FRP内网穿透，关于Ngrok，据说已经开始商业化，具体我也不清楚，毕竟我FRP弄成功了！注意：文中frp目录<code>frp1</code>请将此当作<code>frp</code>目录即可，请用pi用户操作！在此感谢提供免费frp服务的大神们！</p><a id="more"></a><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><strong>2018-03-19 更新</strong>由于frp有两个版本 <code>9.x</code>和<code>14.x</code> </p><p>这里只说<code>14.x</code> 下文图中出现是<code>frpzj.lu8.win</code>请当作<code>frps.lu8.win</code>，原因是免费开放的作者改域名</p><p>另外我有点想免费开放一个frp服务端！</p><p>下载frp命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">wget https://github.com/fatedier/frp/releases/download/v0.14.1/frp_0.14.1_linux_arm.tar.gz #下载文件</div><div class="line">tar -zxvf frp_0.14.1_linux_arm.tar.gz #解压</div><div class="line">mv -f frp_0.14.1_linux_arm frp #重命名文件夹</div><div class="line">cd frp #进入frp目录</div><div class="line">sudo apt-get install screen #scree命令行终端</div></pre></td></tr></table></figure><p>基本完成了，编辑前<strong><a href="http://frps.lu8.win:7600/" target="_blank" rel="external">点击跳转</a></strong>查询隧道是否存在，查询帐号和密码均为：admin</p><p>如图所示：<img src="https://t1.aixinxi.net/o_1c0stnfk07r1cej11ugmip1f2oa.png-w.jpg" alt=""></p><p>首先查看<code>name</code>（名称）字段和<code>port</code>（端口）字段是否存在，端口范围：<code>1000-65535</code> 这里推荐用浏览器搜索功能，快捷键：<code>Ctrl</code>+<code>F</code></p><p>我这里查看到名称<code>test00</code>和端口<code>55551</code>没有存在，也就是没人使用！这里我就使用这个演示！</p><h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>完成上面的就可以继续下一步：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nano frpc.ini #用nano 编辑frp配置文件</div></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">#配置文件：</div><div class="line">[common] #该字段配置不需要更改</div><div class="line">server_addr = frps.lu8.win #服务器ip或者域名</div><div class="line">server_port = 7100 #服务器端口</div><div class="line">log_file = ./frpc.log #日志文件</div><div class="line">log_level = info</div><div class="line">log_max_days = 3 #日志记录为最近三天</div><div class="line">privilege_token = frp888 #特权密码</div><div class="line"></div><div class="line">[test00] #隧道名称，必改</div><div class="line">privilege_mode = true</div><div class="line">type = tcp #连接类型</div><div class="line">local_ip = 127.0.0.1 #本机ip，不需要改</div><div class="line">local_port = 22 #本地端口，不需要改</div><div class="line">remote_port = 55551 #远程端口，必改</div><div class="line">custom_domains = xxx.ijiangjia.com #绑定自定义域名,不需要建议删掉</div></pre></td></tr></table></figure><p>复制该配置文件请删除注释，否则运行会出错！</p><p>按快捷键<code>Ctrl</code>+ <code>X</code> 输入<code>Y</code>回车存盘退出！</p><p>终端执行：<code>./frpc -c ./frpc.ini</code></p><p><img src="https://t1.aixinxi.net/o_1c0su652afcoip8u51177f1fsra.png-w.jpg" alt="运行结果"></p><p>启动ssh工具：<strong>windows</strong>：putty  <strong>linux</strong>:终端或者自带的ssh工具</p><p>我的电脑是<strong>linux</strong>，所以我选择系统自带工具ssh连接</p><p>连接： <code>frps.lu8.win:xxxxx</code>其中x为你自己设置端口号</p><p><img src="https://t1.aixinxi.net/o_1c0suiomgfke14j822bn9g1ddea.png-w.jpg" alt="1"></p><p><img src="https://t1.aixinxi.net/o_1c0sul3vrd8a19c716sd140h13jma.png-w.jpg" alt="2"></p><p> 输入树莓派密码即可进入！如果设置自定义域名的，需要将域名以<code>cname</code>记录解析到frps.lu8.win，即可使用自己的域名！</p><p>关闭终端后发现又连接不上了？</p><p>进入frp目录执行命令<code>screen ./frpc -c ./frpc.ini</code>执行后，按快捷键<code>Ctrl</code>+<code>A</code>再按<code>Ctrl</code>+ <code>D</code>即可最小化，只要不将树莓派重启都可以随时连接！</p><h3 id="终极配置"><a href="#终极配置" class="headerlink" title="终极配置"></a>终极配置</h3><p>什么？家里突然断电然后又来电，这时又在外面想连接树莓派管理怎么办？</p><p>别急，这里解决这个问题:</p><p>进入frp目录执行<code>pwd</code>查看当前目录</p><p><img src="https://t1.aixinxi.net/o_1c0t0cq1u1cd28rv15n612nkll5a.png-w.jpg" alt="4"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update #更新</div><div class="line">sudo apt-get install -y supervisor #安装supervisor</div><div class="line">sudo nano /etc/supervisor/conf.d/frp.conf #新建frp配置文件并编辑</div></pre></td></tr></table></figure><p>配置内容：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">[program:frp]</div><div class="line">user=pi</div><div class="line">command=/home/pi/frp/frpc -c /home/pi/frp/frpc.ini</div><div class="line">startsecs=1</div><div class="line">startretries=100</div><div class="line">autorstart=true</div><div class="line">autorestart=true</div><div class="line">stderr_logfile=/tmp/err-frps.log</div><div class="line">stderr_logfile_maxbytes=50MB</div><div class="line">stderr_logfile_backups=10</div><div class="line">stdout_logfile=/tmp/out-frps.log</div><div class="line">stdout_logfile_maxbytes=50MB</div><div class="line">stdout_logfile_backups=10</div></pre></td></tr></table></figure><p><code>command</code>那一行输入frpc所在目录即可！如果是按照我的步骤做的话，无需改动！</p><p>按快捷键<code>Ctrl</code>+ <code>X</code> 输入<code>Y</code>回车存盘退出！</p><p># 重启supervisor</p><p>sudo systemctl restart supervisor</p><p># 查看supervisor运行状态</p><p>sudo supervisorctl status</p><p><img src="https://t1.aixinxi.net/o_1c0t0eimb8ua7dj16r0i7vgo8a.png-w.jpg" alt="5"></p><p><code>frp</code>后面跟着<code>RUNNING</code>就代表正在运行啦，执行<code>sudo reboot</code>完成重启</p><p>再次查看supervisor运行状态，如果在运行状态那就是完成啦！</p>]]></content>
     
@@ -159,21 +159,21 @@
     
     </summary>
     
-      <category term="树莓派" scheme="http://www.ijiangjia.com/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+      <category term="树莓派" scheme="https://www.ijiangjia.com/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
     
     
-      <category term="linux" scheme="http://www.ijiangjia.com/tags/linux/"/>
+      <category term="linux" scheme="https://www.ijiangjia.com/tags/linux/"/>
     
-      <category term="内网穿透" scheme="http://www.ijiangjia.com/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+      <category term="内网穿透" scheme="https://www.ijiangjia.com/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
     
   </entry>
   
   <entry>
     <title>树莓派系列教程-起步篇</title>
-    <link href="http://www.ijiangjia.com/2017/59858.html"/>
-    <id>http://www.ijiangjia.com/2017/59858.html</id>
+    <link href="https://www.ijiangjia.com/2017/59858.html"/>
+    <id>https://www.ijiangjia.com/2017/59858.html</id>
     <published>2017-12-08T12:28:55.000Z</published>
-    <updated>2018-01-29T11:11:22.407Z</updated>
+    <updated>2018-03-23T05:51:57.292Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>教程环境：<br>树莓派3B和新烧录好的<code>raspbain</code>系统为准！</p></blockquote><a id="more"></a><h3 id="连接树莓派"><a href="#连接树莓派" class="headerlink" title="连接树莓派"></a>连接树莓派</h3><p><strong>准备工具</strong> ：putty 、网线、路由器、电脑</p><p>将树莓派插上电源和SD卡，并插入网线，网线的另一端连到路由器。同时，笔记本（电脑）也连到该路由器上。进入路由器后台查看树莓派IP，笔记本（电脑）打开putty，在主机名称（或IP地址）中输入树莓派IP地址。</p><p><img src="http://tu-img-1.aixinxi.net/o_1c0qt4eq3q9jv5n1hmtf42li4a.png-w.jpg" alt=""></p><p>没路由器怎么办？别急，请参考<a href="http://shumeipai.nxez.com/2013/10/15/raspberry-pi-and-a-network-cable-directly-connected-laptop.html" target="_blank" rel="external">电脑直连树莓派</a> 推荐使用笔记本电脑，毕竟这样可以让树莓派有网络！步骤执行到教程的第二大点的第三小点就可以，无需继续！</p><p><strong>SSH连接问题</strong></p><p>有些版本新烧录好的系统的<code>/boot</code>分区并没有<code>ssh</code>文件，会导致连接失败、连接被拒接等问题出现，解决办法：将内存卡放进读卡器并插入电脑，然后在根目录新建名称<code>ssh</code>的文件名！<strong>注意：</strong>文件名称没有任何后缀，否则一样也会失败！</p><p>首次连接ssh会提示警告信息，选择<code>是</code>即可，后面会出现登陆界面：</p><p>输入用户名：pi  密码：raspberry（输入密码的过程中，密码是看不到的）</p><p>回车确认，就连接上了树莓派。</p><h3 id="初始化设置"><a href="#初始化设置" class="headerlink" title="初始化设置"></a>初始化设置</h3><p>终端输入<code>sudo raspi-config</code>会出现类似下图的界面！</p><p><img src="http://tu-img-1.aixinxi.net/o_1c0qu09ho50021f160j1s6t19gja.png-w.jpg" alt="raspi-config配置"></p><p><strong>1. 时间问题：</strong>由于时区不同造成树莓派时间比北京时间慢了整整8个小时。</p><p>​    查看当前时间命令<code>date</code>  终端输入<code>sudo raspi-config</code> 进入树莓派配置页面，（回车即可选择进入）依次进入<code>Localisation Optuions</code>&gt;&gt;&gt;<code>Change Timezone</code>选择Asia – Chongqing（或shanghai）重启即可生效！</p><p><strong>2. 语言设置：</strong>系统默认是英语，这对不太懂英语的小伙伴是一个很大障碍！</p><p>​    同样终端输入<code>sudo raspi-config</code> 进入树莓派配置页面，（回车即可选择进入）依次进入<code>Localisation Optuions</code>&gt;&gt;&gt;<code>Change Locale</code> 选择en_US.UTF-8和zh_CN.UTF-8 按空格键可以选中和取消！重启生效</p><p><strong>3. 系统默认密码：</strong>通常系统默认密码是建议修改的，为了防止他人串改！</p><p>​    同样终端输入<code>sudo raspi-config</code> 进入树莓派配置页面，（回车即可选择进入）选择<code>Change User Password</code>即可设置密码，还有一个更简便的方法，终端输入<code>passwd</code>即可完成修改密码！</p><h3 id="桌面控制"><a href="#桌面控制" class="headerlink" title="桌面控制"></a>桌面控制</h3><p>字符界面不会用？来来来，教你装远程桌面客户端</p><p><strong>XRDP</strong>远程桌面（局域网必备）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install xrdp #安装XRDP</div><div class="line">sudo systemctl enable xrdp #设置开机启动</div><div class="line">sudo reboot #重启树莓派</div><div class="line">ifconfig #查看ip</div></pre></td></tr></table></figure><p><img src="http://tu-img-1.aixinxi.net/o_1c0r06620ih1s4k1kad16h1ja2a.png-w.jpg" alt="ip"></p><p>框里面是ip，这是网线连接的，如果是无线连接，那么就是<code>wlan0</code>的</p><p>然后可以使用电脑内置的远程桌面程序连接！</p><p><strong>Teamviewer</strong>几乎支持任何设备的安装 （外网可以远程连接）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">wget https://dl.tvcdn.de/download/linux/version_13x/teamviewer-host_13.0.5641_armhf.deb</div><div class="line">sudo dpkg -i teamviewer*.deb #第一次安装会报错，执行下面的命令之后在执行该命令即可安装成功</div><div class="line">sudo apt-get -f install</div></pre></td></tr></table></figure><p> <strong>桌面环境</strong><br>受控端直接运行TeamViewer即可，在控制端输入ID和密码。</p><p><strong>命令行终端环境</strong><br>我一般使用SSH远程登录树莓派，没有显示器。而TeamViewer支持headless模式操作。</p><p>注：在接受license的步骤存在一个坑，在安装TeamViewer的时候，认为你是以界面形式安装的，所以，会弹出一个对话框，提醒你接受license，但是，由于你用ssh登录的，所以，这个对话框你看不到，自然也不会去接受协议，从而导致在使用时连接失败。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo teamviewer --daemon stop</div><div class="line">sudo nano /opt/teamviewer/config/global.conf</div></pre></td></tr></table></figure><p>文件末尾添加：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[int32] EulaAccepted = 1 </div><div class="line">[int32] EulaAcceptedRevision = 6</div></pre></td></tr></table></figure><p>然后<code>Ctrl</code>+ <code>X</code>输入<code>Y</code>回车即可保存，继续执行启动命令<code>sudo teamviewer --daemon start</code></p><p>*<em>开启TeamViewer服务随机启动*</em></p><p><code>sudo teamviewer --daemon enable</code></p><p><strong>查看帮助信息</strong></p><p><code>teamviewer help</code></p><p><strong>查看本机ID</strong></p><p><code>teamviewer info</code></p><p><strong>设置本机密码</strong></p><p><code>teamviewer passwd [你的密码]</code></p><h3 id="参考教材"><a href="#参考教材" class="headerlink" title="参考教材"></a>参考教材</h3><p><a href="https://www.cnblogs.com/xuanxiaochen/p/5840402.html" target="_blank" rel="external">树莓派笔记——初始化及系统设置 </a></p><p><a href="http://blog.csdn.net/qianchenglenger/article/details/51885122" target="_blank" rel="external">通过SSH在Ubuntu下安装TeamViewer软件</a></p>]]></content>
     
@@ -185,19 +185,19 @@
     
     </summary>
     
-      <category term="树莓派" scheme="http://www.ijiangjia.com/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+      <category term="树莓派" scheme="https://www.ijiangjia.com/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
     
     
-      <category term="raspbain" scheme="http://www.ijiangjia.com/tags/raspbain/"/>
+      <category term="raspbain" scheme="https://www.ijiangjia.com/tags/raspbain/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu系统安装php7.0以及检测环境</title>
-    <link href="http://www.ijiangjia.com/2017/23260.html"/>
-    <id>http://www.ijiangjia.com/2017/23260.html</id>
+    <link href="https://www.ijiangjia.com/2017/23260.html"/>
+    <id>https://www.ijiangjia.com/2017/23260.html</id>
     <published>2017-11-28T04:11:15.000Z</published>
-    <updated>2018-01-29T11:15:56.793Z</updated>
+    <updated>2018-03-23T05:51:42.260Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>起初是为了帮朋友搭建类似电脑之家的社区网站，在选择网站程序时选择了<code>asp</code>和<code>php</code>格式的程序，前者只能在win系统才能架设，而后者需要在Linux系统下，在操作虚拟空间的时候由于手贱先将原先的PHP环境切换到ASP环境。导致测试完ASP程序之后不能更换操作系统了！要更换操作系统只能等第二天，这当然不能忍了，恰好我系统是Linux安装PHP环境也是几行命令的事</p></blockquote><a id="more"></a><p><img src="http://tu-img-1.aixinxi.net/o_1c00965e915hh1v2alsfk3lbrfa.png-w.jpg" alt="系统提示"></p><p>简单介绍php，<font color="red;">php环境配置apache2+php+mysql  系统为ubuntu16.04</font></p><p>关于php介绍我就不废话了，网上一大堆！直接进主题：</p><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p><strong>1. 安装 Apache2</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install apache2</div></pre></td></tr></table></figure></p><p><strong>2. 安装php7.0</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository -y ppa:ondrej/php</div><div class="line">sudo apt update</div><div class="line">sudo apt install  php7.0</div></pre></td></tr></table></figure><p><strong>3. 安装Mysql服务端和Mysql客户端</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt install -y mysql-server mysql-client</div></pre></td></tr></table></figure><p>第三步，会提示设置mysql密码并确认密码</p><p><img src="http://tu-img-1.aixinxi.net/o_1c00aej331uj16h7s6bv9v1om1a.png-w.jpg" alt="设置Mysql"></p><p><strong>4. 安装PHP和Mysql关联插件</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install libapache2-mod-php7.0</div><div class="line">sudo apt-get install php7.0-mysql</div><div class="line">sudo apt-get install php7.0-gd</div></pre></td></tr></table></figure><p><strong>5. 安装phpmyadmin</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install phpmyadmin</div></pre></td></tr></table></figure><p>在安装过程中会要求选择Web server：apache2或lighttpd，使用空格键选定apache2，然后确定,下面界面输入你刚才安装Mysql时设置的密码，确定。再确认一次Mysql密码，确定。</p><p><img src="http://tu-img-1.aixinxi.net/o_1c00asfs0198j1at1jhvpk135qa.png-w.jpg" alt="配置"></p><p><img src="http://tu-img-1.aixinxi.net/o_1c00auavc1rmh8cblvch8l29la.png-w.jpg" alt="选择"></p><p><img src="http://tu-img-1.aixinxi.net/o_1c00b0tro1f751b0m17j61daogila.png-w.jpg" alt="输入密码"></p><p><strong>6. 将phpmyadmin与apache2建立连接</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo ln -s /usr/share/phpmyadmin  /var/www/html</div></pre></td></tr></table></figure><p><strong>7. 修改php配置文件</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo vim /etc/php/7.0/apache/php/ini</div></pre></td></tr></table></figure><p>display_errors = On(显示错误日志，出现两次，都要改，不然无效)<br>extension=php_mbstring.dll (开启mbstring)</p><h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p><strong>1. 启动apache2</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo /etc/init.d/apache2  restart</div></pre></td></tr></table></figure><p><img src="http://tu-img-1.aixinxi.net/o_1c00b8fhk1i7stb99m9j1r1duca.png-w.jpg" alt="启动Apache2"></p><p><strong>2. 在phptest目录下新建一个PHP 文件:test.php</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo gedit /var/www/html/test.php</div></pre></td></tr></table></figure><p><strong>3. 在gedit 输入下面内容</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">&lt;title&gt;PHP Site&lt;/title&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;p&gt;</div><div class="line">&lt;center&gt;</div><div class="line">&lt;?php</div><div class="line">echo &quot;Hello,This is my first PHP webpage\n&quot;;phpinfo();</div><div class="line">?&gt;</div><div class="line">&lt;/center&gt;</div><div class="line">&lt;/p&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure><p>保存退出</p><p><strong>4. 浏览器打开测试</strong></p><p>在浏览器输入<code>http://localhost/test.php</code> 回车查看结果！</p><p><img src="http://tu-img-1.aixinxi.net/o_1c00bh83v1e8e13uff421gohr6ia.png-w.jpg" alt="结果"></p><p>想查看php版本直接在终端输入<code>php -v</code>即可！</p><p>浏览器输入<code>127.0.0.1</code>或者<code>localhost</code>就会看到图下一样!</p><p><img src="http://tu-img-1.aixinxi.net/o_1c00bn4151128c5kvjl1hauin1a.png-w.jpg" alt="localhost"></p><h3 id="拓展篇"><a href="#拓展篇" class="headerlink" title="拓展篇"></a>拓展篇</h3><p><strong>1. 站点目录更改</strong></p><p>Apache2默认站点是在<code>var/www/</code>下，但是有时候又想更换站点，下面这个方法可以帮助您：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo gedit /etc/apache2/apache2.conf</div></pre></td></tr></table></figure><p>找到下图的部分:</p><p>将<code>&lt;Directory /var/www/&gt;</code>改成<code>&lt;Directory “你要设置的目录”&gt;</code></p><p>更改后建议要重新建立Apache2和phpmyadmin链接</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo ln -s /usr/share/phpmyadmin  /var/www/html/phpmyadmin</div></pre></td></tr></table></figure><p>将后面的<code>/var/www/html</code>改为你对应的目录，执行<code>sudo /etc/init.d/apache2 restart</code>重启生效</p><p><img src="http://tu-img-1.aixinxi.net/o_1c00c58q31rqg56sda718fuq0ja.png-w.jpg" alt="默认站点更改"></p><p><strong>2. 服务管理命令</strong></p><p>apache2 服务管理命令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo /etc/init.d/apache2 stop/restart/start</div><div class="line">service apache2 stop/restart/start</div><div class="line">    // 两条令相同</div></pre></td></tr></table></figure><p>mysql 服务管理命令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo /etc/init.d/mysql stop/restart/start</div><div class="line">service mysql stop/restart/start</div><div class="line">    // 两条令相同</div></pre></td></tr></table></figure><font color="red">2017年12月1号：</font><p>如果浏览器打开<code>phpmyadmin</code>提示<code>The [*mbstring*](http://127.0.0.1/phpmyadmin/url.php?url=http%3A%2F%2Fphp.net%2Fmanual%2Fen%2Fbook.mbstring.php) extension is missing. Please check your PHP configuration.</code></p><p>就是缺少mbstring文件，首先确认当前php版本 <code>php -v</code>Ubuntu16.04默认安装的是php7.0</p><p>先安装php7.0的mbstring</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install php7.0-mbstring</div><div class="line">service apache2 restart #重启apache2</div></pre></td></tr></table></figure><p>没出现提示就对了，如果还出现重新执行上面的命令，并命令的<code>7.0</code>改为当前版本！</p>]]></content>
     
@@ -209,21 +209,21 @@
     
     </summary>
     
-      <category term="Ubuntu 环境" scheme="http://www.ijiangjia.com/categories/Ubuntu-%E7%8E%AF%E5%A2%83/"/>
+      <category term="Ubuntu 环境" scheme="https://www.ijiangjia.com/categories/Ubuntu-%E7%8E%AF%E5%A2%83/"/>
     
     
-      <category term="开发工具" scheme="http://www.ijiangjia.com/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+      <category term="开发工具" scheme="https://www.ijiangjia.com/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
     
-      <category term="php" scheme="http://www.ijiangjia.com/tags/php/"/>
+      <category term="php" scheme="https://www.ijiangjia.com/tags/php/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu16.04安装chromium浏览器以及下载器配置</title>
-    <link href="http://www.ijiangjia.com/2017/24648.html"/>
-    <id>http://www.ijiangjia.com/2017/24648.html</id>
+    <link href="https://www.ijiangjia.com/2017/24648.html"/>
+    <id>https://www.ijiangjia.com/2017/24648.html</id>
     <published>2017-11-23T13:50:35.000Z</published>
-    <updated>2018-01-29T09:15:14.544Z</updated>
+    <updated>2018-03-23T05:50:59.042Z</updated>
     
     <content type="html"><![CDATA[<p><strong>系统自带有火狐浏览器，但我喜欢用谷歌浏览器，所以只装<code>chromium</code>版的浏览器</strong><br>在这里做个解释：<code>chrome浏览器</code>和<code>chromium浏览器</code>都是出于谷歌的！<br>安装谷歌插件那部分需要v。p。n</p><p>安装只列举ubuntu16.04安装chromium浏览器</p><a id="more"></a><h3 id="安装-chromium浏览器"><a href="#安装-chromium浏览器" class="headerlink" title="安装 chromium浏览器"></a>安装 chromium浏览器</h3><p>在终端依次执行以下命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository ppa:a-v-shkop/chromium</div><div class="line"></div><div class="line">sudo apt-get update</div><div class="line"></div><div class="line">sudo apt-get install chromium-browser</div></pre></td></tr></table></figure><p>没提示错误的话，<br>按下电脑的<code>win</code>键或者左上角点击ubuntu的logo可以搜索<br><img src="http://tu-img-1.aixinxi.net/o_1bvkg6tahfo7e7h1mpm1f0j86fa.png-w.jpg" alt="查看chromium是否安装"></p><h3 id="uGet替换chromium浏览器默认下载"><a href="#uGet替换chromium浏览器默认下载" class="headerlink" title="uGet替换chromium浏览器默认下载"></a>uGet替换chromium浏览器默认下载</h3><p>不知道你们有没有发现使用<code>chrome浏览器</code>下载东西贼慢，<code>chromium浏览器</code>也不例外！<br>这时第三方的下载插件就有用了！</p><p>uGet是采用aria2作为下载后端，所以两个软件都必须同时安装。</p><ol><li>安装uGet</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install uget  #Ubuntu、deepin安装</div></pre></td></tr></table></figure><ol><li>安装aria2</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install aria2  #Ubuntu、deepin安装</div></pre></td></tr></table></figure><ol><li>配置uGet默认下载插件为aria2<br><img src="http://tu-img-1.aixinxi.net/o_1bvkhf0bh1vcn7846f31j8p1smea.png-w.jpg" alt="打开uGet软件"><br>菜单栏依次打开： <code>编辑</code>》》》<code>设置</code>》》》<code>插件</code><br><img src="http://tu-img-1.aixinxi.net/o_1bvkhksuh179nthf1vnk6041p6ra.png-w.jpg" alt="配置"></li><li>设置uGet为chromium的下载默认插件<br>安装uget-chrome-wrapper</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">#Ubuntu&amp;&amp;Linux Mint</div><div class="line">sudo apt install uget-chrome-wrapper</div><div class="line">#arch </div><div class="line">yaourt -S uget-chrome-wrapper</div><div class="line">packer -S uget-chrome-wrapper</div><div class="line">#其他linux发行版，例如deepin，需要提前安装好“curl”</div><div class="line"></div><div class="line">wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/build/linux/install_uget_chrome_wrapper.sh</div><div class="line">sudo sh install_uget_chrome_wrapper.sh</div></pre></td></tr></table></figure><p><strong><a href="https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi?hl=zh-CN" target="_blank" rel="external">点击前往安装Chrome插件</a></strong></p><p>添加uGet扩展后，谷歌浏览器右上角即可显示uGet图标。重启谷歌浏览器，只要点击下载链接，就会自动弹出uGet下载界面、自动添加下载任务。<br>当然，如果对于某些链接，仍要使用谷歌浏览器下载，可以用鼠标右键“链接另存为”。</p><p><font color="red">浏览器添加插件还是用不了uGet下载的话，请查看这里是否为绿色！如下图：</font><br><img src="http://t1.aixinxi.net/o_1bvki55ek37pcls1jb21c7hsu4a.png-w.jpg" alt="对比"></p><p><a href="http://www.cnblogs.com/EasonJim/p/7119294.html" target="_blank" rel="external">参考教程1</a></p><p><a href="https://slgobinath.github.io/uget-chrome-wrapper/#installation" target="_blank" rel="external">参考教程2</a></p>]]></content>
     
@@ -234,21 +234,21 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://www.ijiangjia.com/categories/Linux/"/>
+      <category term="Linux" scheme="https://www.ijiangjia.com/categories/Linux/"/>
     
     
-      <category term="chromium" scheme="http://www.ijiangjia.com/tags/chromium/"/>
+      <category term="chromium" scheme="https://www.ijiangjia.com/tags/chromium/"/>
     
-      <category term="chrome" scheme="http://www.ijiangjia.com/tags/chrome/"/>
+      <category term="chrome" scheme="https://www.ijiangjia.com/tags/chrome/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu16.04出现内部错误</title>
-    <link href="http://www.ijiangjia.com/2017/9080.html"/>
-    <id>http://www.ijiangjia.com/2017/9080.html</id>
+    <link href="https://www.ijiangjia.com/2017/9080.html"/>
+    <id>https://www.ijiangjia.com/2017/9080.html</id>
     <published>2017-11-20T12:44:58.000Z</published>
-    <updated>2017-11-20T14:31:58.008Z</updated>
+    <updated>2018-03-23T05:52:27.369Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>Linux出现内部错误不仅只有Ubuntu才会有，其他Linux的桌面发行版也会出现，但是我只用过centos7.x和Ubuntu16.04桌面发行版本，如有错误欢迎指正！</p></blockquote><a id="more"></a><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>在桌面版Ubuntu中，我经常遇到一些弹窗窗口，警告我Ubuntu发生了内部错误，问我要不要发送错误报告。每次软件崩溃都要烦扰我，我如何才能关掉这个错误报告功能呢？而我再一次重装系统又出现这个问题，这次顺便写下来记录，方便以后查证！</p><p>Ubuntu桌面版预装了Apport，它是一个错误收集系统，会收集软件崩溃、未处理异常和其他，包括程序bug，并为调试目的生成崩溃报告。当一个应用程序崩溃或者出现Bug时候，Apport就会通过弹窗警告用户并且询问用户是否提交崩溃报告。你也许也看到过下面的消息。</p><ul><li>“Sorry, the application XXXX has closed unexpectedly.”</li><li>“对不起，应用程序XXXX意外关闭了。”</li><li>“Sorry, Ubuntu XX.XX has experienced an internal error.”</li><li>“对不起，Ubuntu XX.XX 发生了一个内部错误。”</li><li>“System program problem detected.”</li><li>“检测到系统程序问题。”<br><img src="http://tu-img-1.aixinxi.net/o_1bvcogglu8tltkp1dsn16bb11pka.png-w.jpg" alt="内部错误"></li></ul><p>也许因为应用一直崩溃，频繁的错误报告会使人心烦。也许你担心Apport会收集和上传你的Ubuntu系统的敏感信息。无论什么原因，你想关掉Apport的错误报告功能。</p><h3 id="临时关闭apport错误报告"><a href="#临时关闭apport错误报告" class="headerlink" title="临时关闭apport错误报告"></a>临时关闭apport错误报告</h3><p>如果你想要临时关闭Apport，使用下列命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo service apport stop</div></pre></td></tr></table></figure></p><p><strong>注意</strong>：重启Ubuntu系统会继续自动开启</p><h3 id="永久关闭Apport错误报告"><a href="#永久关闭Apport错误报告" class="headerlink" title="永久关闭Apport错误报告"></a>永久关闭Apport错误报告</h3><p>为了永久关闭Apport，编辑/etc/default/apport，修改下列参数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo gedit /etc/default/apport</div></pre></td></tr></table></figure></p><p><img src="http://tu-img-1.aixinxi.net/o_1bvcp5lbq9be114qmch6ns1r8da.png-w.jpg" alt="apport"><br>将图中的<code>enabled=1</code>改为<code>enabled=0</code>这样就是关闭了<br>下次重启你的Ubuntu系统，Apport将会自动关闭</p><h3 id="永久移除apport"><a href="#永久移除apport" class="headerlink" title="永久移除apport"></a>永久移除apport</h3><p>如果你再也不会用Apport，有一种简单的方法完全移除它<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get --purge apport</div></pre></td></tr></table></figure></p><p>此方法不建议使用，慎重！</p>]]></content>
     
@@ -260,19 +260,19 @@
     
     </summary>
     
-      <category term="Ubuntu" scheme="http://www.ijiangjia.com/categories/Ubuntu/"/>
+      <category term="Ubuntu" scheme="https://www.ijiangjia.com/categories/Ubuntu/"/>
     
     
-      <category term="Ubuntu" scheme="http://www.ijiangjia.com/tags/Ubuntu/"/>
+      <category term="Ubuntu" scheme="https://www.ijiangjia.com/tags/Ubuntu/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu16.04安装Nodejs和npm</title>
-    <link href="http://www.ijiangjia.com/2017/13731.html"/>
-    <id>http://www.ijiangjia.com/2017/13731.html</id>
+    <link href="https://www.ijiangjia.com/2017/13731.html"/>
+    <id>https://www.ijiangjia.com/2017/13731.html</id>
     <published>2017-11-19T13:01:10.000Z</published>
-    <updated>2018-01-29T11:16:34.995Z</updated>
+    <updated>2018-03-23T05:51:38.416Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>Linux 很多软件或者开发工具是离不开Nodejs的</p></blockquote><h3 id="Nodejs-下载"><a href="#Nodejs-下载" class="headerlink" title="Nodejs 下载"></a>Nodejs 下载</h3><p><strong><a href="https://nodejs.org/zh-cn/" target="_blank" rel="external">官网</a></strong>下载64位安装包<strong><a href="https://nodejs.org/dist/v8.6.0/node-v8.6.0-linux-x64.tar.xz" target="_blank" rel="external">点击下载 node-v8.6.0-linux-x64.tar.xz</a></strong><br><a id="more"></a></p><h3 id="Node与Npm的安装"><a href="#Node与Npm的安装" class="headerlink" title="Node与Npm的安装"></a>Node与Npm的安装</h3><p>1.将安装包拷贝到虚拟机，解压安装包<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar -xJf node-v8.6.0-linux-x64.tar.xz</div></pre></td></tr></table></figure></p><p>2.移动解压出来的文件包到通用的软件安装目录 /opt/<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo mv node-v8.6.0-linux-x64 /opt/</div></pre></td></tr></table></figure></p><p>3.安装 npm 和 node 命令到系统命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo ln -s /opt/node-v8.6.0-linux-x64/bin/node /usr/local/bin/node</div><div class="line">sudo ln -s /opt/node-v8.6.0-linux-x64/bin/npm /usr/local/bin/npm</div></pre></td></tr></table></figure></p><p>4.验证 Nodejs 环境安装是否成功</p><p><img src="http://images.ijiangjia.com/17-11-19/94490246.jpg" alt="版本"></p>]]></content>
     
@@ -285,21 +285,21 @@
     
     </summary>
     
-      <category term="Ubuntu 环境" scheme="http://www.ijiangjia.com/categories/Ubuntu-%E7%8E%AF%E5%A2%83/"/>
+      <category term="Ubuntu 环境" scheme="https://www.ijiangjia.com/categories/Ubuntu-%E7%8E%AF%E5%A2%83/"/>
     
     
-      <category term="nodejs" scheme="http://www.ijiangjia.com/tags/nodejs/"/>
+      <category term="nodejs" scheme="https://www.ijiangjia.com/tags/nodejs/"/>
     
-      <category term="Ubuntu" scheme="http://www.ijiangjia.com/tags/Ubuntu/"/>
+      <category term="Ubuntu" scheme="https://www.ijiangjia.com/tags/Ubuntu/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu安装FTP工具</title>
-    <link href="http://www.ijiangjia.com/2017/18763.html"/>
-    <id>http://www.ijiangjia.com/2017/18763.html</id>
+    <link href="https://www.ijiangjia.com/2017/18763.html"/>
+    <id>https://www.ijiangjia.com/2017/18763.html</id>
     <published>2017-11-16T10:15:25.000Z</published>
-    <updated>2017-11-17T06:35:59.278Z</updated>
+    <updated>2018-03-23T05:51:20.759Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote><p>FileZilla是一个免费而且开源的FTP客户端软件，共有两种版本：客户端版本、服务器版本。FileZilla有条理的界面和管理多站点的简化方式使得FileZilla Client成为一个方便高效的FTP客户端工具。本文介绍的是Ubuntu下FileZilla的安装<br><a id="more"></a><br>先放一个界面图：<br><img src="http://tu-img-1.aixinxi.net/o_1bv25fi5r19vsj68195584bjs7a.png" alt="FTP"></p></blockquote><p>FileZilla Client 非常好用，以下是安装步骤。<br>安装filezilla ：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install filezilla</div></pre></td></tr></table></figure></p><p>再装个语言包：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install filezilla-locales</div></pre></td></tr></table></figure></p><p>我装这个没成功。。。。这个是语言包的。</p><p>安装成功后，如果出现./filezilla/filezilla.xml、./filezilla/layout.xml等文件不允许些或者说不能够读，可能是权限问题。</p><p>然后，把这些文件赋予合适的权限就成功了。</p><blockquote><p>参考教程：<a href="http://blog.csdn.net/stubbornness1219/article/details/50909760" target="_blank" rel="external">点击跳转</a></p></blockquote>]]></content>
     
@@ -310,21 +310,21 @@
     
     </summary>
     
-      <category term="工具" scheme="http://www.ijiangjia.com/categories/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="https://www.ijiangjia.com/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="FTP" scheme="http://www.ijiangjia.com/tags/FTP/"/>
+      <category term="FTP" scheme="https://www.ijiangjia.com/tags/FTP/"/>
     
-      <category term="工具" scheme="http://www.ijiangjia.com/tags/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="https://www.ijiangjia.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
   <entry>
     <title>TeamViewer</title>
-    <link href="http://www.ijiangjia.com/2017/30971.html"/>
-    <id>http://www.ijiangjia.com/2017/30971.html</id>
+    <link href="https://www.ijiangjia.com/2017/30971.html"/>
+    <id>https://www.ijiangjia.com/2017/30971.html</id>
     <published>2017-11-16T08:14:17.000Z</published>
-    <updated>2017-11-28T02:58:48.290Z</updated>
+    <updated>2018-03-23T05:52:20.949Z</updated>
     
     <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote><p>Teamviewer 是一个远程协助软件，个人使用是免费的。如果对方的电脑也安装了 TeamViewer，那么你只需要输入对方的 TeamViewer ID号就能远程控制对方电脑了。<br>安装时若出现问题的麻烦评论反馈，方便后来的朋友参考，谢谢！<br>现在任何操作系统我都会第一时间安装上<code>TeamViewer</code>程序，几乎所有平台他都支持！<br><img src="http://tu-img-1.aixinxi.net/o_1bv1v5erp1r35drkh931saj1m7ma.png" alt="TeamViewer系统支持"><br>本篇文章只写<code>Ubuntu 16.04</code>的，理论兼容<code>Ubuntu</code>所有版本<br><a id="more"></a></p><h3 id="下载TeamViewer"><a href="#下载TeamViewer" class="headerlink" title="下载TeamViewer"></a>下载TeamViewer</h3><p>首先前往<code>TeamViewer</code>的官网下载deb包<br><a href="https://www.teamviewer.com/en/download/linux/" target="_blank" rel="external">TeamViewer国际版</a> | <a href="https://www.teamviewer.com/zhcn/download/linux/" target="_blank" rel="external">TeamViewer国内版</a><br><img src="http://tu-img-1.aixinxi.net/o_1bv1vfgnkq2h19291h4aeqtis2a.png" alt="TeamViewer"><br>这是一个32位的deb包。Debian 6/Ubuntu 10等旧发行版本可以下载64位deb包，因为它们没有Multiarch多架构功能。对于Ubuntu 16.04，我们可以下载32位deb包，因为Ubuntu 16.04具备多架构功能，即使是64位的Ubuntu 16.04系统也能安装32位的deb包。</p></blockquote><p>下载完成后 <code>CTRL</code>+<code>ALT</code>+<code>T</code>快捷键打开命令行并切换到安装的目录<br><img src="http://tu-img-1.aixinxi.net/o_1bv20i1kr1cukquh81c1jut17eba.png" alt=""></p><p>查看是否存在TeamViewer的安装包，存在则进行下一步</p><h3 id="安装依赖包"><a href="#安装依赖包" class="headerlink" title="安装依赖包"></a>安装依赖包</h3><p>有时候安装提示依赖错误或者提示缺少依赖包的可以输入下面解决：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get -f install</div></pre></td></tr></table></figure></p><p>系统是32位的可以跳过这一步，因为我们的Ubuntu系统安装是64位的，而安装是32位的所以我们需要安装32位的架构</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo dpkg --add-architecture i386</div><div class="line">sudo apt-get update</div><div class="line"></div><div class="line">sudo apt-get install libdbus-1-3:i386 libasound2:i386 libexpat1:i386 libfontconfig1:i386 libfreetype6:i386 libjpeg62:i386 libpng12-0:i386 libsm6:i386 libxdamage1:i386 libxext6:i386 libxfixes3:i386 libxinerama1:i386 libxrandr2:i386 libxrender1:i386 libxtst6:i386 zlib1g:i386 libc6:i386</div></pre></td></tr></table></figure><p><img src="http://tu-img-1.aixinxi.net/o_1bv22tkd611gis0dg5h1h49o3qa.png" alt="依赖包"><br>这是执行命令之后的截图</p><p>最后执行一行命令 sudo dpkg -i 包名<br>例如我的安装包名为：teamviewer_12.0.85001_i386.deb<br>可以用<code>TAB</code>键补全包名，用法：输入<code>team</code>包名前缀然后按下<code>TAB</code>键<br><img src="http://tu-img-1.aixinxi.net/o_1bv23c5e715i0p8616sd1eo21m6ma.png" alt="安装成功"></p><h3 id="安装完成"><a href="#安装完成" class="headerlink" title="安装完成"></a>安装完成</h3><p>到这里我们安装好了！来看看效果<br>按下<code>win</code>键 输入team 就能看到<code>TeamViewer</code>啦<br><img src="http://tu-img-1.aixinxi.net/o_1bv23mqhk2er1ugr1fe01id3flpa.png" alt="查找teamviewer"></p><p>点击打开<br><img src="http://tu-img-1.aixinxi.net/o_1bv2441fq97r9fna3n4rc15rua.png" alt="最终效果"></p><blockquote><p>到这里教程结束啦！有什么建议或者文章不完整麻烦反馈给我哦！邮箱<strong>58420846@qq.com</strong> QQ<strong>58420846</strong></p></blockquote>]]></content>
     
@@ -335,23 +335,23 @@
     
     </summary>
     
-      <category term="Ubuntu" scheme="http://www.ijiangjia.com/categories/Ubuntu/"/>
+      <category term="Ubuntu" scheme="https://www.ijiangjia.com/categories/Ubuntu/"/>
     
     
-      <category term="linux" scheme="http://www.ijiangjia.com/tags/linux/"/>
+      <category term="linux" scheme="https://www.ijiangjia.com/tags/linux/"/>
     
-      <category term="TeamViewer" scheme="http://www.ijiangjia.com/tags/TeamViewer/"/>
+      <category term="TeamViewer" scheme="https://www.ijiangjia.com/tags/TeamViewer/"/>
     
   </entry>
   
   <entry>
     <title>博客镜像以及百度谷歌收录</title>
-    <link href="http://www.ijiangjia.com/2017/53294.html"/>
-    <id>http://www.ijiangjia.com/2017/53294.html</id>
+    <link href="https://www.ijiangjia.com/2017/53294.html"/>
+    <id>https://www.ijiangjia.com/2017/53294.html</id>
     <published>2017-11-15T12:09:02.000Z</published>
-    <updated>2018-03-07T05:54:01.576Z</updated>
+    <updated>2018-03-23T05:50:49.406Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>前几天因为系统（Linux）崩溃，所以导致最近一直坐在电脑屏幕前面</p></blockquote><p>今天可谓是伤心至极<br>起先还大言不惭以为可以恢复博客，<del>可是没想到<code>国内版</code> <code>国际版</code>这两个版本的博客居然不可以共存，同一个系统都不可以</del>。难道我<a id="more"></a>还有什么东西冲突不成？折腾大半天还是放弃了，差不多快将所有东西换掉了都不能，<del>恰巧这时候<code>国内版</code>的<code>Coding</code>代码托管平台网站突然打不开！</del><font color="red"><strong>11月18号：在一次配置hosts文件的时候发现 我强行将coding.net指向一个无效的IP导致不能访问Coding官网。。。我好蠢。。</strong></font><br><img src="http://tu-img-1.aixinxi.net/o_1buvt60b81pfr2mgu6f4v5ijea.png" alt="Coding"><br>但平台检测实际情况是这样的：<br><img src="http://tu-img-1.aixinxi.net/o_1buvtav4e1jiccdk10451qu21sua.png" alt="Coding"><br>狗血不狗血。。。而且好像就是这系统有问题。。。。。<br>好吧好吧，不管是不是系统还是网络问题我打算将国内博客无限期停办下去。关于为啥一开始搭建网站镜像文末有说明。<br>确定了放弃<code>国内版</code>，下一步计划当然是让搜索引擎收录我的博客啦！<br>本来高高兴兴去<code>谷歌</code>和<code>百度</code>的搜索引擎添加站点的<br>将站点添加完之后，测试抓取结果如下：<br>谷歌抓取数据：<br><img src="http://tu-img-1.aixinxi.net/o_1bv1i07o51rhf1ds39rs1vnr128ta.png" alt="谷歌"><br>百度抓取数据：<br><img src="http://tu-img-1.aixinxi.net/o_1bv1i2v2hedn13j71fo74si17uja.png" alt="百度"><br>由上图发现百度除了移动端没问题外，其他都不能正常抓取。<br>经过一系列百度，google得知<code>Github</code>屏蔽了百度的爬虫，也就是说明百度可能收录不了搭载<code>Github</code>的博客。。。</p><p>又折腾一番，找到在搜索引擎检测是否被收录的情况：<code>site:域名</code><br>我的博客检测如下：<br>百度搜索引擎：<br><img src="http://tu-img-1.aixinxi.net/o_1bv1iqigs1n6h1bgibpl18v0es9a.png" alt="百度搜索引擎"><br>谷歌搜索引擎：<br><img src="http://tu-img-1.aixinxi.net/o_1bv1iu2fb1bnvtgqavp1m5ndupa.png" alt="谷歌搜索引擎"></p><p>百度的第一个是博客的站点，第二个是之前搭建网站被百度收录的结果。<br>谷歌就有点牛逼了，完全可以全部抓取，但是属于半收录情况！<br><em>截图的结果是前一天晚上提交过网站地图的</em>论收录感觉还是谷歌牛掰！</p><p>百度的爬虫不能爬取<code>Github</code>的静态博客，那么可以爬取与<code>Github</code>提供相同功能的<code>Coding</code>吗？<br>答案是肯定可以的.</p><blockquote><p>有些人在全站是找不到评论的地方的，因为你被墙了！！<br>下图是 DISQUS<br><img src="http://tu-img-1.aixinxi.net/o_1bv1k2ra21ujlj4jds017gi64a.png" alt="评论系统"></p></blockquote>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>前几天因为系统（Linux）崩溃，所以导致最近一直坐在电脑屏幕前面</p></blockquote><p>今天可谓是伤心至极<br>起先还大言不惭以为可以恢复博客，<del>可是没想到<code>国内版</code> <code>国际版</code>这两个版本的博客居然不可以共存，同一个系统都不可以</del>。难道我<a id="more"></a>还有什么东西冲突不成？折腾大半天还是放弃了，差不多快将所有东西换掉了都不能，<del>恰巧这时候<code>国内版</code>的<code>Coding</code>代码托管平台网站突然打不开！</del><font color="red"><strong>11月18号：在一次配置hosts文件的时候发现 我强行将coding.net指向一个无效的IP导致不能访问Coding官网。。。我好蠢。。</strong></font><br><img src="http://tu-img-1.aixinxi.net/o_1buvt60b81pfr2mgu6f4v5ijea.png" alt="Coding"><br>但平台检测实际情况是这样的：<br><img src="http://tu-img-1.aixinxi.net/o_1buvtav4e1jiccdk10451qu21sua.png" alt="Coding"><br>狗血不狗血。。。而且好像就是这系统有问题。。。。。<br>好吧好吧，不管是不是系统还是网络问题我打算将国内博客无限期停办下去。关于为啥一开始搭建网站镜像文末有说明。<br>确定了放弃<code>国内版</code>，下一步计划当然是让搜索引擎收录我的博客啦！<br>本来高高兴兴去<code>谷歌</code>和<code>百度</code>的搜索引擎添加站点的<br>将站点添加完之后，测试抓取结果如下：<br>谷歌抓取数据：<br><img src="http://tu-img-1.aixinxi.net/o_1bv1i07o51rhf1ds39rs1vnr128ta.png" alt="谷歌"><br>百度抓取数据：<br><img src="http://tu-img-1.aixinxi.net/o_1bv1i2v2hedn13j71fo74si17uja.png" alt="百度"><br>由上图发现百度除了移动端没问题外，其他都不能正常抓取。<br>经过一系列百度，google得知<code>Github</code>屏蔽了百度的爬虫，也就是说明百度可能收录不了搭载<code>Github</code>的博客。。。</p><p>又折腾一番，找到在搜索引擎检测是否被收录的情况：<code>site:域名</code><br>我的博客检测如下：<br>百度搜索引擎：<br><img src="http://tu-img-1.aixinxi.net/o_1bv1iqigs1n6h1bgibpl18v0es9a.png" alt="百度搜索引擎"><br>谷歌搜索引擎：<br><img src="http://tu-img-1.aixinxi.net/o_1bv1iu2fb1bnvtgqavp1m5ndupa.png" alt="谷歌搜索引擎"></p><p>百度的第一个是博客的站点，第二个是之前搭建网站被百度收录的结果。<br>谷歌就有点牛逼了，完全可以全部抓取，但是属于半收录情况！<br><em>截图的结果是前一天晚上提交过网站地图的</em>论收录感觉还是谷歌牛掰！</p><p>百度的爬虫不能爬取<code>Github</code>的静态博客，那么可以爬取与<code>Github</code>提供相同功能的<code>Coding</code>吗？<br>答案是肯定可以的.</p><p>&gt;</p><blockquote><p>有些人在全站是找不到评论的地方的，因为你被墙了！！<br>下图是 DISQUS<br><img src="http://tu-img-1.aixinxi.net/o_1bv1k2ra21ujlj4jds017gi64a.png" alt="评论系统"></p></blockquote>]]></content>
     
     <summary type="html">
     
@@ -362,21 +362,21 @@
     
     </summary>
     
-      <category term="日常吹牛" scheme="http://www.ijiangjia.com/categories/%E6%97%A5%E5%B8%B8%E5%90%B9%E7%89%9B/"/>
+      <category term="日常吹牛" scheme="https://www.ijiangjia.com/categories/%E6%97%A5%E5%B8%B8%E5%90%B9%E7%89%9B/"/>
     
     
-      <category term="博客" scheme="http://www.ijiangjia.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="https://www.ijiangjia.com/tags/%E5%8D%9A%E5%AE%A2/"/>
     
-      <category term="收录" scheme="http://www.ijiangjia.com/tags/%E6%94%B6%E5%BD%95/"/>
+      <category term="收录" scheme="https://www.ijiangjia.com/tags/%E6%94%B6%E5%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu16.04从安装到优化Sublime系列教程 安装篇</title>
-    <link href="http://www.ijiangjia.com/2017/40337.html"/>
-    <id>http://www.ijiangjia.com/2017/40337.html</id>
+    <link href="https://www.ijiangjia.com/2017/40337.html"/>
+    <id>https://www.ijiangjia.com/2017/40337.html</id>
     <published>2017-10-31T10:02:32.000Z</published>
-    <updated>2018-01-29T11:20:37.092Z</updated>
+    <updated>2018-03-23T05:52:13.029Z</updated>
     
     <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>发现文章不足之处，欢迎指正。<br>本系列教程针对对Sublime Text 不熟悉的新手</p><h3 id="Sublime-Text-介绍"><a href="#Sublime-Text-介绍" class="headerlink" title="Sublime Text 介绍"></a>Sublime Text 介绍</h3><a id="more"></a><p>开始之前，介绍一下我们接下来要安装的 Sublime Text</p><blockquote><p>Sublime Text 是一个代码编辑器（Sublime Text 2是收费软件，但可以无限期试用），<br>也是HTML和散文先进的文本编辑器。Sublime Text是由程序员Jon Skinner于2008年1月<br>份所开发出来，它最初被设计为一个具有丰富扩展功能的Vim。</p><p>Sublime Text具有漂亮的用户界面和强大的功能，例如代码缩略图，Python的插件，<br>代码段等。还可自定义键绑定，菜单和工具栏。Sublime Text 的主要功能包括：拼写<br>检查，书签，完整的 Python API ， Goto 功能，即时项目切换，多选择，多窗口等等。<br>Sublime Text 是一个跨平台的编辑器，同时支持Windows、Linux、Mac OS X等操作系统。</p></blockquote><h3 id="安装Sublime-Text-3"><a href="#安装Sublime-Text-3" class="headerlink" title="安装Sublime Text 3"></a>安装Sublime Text 3</h3><p>首先打开Ubuntu终端 快捷键：Ctrl + Alt + T<br>添加sublime text 3的仓库：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository ppa:webupd8team/sublime-text-3</div></pre></td></tr></table></figure><p>根据提示按ENTER 继续，建立信任数据库<br>更新软件库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div></pre></td></tr></table></figure></p><p>安装Sublime Text 3<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install sublime-text-installer</div></pre></td></tr></table></figure></p><p>等待软件安装成功<br>然后在终端输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">subl</div></pre></td></tr></table></figure></p><p>能打开就代表安装成功！</p><p><font color="red">11月21号新增：</font>用PPA源安装的Sublime text 3基本不是最新版，所以导致有时候启动提示有新版本更新，但是你又不想更新可以通过以下方法关闭<br><strong>确定软件版本</strong><br>注册过就跳过这一步<br>首先确定软件的版本，好找到对应的注册码。<br>Sublime text 3的菜单栏的<code>Help</code>》》》<code>About Sublime text</code>即可查看到软件版本号，这是我装的软件本版<code>Build 3143</code><br><img src="http://tu-img-1.aixinxi.net/o_1bvee9et81ahe524un8m8gc98a.png-w.jpg" alt="软件版本"><br>然后百度对应的注册码。我这里附上我这个版本号的注册码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">—– BEGIN LICENSE —–</div><div class="line">TwitterInc</div><div class="line">200 User License</div><div class="line">EA7E-890007</div><div class="line">1D77F72E 390CDD93 4DCBA022 FAF60790</div><div class="line">61AA12C0 A37081C5 D0316412 4584D136</div><div class="line">94D7F7D4 95BC8C1C 527DA828 560BB037</div><div class="line">D1EDDD8C AE7B379F 50C9D69D B35179EF</div><div class="line">2FE898C4 8E4277A8 555CE714 E1FB0E43</div><div class="line">D5D52613 C3D12E98 BC49967F 7652EED2</div><div class="line">9D2D2E61 67610860 6D338B72 5CF95C69</div><div class="line">E36B85CC 84991F19 7575D828 470A92AB</div><div class="line">—— END LICENSE ——</div></pre></td></tr></table></figure></p><p>找到对应的注册码，到Sublime的菜单栏<code>Help</code>》》》<code>Enter License</code><br><img src="http://tu-img-1.aixinxi.net/o_1bveep6tkm9pikcu0o1618gta.png-w.jpg" alt="注册码输入框"><br>粘贴进去，选择下方的<code>Use License</code>，这样注册功！接下来就是关闭更新提示！</p><p><strong>关闭更新提示</strong><br>不注册就算设置关闭还是一样提示更新<br>同样还是Sublime的菜单栏<code>Preferences</code>》》》<code>Settings-User</code><br>或者是<code>Preferences</code>》》》<code>Settings</code> 恰好我是这种<br>在最后一个花括号{}结尾前添加一句：<code>”update_check“:false，</code><br>我的配置如下：<br><img src="http://tu-img-1.aixinxi.net/o_1bveg0aa91109to3q8o1nag1s7na.png-w.jpg" alt="配置"><br>需要提醒大家的是，”update_check”:false前的最后一行的结尾有一个逗号，如果你也配置了主题等其他内容，没有那个逗号，是无法保存更改的。<br>下面是错误演示，错误原因：上一行缺少英文逗号<br><img src="http://tu-img-1.aixinxi.net/o_1bveg6jt6oug1lqlbi31nqf9eoa.png-w.jpg" alt="错误掩饰"><br>保存退出，重启发现提示更新已经没了</p><h3 id="安装-包管理器-Package-Control"><a href="#安装-包管理器-Package-Control" class="headerlink" title="安装 包管理器 Package Control"></a>安装 包管理器 Package Control</h3><p><code>Package Control</code>是为Sublime Text 安装强大的插件的包管理器，相当于苹果手机的应用商店！</p><p> 使用<code>Ctrl+</code>` 快捷键或者通过<code>View-&gt;Show Console</code>菜单</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">import urllib.request,os,hashlib; h = &apos;6f4c264a24d933ce70df5dedcf1dcaee&apos; + &apos;ebe013ee18cced0ef93d5f746d80ef60&apos;; pf = &apos;Package Control.sublime-package&apos;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &apos;http://packagecontrol.io/&apos; + pf.replace(&apos; &apos;, &apos;%20&apos;)).read(); dh = hashlib.sha256(by).hexdigest(); print(&apos;Error validating download (got %s instead of %s), please try manual install&apos; % (dh, h)) if dh != h else open(os.path.join( ipp, pf), &apos;wb&apos; ).write(by)</div></pre></td></tr></table></figure><p>将其上方的代码输入进控制台，并单击回车。<br>等待安装完成后，完全退出Sublime Text 并重新打开。</p><blockquote><p>怎么判断安装完成呢？有两个方法：<br>第一种：在控制台输入代码回车后查看Sublime Text 软件右下角有东西跑来跑去就是正在安装，否则安装完成！<br>第二种： 在控制台输入代码回车等五分钟即可，然后重启Sublime Text  </p></blockquote><p>此时就可以在<code>Preferences</code>菜单下看到<code>Package Settings</code>和<code>Package Control</code>两个菜单了。</p><blockquote><p>注意：如果安装报错，比如连接远程服务器失败之类的，请设置wbond.net的host，相关host如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt; 50.116.33.29        sublime.wbond.net</div><div class="line">&gt;</div></pre></td></tr></table></figure></p></blockquote><p>这里就不展示手动安装<code>PCIP -Package Control</code></p><p>本次教程结束！需要继续看接下来的文章请移步到<strong>分类</strong>查看sublime 即可找到！</p><p>教程参考：<br><a href="http://www.jianshu.com/p/ecc241f22ed5" target="_blank" rel="external">作者：MR<em>LP__</em>李鹏</a></p>]]></content>
     
@@ -387,21 +387,21 @@
     
     </summary>
     
-      <category term="sublime" scheme="http://www.ijiangjia.com/categories/sublime/"/>
+      <category term="sublime" scheme="https://www.ijiangjia.com/categories/sublime/"/>
     
     
-      <category term="Ubuntu" scheme="http://www.ijiangjia.com/tags/Ubuntu/"/>
+      <category term="Ubuntu" scheme="https://www.ijiangjia.com/tags/Ubuntu/"/>
     
-      <category term="开发工具" scheme="http://www.ijiangjia.com/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+      <category term="开发工具" scheme="https://www.ijiangjia.com/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
     
-      <category term="sublime" scheme="http://www.ijiangjia.com/tags/sublime/"/>
+      <category term="sublime" scheme="https://www.ijiangjia.com/tags/sublime/"/>
     
   </entry>
   
   <entry>
     <title>博客进展</title>
-    <link href="http://www.ijiangjia.com/2017/29772.html"/>
-    <id>http://www.ijiangjia.com/2017/29772.html</id>
+    <link href="https://www.ijiangjia.com/2017/29772.html"/>
+    <id>https://www.ijiangjia.com/2017/29772.html</id>
     <published>2017-10-28T04:03:08.000Z</published>
     <updated>2018-03-07T05:53:36.812Z</updated>
     
@@ -413,15 +413,15 @@
     
     </summary>
     
-      <category term="个人杂谈" scheme="http://www.ijiangjia.com/categories/%E4%B8%AA%E4%BA%BA%E6%9D%82%E8%B0%88/"/>
+      <category term="个人杂谈" scheme="https://www.ijiangjia.com/categories/%E4%B8%AA%E4%BA%BA%E6%9D%82%E8%B0%88/"/>
     
     
   </entry>
   
   <entry>
     <title>关于博客版本区别说明</title>
-    <link href="http://www.ijiangjia.com/2017/64403.html"/>
-    <id>http://www.ijiangjia.com/2017/64403.html</id>
+    <link href="https://www.ijiangjia.com/2017/64403.html"/>
+    <id>https://www.ijiangjia.com/2017/64403.html</id>
     <published>2017-10-21T12:33:25.000Z</published>
     <updated>2017-10-27T15:09:08.490Z</updated>
     
