@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.ijiangjia.com/"/>
-  <updated>2018-03-23T05:50:33.513Z</updated>
+  <updated>2018-05-02T14:02:22.938Z</updated>
   <id>https://www.ijiangjia.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ubuntu多引导修复</title>
+    <link href="https://www.ijiangjia.com/2018/60501.html"/>
+    <id>https://www.ijiangjia.com/2018/60501.html</id>
+    <published>2018-04-29T13:22:20.000Z</published>
+    <updated>2018-05-02T14:02:22.938Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>由于某些原因（手贱）不小心删了引导文件，三个系统的引导项全删了，分别是<code>Win10</code>,<code>Ubuntu16.04</code>,<code>Deepin15.3</code> 在这之前我还因为因为我开机姿势不对，重复开了好几次机！</p></blockquote><p><img src="https://t1.aixinxi.net/o_1ccgf1qgs1a15122r1mhbn2jldba.jpg-w.jpg" alt="开机提示无系统"></p><a id="more"></a><blockquote><p>分析了解：三系统无引导项，开机直接显示硬盘无系统！</p></blockquote><h3 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h3><p>需要另外准备一台电脑，一个大于8G的u盘，pe刻录程序（随意），软碟通，一个ubuntu14.04往上系统镜像，一个win10（1607版本往上）镜像！</p><h3 id="动手实践"><a href="#动手实践" class="headerlink" title="动手实践"></a>动手实践</h3><p>分为两步进行：</p><h4 id="修复win10启动项"><a href="#修复win10启动项" class="headerlink" title="修复win10启动项"></a>修复win10启动项</h4><ol><li><p>将u盘制作成pe启动盘，并将原版镜像复制到u盘根目录</p></li><li><p>插上需要修复引导的电脑，快速启动项或者BIOS进入u盘的pe启动盘</p></li><li><p>将WIN10系统镜像直接双击打开，他会自动挂在变成DVD驱动器。然后双击里面的<code>setup.exe</code> 如图：</p><p><img src="https://t1.aixinxi.net/o_1ccgg03dm7j21s04ttjft4vqa.jpg-w.jpg" alt="dakia"></p><p><img src="https://t1.aixinxi.net/o_1ccgg5h6n11no3k44fm91notba.jpg-w.jpg" alt="daikaiwin10"></p></li><li><p>按下快捷键shift + F10 会弹出cmd命令行！注意核对驱动器的盘符(不一定是<code>H</code>)</p><p><img src="https://t1.aixinxi.net/o_1ccggau8n15tl1gn918nb2so1vdqa.jpg-w.jpg" alt="cmd"></p></li><li><p>输入<code>bcdboot c:\windows /l zh-cn</code> 会自动向ESP分区生成启动文件、自动向BIOS写入名为“Windows Boot Manager”的UEFI启动项</p></li><li><p>提示成功就可以拔掉u盘重启了!(当时忘了截图)</p></li><li><p>如果出现win10的引导项并且能进入那就没问题了！</p></li></ol><h4 id="修复ubuntu的grub启动项"><a href="#修复ubuntu的grub启动项" class="headerlink" title="修复ubuntu的grub启动项"></a>修复ubuntu的grub启动项</h4><ol><li><p>想要修复引导项 你需要Ubuntu的启动盘(live cd)，来进入Ubuntu系统来修复引导问题（重新将u盘制作live cd）</p></li><li><p>快速启动项或者bios选择u盘启动，选择<code>预览ubuntu系统</code>（且需要网络）。</p><p><img src="https://t1.aixinxi.net/o_1ccghbsjsn5sjqp13uqlqh1f66a.png-w.jpg" alt="live cd"></p></li><li><p>打开终端，终端快捷键是<code>Ctrl+Alt+T</code>输入命令，添加boot-repair所在的源 期间需要回车确认添加源！</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository ppa:yannubuntu/boot-repair</div><div class="line">sudo apt-get update #有时候很卡。。</div><div class="line">apt-get install boot-repair</div><div class="line">boot-repair</div></pre></td></tr></table></figure><p>​</p></li><li><p>出现这如下图一样，点击<code>Recommended repair</code> 过几分钟重启就行了（期间可能会提示yes/no，选择yes就行了）</p><p><img src="https://t1.aixinxi.net/o_1ccghk45i15577an4igh6vuoja.png-w.jpg" alt="repair"></p></li><li><p>几分钟后提示完成那么拿掉u盘 就可以直接重启就行了</p></li><li><p><del>重启发现进不去或者卡在grub界面那就重新来一次并跳过第…..这时我们需要选择<code>高级选项</code>（虽然官方不建议普通用户使用）</del>(应该没人走到这一步吧。。。如果有麻烦紧急邮箱联系我。邮箱：58420846@qq.com)</p></li></ol><p>重启就会发现有ubuntu引导（开心）</p><p>等等，我们不是需要grub引导其他系统的吗？</p><p>正常进ubuntu系统</p><p>命令行执行</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt update </div><div class="line">sudo update-grub #更新grub引导</div></pre></td></tr></table></figure><p>发现win10已经成功添加在里面了！</p><p><img src="https://t1.aixinxi.net/o_1ccghu9gp1vf3s4i1ite1rc7c8qa.png-w.jpg" alt="test"></p><p>最后需要修改<code>grub.cfg</code>文件。不想引导项多出来什么乱七八糟的话，我们需要将里面的东西删掉：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">cd /boot/grub</div><div class="line">sudo chmod u+x grub.cfg    #给予当前用户编辑权限</div><div class="line">sudo gedit grub.cfg #编辑</div><div class="line">将文中以下内容删除：</div><div class="line">### BEGIN /etc/grub.d/25_custom ###</div><div class="line">.....</div><div class="line">.....</div><div class="line">### END /etc/grub.d/25_custom ###</div><div class="line">##删除保存文件 关闭。（以后更新grub一样会出现。。目前我知道这个方法屏蔽。若有其他好的方法麻烦评论区说下，谢谢！</div><div class="line">reboot #重启电脑</div></pre></td></tr></table></figure><p>下面是我的真实修复好的引导项：</p><p>资料参考：</p><p><a href="http://bbs.pcbeta.com/forum.php?mod=viewthread&amp;ordertype=1&amp;tid=1727468" target="_blank" rel="external">http://bbs.pcbeta.com/forum.php?mod=viewthread&amp;ordertype=1&amp;tid=1727468</a>(图中部分取自这里)</p><p><a href="http://bbs.pcbeta.com/forum.php?mod=viewthread&amp;ordertype=1&amp;tid=1727468" target="_blank" rel="external">http://bbs.pcbeta.com/forum.php?mod=viewthread&amp;ordertype=1&amp;tid=1727468</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;由于某些原因（手贱）不小心删了引导文件，三个系统的引导项全删了，分别是&lt;code&gt;Win10&lt;/code&gt;,&lt;code&gt;Ubuntu16.04&lt;/code&gt;,&lt;code&gt;Deepin15.3&lt;/code&gt; 在这之前我还因为因为我开机姿势不对，重复开了好几次机！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://t1.aixinxi.net/o_1ccgf1qgs1a15122r1mhbn2jldba.jpg-w.jpg&quot; alt=&quot;开机提示无系统&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Ubuntu" scheme="https://www.ijiangjia.com/categories/Ubuntu/"/>
+    
+    
+      <category term="Linux" scheme="https://www.ijiangjia.com/tags/Linux/"/>
+    
+      <category term="Ubuntu" scheme="https://www.ijiangjia.com/tags/Ubuntu/"/>
+    
+      <category term="常见问题" scheme="https://www.ijiangjia.com/tags/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>博客再次拥抱https并全站启用https+CDN加速</title>
@@ -112,9 +141,9 @@
       <category term="Linux" scheme="https://www.ijiangjia.com/categories/Linux/"/>
     
     
-      <category term="Ubuntu" scheme="https://www.ijiangjia.com/tags/Ubuntu/"/>
-    
       <category term="Linux" scheme="https://www.ijiangjia.com/tags/Linux/"/>
+    
+      <category term="Ubuntu" scheme="https://www.ijiangjia.com/tags/Ubuntu/"/>
     
       <category term="常见问题" scheme="https://www.ijiangjia.com/tags/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
     
@@ -149,7 +178,7 @@
     <link href="https://www.ijiangjia.com/2017/46998.html"/>
     <id>https://www.ijiangjia.com/2017/46998.html</id>
     <published>2017-12-09T06:51:46.000Z</published>
-    <updated>2018-03-23T05:52:03.772Z</updated>
+    <updated>2018-05-02T14:02:59.555Z</updated>
     
     <content type="html"><![CDATA[<p>linux内网穿透都可以参考  这里只说树莓派FRP内网穿透，关于Ngrok，据说已经开始商业化，具体我也不清楚，毕竟我FRP弄成功了！注意：文中frp目录<code>frp1</code>请将此当作<code>frp</code>目录即可，请用pi用户操作！在此感谢提供免费frp服务的大神们！</p><a id="more"></a><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><strong>2018-03-19 更新</strong>由于frp有两个版本 <code>9.x</code>和<code>14.x</code> </p><p>这里只说<code>14.x</code> 下文图中出现是<code>frpzj.lu8.win</code>请当作<code>frps.lu8.win</code>，原因是免费开放的作者改域名</p><p>另外我有点想免费开放一个frp服务端！</p><p>下载frp命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">wget https://github.com/fatedier/frp/releases/download/v0.14.1/frp_0.14.1_linux_arm.tar.gz #下载文件</div><div class="line">tar -zxvf frp_0.14.1_linux_arm.tar.gz #解压</div><div class="line">mv -f frp_0.14.1_linux_arm frp #重命名文件夹</div><div class="line">cd frp #进入frp目录</div><div class="line">sudo apt-get install screen #scree命令行终端</div></pre></td></tr></table></figure><p>基本完成了，编辑前<strong><a href="http://frps.lu8.win:7600/" target="_blank" rel="external">点击跳转</a></strong>查询隧道是否存在，查询帐号和密码均为：admin</p><p>如图所示：<img src="https://t1.aixinxi.net/o_1c0stnfk07r1cej11ugmip1f2oa.png-w.jpg" alt=""></p><p>首先查看<code>name</code>（名称）字段和<code>port</code>（端口）字段是否存在，端口范围：<code>1000-65535</code> 这里推荐用浏览器搜索功能，快捷键：<code>Ctrl</code>+<code>F</code></p><p>我这里查看到名称<code>test00</code>和端口<code>55551</code>没有存在，也就是没人使用！这里我就使用这个演示！</p><h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>完成上面的就可以继续下一步：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nano frpc.ini #用nano 编辑frp配置文件</div></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">#配置文件：</div><div class="line">[common] #该字段配置不需要更改</div><div class="line">server_addr = frps.lu8.win #服务器ip或者域名</div><div class="line">server_port = 7100 #服务器端口</div><div class="line">log_file = ./frpc.log #日志文件</div><div class="line">log_level = info</div><div class="line">log_max_days = 3 #日志记录为最近三天</div><div class="line">privilege_token = frp888 #特权密码</div><div class="line"></div><div class="line">[test00] #隧道名称，必改</div><div class="line">privilege_mode = true</div><div class="line">type = tcp #连接类型</div><div class="line">local_ip = 127.0.0.1 #本机ip，不需要改</div><div class="line">local_port = 22 #本地端口，不需要改</div><div class="line">remote_port = 55551 #远程端口，必改</div><div class="line">custom_domains = xxx.ijiangjia.com #绑定自定义域名,不需要建议删掉</div></pre></td></tr></table></figure><p>复制该配置文件请删除注释，否则运行会出错！</p><p>按快捷键<code>Ctrl</code>+ <code>X</code> 输入<code>Y</code>回车存盘退出！</p><p>终端执行：<code>./frpc -c ./frpc.ini</code></p><p><img src="https://t1.aixinxi.net/o_1c0su652afcoip8u51177f1fsra.png-w.jpg" alt="运行结果"></p><p>启动ssh工具：<strong>windows</strong>：putty  <strong>linux</strong>:终端或者自带的ssh工具</p><p>我的电脑是<strong>linux</strong>，所以我选择系统自带工具ssh连接</p><p>连接： <code>frps.lu8.win:xxxxx</code>其中x为你自己设置端口号</p><p><img src="https://t1.aixinxi.net/o_1c0suiomgfke14j822bn9g1ddea.png-w.jpg" alt="1"></p><p><img src="https://t1.aixinxi.net/o_1c0sul3vrd8a19c716sd140h13jma.png-w.jpg" alt="2"></p><p> 输入树莓派密码即可进入！如果设置自定义域名的，需要将域名以<code>cname</code>记录解析到frps.lu8.win，即可使用自己的域名！</p><p>关闭终端后发现又连接不上了？</p><p>进入frp目录执行命令<code>screen ./frpc -c ./frpc.ini</code>执行后，按快捷键<code>Ctrl</code>+<code>A</code>再按<code>Ctrl</code>+ <code>D</code>即可最小化，只要不将树莓派重启都可以随时连接！</p><h3 id="终极配置"><a href="#终极配置" class="headerlink" title="终极配置"></a>终极配置</h3><p>什么？家里突然断电然后又来电，这时又在外面想连接树莓派管理怎么办？</p><p>别急，这里解决这个问题:</p><p>进入frp目录执行<code>pwd</code>查看当前目录</p><p><img src="https://t1.aixinxi.net/o_1c0t0cq1u1cd28rv15n612nkll5a.png-w.jpg" alt="4"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update #更新</div><div class="line">sudo apt-get install -y supervisor #安装supervisor</div><div class="line">sudo nano /etc/supervisor/conf.d/frp.conf #新建frp配置文件并编辑</div></pre></td></tr></table></figure><p>配置内容：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">[program:frp]</div><div class="line">user=pi</div><div class="line">command=/home/pi/frp/frpc -c /home/pi/frp/frpc.ini</div><div class="line">startsecs=1</div><div class="line">startretries=100</div><div class="line">autorstart=true</div><div class="line">autorestart=true</div><div class="line">stderr_logfile=/tmp/err-frps.log</div><div class="line">stderr_logfile_maxbytes=50MB</div><div class="line">stderr_logfile_backups=10</div><div class="line">stdout_logfile=/tmp/out-frps.log</div><div class="line">stdout_logfile_maxbytes=50MB</div><div class="line">stdout_logfile_backups=10</div></pre></td></tr></table></figure><p><code>command</code>那一行输入frpc所在目录即可！如果是按照我的步骤做的话，无需改动！</p><p>按快捷键<code>Ctrl</code>+ <code>X</code> 输入<code>Y</code>回车存盘退出！</p><p># 重启supervisor</p><p>sudo systemctl restart supervisor</p><p># 查看supervisor运行状态</p><p>sudo supervisorctl status</p><p><img src="https://t1.aixinxi.net/o_1c0t0eimb8ua7dj16r0i7vgo8a.png-w.jpg" alt="5"></p><p><code>frp</code>后面跟着<code>RUNNING</code>就代表正在运行啦，执行<code>sudo reboot</code>完成重启</p><p>再次查看supervisor运行状态，如果在运行状态那就是完成啦！</p>]]></content>
     
@@ -162,7 +191,7 @@
       <category term="树莓派" scheme="https://www.ijiangjia.com/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
     
     
-      <category term="linux" scheme="https://www.ijiangjia.com/tags/linux/"/>
+      <category term="Linux" scheme="https://www.ijiangjia.com/tags/Linux/"/>
     
       <category term="内网穿透" scheme="https://www.ijiangjia.com/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
     
@@ -288,9 +317,9 @@
       <category term="Ubuntu 环境" scheme="https://www.ijiangjia.com/categories/Ubuntu-%E7%8E%AF%E5%A2%83/"/>
     
     
-      <category term="nodejs" scheme="https://www.ijiangjia.com/tags/nodejs/"/>
-    
       <category term="Ubuntu" scheme="https://www.ijiangjia.com/tags/Ubuntu/"/>
+    
+      <category term="nodejs" scheme="https://www.ijiangjia.com/tags/nodejs/"/>
     
   </entry>
   
@@ -324,7 +353,7 @@
     <link href="https://www.ijiangjia.com/2017/30971.html"/>
     <id>https://www.ijiangjia.com/2017/30971.html</id>
     <published>2017-11-16T08:14:17.000Z</published>
-    <updated>2018-03-23T05:52:20.949Z</updated>
+    <updated>2018-05-02T14:03:26.711Z</updated>
     
     <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote><p>Teamviewer 是一个远程协助软件，个人使用是免费的。如果对方的电脑也安装了 TeamViewer，那么你只需要输入对方的 TeamViewer ID号就能远程控制对方电脑了。<br>安装时若出现问题的麻烦评论反馈，方便后来的朋友参考，谢谢！<br>现在任何操作系统我都会第一时间安装上<code>TeamViewer</code>程序，几乎所有平台他都支持！<br><img src="http://tu-img-1.aixinxi.net/o_1bv1v5erp1r35drkh931saj1m7ma.png" alt="TeamViewer系统支持"><br>本篇文章只写<code>Ubuntu 16.04</code>的，理论兼容<code>Ubuntu</code>所有版本<br><a id="more"></a></p><h3 id="下载TeamViewer"><a href="#下载TeamViewer" class="headerlink" title="下载TeamViewer"></a>下载TeamViewer</h3><p>首先前往<code>TeamViewer</code>的官网下载deb包<br><a href="https://www.teamviewer.com/en/download/linux/" target="_blank" rel="external">TeamViewer国际版</a> | <a href="https://www.teamviewer.com/zhcn/download/linux/" target="_blank" rel="external">TeamViewer国内版</a><br><img src="http://tu-img-1.aixinxi.net/o_1bv1vfgnkq2h19291h4aeqtis2a.png" alt="TeamViewer"><br>这是一个32位的deb包。Debian 6/Ubuntu 10等旧发行版本可以下载64位deb包，因为它们没有Multiarch多架构功能。对于Ubuntu 16.04，我们可以下载32位deb包，因为Ubuntu 16.04具备多架构功能，即使是64位的Ubuntu 16.04系统也能安装32位的deb包。</p></blockquote><p>下载完成后 <code>CTRL</code>+<code>ALT</code>+<code>T</code>快捷键打开命令行并切换到安装的目录<br><img src="http://tu-img-1.aixinxi.net/o_1bv20i1kr1cukquh81c1jut17eba.png" alt=""></p><p>查看是否存在TeamViewer的安装包，存在则进行下一步</p><h3 id="安装依赖包"><a href="#安装依赖包" class="headerlink" title="安装依赖包"></a>安装依赖包</h3><p>有时候安装提示依赖错误或者提示缺少依赖包的可以输入下面解决：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get -f install</div></pre></td></tr></table></figure></p><p>系统是32位的可以跳过这一步，因为我们的Ubuntu系统安装是64位的，而安装是32位的所以我们需要安装32位的架构</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo dpkg --add-architecture i386</div><div class="line">sudo apt-get update</div><div class="line"></div><div class="line">sudo apt-get install libdbus-1-3:i386 libasound2:i386 libexpat1:i386 libfontconfig1:i386 libfreetype6:i386 libjpeg62:i386 libpng12-0:i386 libsm6:i386 libxdamage1:i386 libxext6:i386 libxfixes3:i386 libxinerama1:i386 libxrandr2:i386 libxrender1:i386 libxtst6:i386 zlib1g:i386 libc6:i386</div></pre></td></tr></table></figure><p><img src="http://tu-img-1.aixinxi.net/o_1bv22tkd611gis0dg5h1h49o3qa.png" alt="依赖包"><br>这是执行命令之后的截图</p><p>最后执行一行命令 sudo dpkg -i 包名<br>例如我的安装包名为：teamviewer_12.0.85001_i386.deb<br>可以用<code>TAB</code>键补全包名，用法：输入<code>team</code>包名前缀然后按下<code>TAB</code>键<br><img src="http://tu-img-1.aixinxi.net/o_1bv23c5e715i0p8616sd1eo21m6ma.png" alt="安装成功"></p><h3 id="安装完成"><a href="#安装完成" class="headerlink" title="安装完成"></a>安装完成</h3><p>到这里我们安装好了！来看看效果<br>按下<code>win</code>键 输入team 就能看到<code>TeamViewer</code>啦<br><img src="http://tu-img-1.aixinxi.net/o_1bv23mqhk2er1ugr1fe01id3flpa.png" alt="查找teamviewer"></p><p>点击打开<br><img src="http://tu-img-1.aixinxi.net/o_1bv2441fq97r9fna3n4rc15rua.png" alt="最终效果"></p><blockquote><p>到这里教程结束啦！有什么建议或者文章不完整麻烦反馈给我哦！邮箱<strong>58420846@qq.com</strong> QQ<strong>58420846</strong></p></blockquote>]]></content>
     
@@ -338,7 +367,7 @@
       <category term="Ubuntu" scheme="https://www.ijiangjia.com/categories/Ubuntu/"/>
     
     
-      <category term="linux" scheme="https://www.ijiangjia.com/tags/linux/"/>
+      <category term="Linux" scheme="https://www.ijiangjia.com/tags/Linux/"/>
     
       <category term="TeamViewer" scheme="https://www.ijiangjia.com/tags/TeamViewer/"/>
     

@@ -4,6 +4,74 @@
 
     
   <url>
+    <loc>https://www.ijiangjia.com/2017/30971.html</loc>
+    <lastmod>2018-05-02T14:03:26.711Z</lastmod>
+    <data>
+        <display>
+        <title>TeamViewer</title>
+        <pubTime>2017-11-16T08:14:17.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>TeamViewer</tag>
+         
+         
+           
+             
+              <breadCrumb title="Ubuntu" url="https://www.ijiangjia.com/categories/Ubuntu/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.ijiangjia.com/2017/46998.html</loc>
+    <lastmod>2018-05-02T14:02:59.555Z</lastmod>
+    <data>
+        <display>
+        <title>树莓派系列教程-内网穿透篇</title>
+        <pubTime>2017-12-09T06:51:46.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>内网穿透</tag>
+         
+         
+           
+             
+              <breadCrumb title="树莓派" url="https://www.ijiangjia.com/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.ijiangjia.com/2018/60501.html</loc>
+    <lastmod>2018-05-02T14:02:22.938Z</lastmod>
+    <data>
+        <display>
+        <title>ubuntu多引导修复</title>
+        <pubTime>2018-04-29T13:22:20.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>Ubuntu</tag>
+         
+        <tag>常见问题</tag>
+         
+         
+           
+             
+              <breadCrumb title="Ubuntu" url="https://www.ijiangjia.com/categories/Ubuntu/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://www.ijiangjia.com/2018/20433.html</loc>
     <lastmod>2018-03-23T05:52:39.198Z</lastmod>
     <data>
@@ -64,28 +132,6 @@
 
     
   <url>
-    <loc>https://www.ijiangjia.com/2017/30971.html</loc>
-    <lastmod>2018-03-23T05:52:20.949Z</lastmod>
-    <data>
-        <display>
-        <title>TeamViewer</title>
-        <pubTime>2017-11-16T08:14:17.000Z</pubTime>
-        
-        <tag>linux</tag>
-         
-        <tag>TeamViewer</tag>
-         
-         
-           
-             
-              <breadCrumb title="Ubuntu" url="https://www.ijiangjia.com/categories/Ubuntu/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://www.ijiangjia.com/2017/40337.html</loc>
     <lastmod>2018-03-23T05:52:13.029Z</lastmod>
     <data>
@@ -103,28 +149,6 @@
            
              
               <breadCrumb title="sublime" url="https://www.ijiangjia.com/categories/sublime/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://www.ijiangjia.com/2017/46998.html</loc>
-    <lastmod>2018-03-23T05:52:03.772Z</lastmod>
-    <data>
-        <display>
-        <title>树莓派系列教程-内网穿透篇</title>
-        <pubTime>2017-12-09T06:51:46.000Z</pubTime>
-        
-        <tag>linux</tag>
-         
-        <tag>内网穿透</tag>
-         
-         
-           
-             
-              <breadCrumb title="树莓派" url="https://www.ijiangjia.com/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
           
         </display>
     </data>
@@ -203,9 +227,9 @@
         <title>Ubuntu16.04安装Nodejs和npm</title>
         <pubTime>2017-11-19T13:01:10.000Z</pubTime>
         
-        <tag>nodejs</tag>
-         
         <tag>Ubuntu</tag>
+         
+        <tag>nodejs</tag>
          
          
            
@@ -225,9 +249,9 @@
         <title>Linux更换内核</title>
         <pubTime>2018-01-30T12:06:37.000Z</pubTime>
         
-        <tag>Ubuntu</tag>
-         
         <tag>Linux</tag>
+         
+        <tag>Ubuntu</tag>
          
         <tag>常见问题</tag>
          
