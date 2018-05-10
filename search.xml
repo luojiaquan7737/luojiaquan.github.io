@@ -3,7 +3,7 @@
   
     
     <entry>
-      <title><![CDATA[ubuntu多引导修复]]></title>
+      <title><![CDATA[Ubuntu多引导修复]]></title>
       <url>/2018/60501.html</url>
       <content type="html"><![CDATA[<blockquote>
 <p>由于某些原因（手贱）不小心删了引导文件，三个系统的引导项全删了，分别是<code>Win10</code>,<code>Ubuntu16.04</code>,<code>Deepin15.3</code> 在这之前我还因为因为我开机姿势不对，重复开了好几次机！</p>
@@ -570,15 +570,31 @@
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install aria2  #Ubuntu、deepin安装</div></pre></td></tr></table></figure>
 <ol>
-<li>配置uGet默认下载插件为aria2<br><img src="http://tu-img-1.aixinxi.net/o_1bvkhf0bh1vcn7846f31j8p1smea.png-w.jpg" alt="打开uGet软件"><br>菜单栏依次打开： <code>编辑</code>》》》<code>设置</code>》》》<code>插件</code><br><img src="http://tu-img-1.aixinxi.net/o_1bvkhksuh179nthf1vnk6041p6ra.png-w.jpg" alt="配置"></li>
-<li>设置uGet为chromium的下载默认插件<br>安装uget-chrome-wrapper</li>
+<li>配置uGet默认下载插件为aria2</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">#Ubuntu&amp;&amp;Linux Mint</div><div class="line">sudo apt install uget-chrome-wrapper</div><div class="line">#arch </div><div class="line">yaourt -S uget-chrome-wrapper</div><div class="line">packer -S uget-chrome-wrapper</div><div class="line">#其他linux发行版，例如deepin，需要提前安装好“curl”</div><div class="line"></div><div class="line">wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/build/linux/install_uget_chrome_wrapper.sh</div><div class="line">sudo sh install_uget_chrome_wrapper.sh</div></pre></td></tr></table></figure>
+<p><img src="http://tu-img-1.aixinxi.net/o_1bvkhf0bh1vcn7846f31j8p1smea.png-w.jpg" alt="打开uGet软件"><br>菜单栏依次打开： <code>编辑</code>》》》<code>设置</code>》》》<code>插件</code><br><img src="http://tu-img-1.aixinxi.net/o_1bvkhksuh179nthf1vnk6041p6ra.png-w.jpg" alt="配置"></p>
+<ol>
+<li><del>设置uGet为chromium的下载默认插件</del><br><del>安装uget-chrome-wrapper</del></li>
+</ol>
 <p><strong><a href="https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi?hl=zh-CN" target="_blank" rel="external">点击前往安装Chrome插件</a></strong></p>
 <p>添加uGet扩展后，谷歌浏览器右上角即可显示uGet图标。重启谷歌浏览器，只要点击下载链接，就会自动弹出uGet下载界面、自动添加下载任务。<br>当然，如果对于某些链接，仍要使用谷歌浏览器下载，可以用鼠标右键“链接另存为”。</p>
-<p><font color="red">浏览器添加插件还是用不了uGet下载的话，请查看这里是否为绿色！如下图：</font><br><img src="http://t1.aixinxi.net/o_1bvki55ek37pcls1jb21c7hsu4a.png-w.jpg" alt="对比"></p>
-<p><a href="http://www.cnblogs.com/EasonJim/p/7119294.html" target="_blank" rel="external">参考教程1</a></p>
-<p><a href="https://slgobinath.github.io/uget-chrome-wrapper/#installation" target="_blank" rel="external">参考教程2</a></p>
+<h3 id="注意！"><a href="#注意！" class="headerlink" title="注意！"></a>注意！</h3><p><font color="red">2018/5/10更新</font>2018年<code>uGet团队</code>已将<code>uget-chrome-wrapper</code>采纳官方插件并重新命名为<code>uget-integrator</code> 因此新的<a href="https://github.com/ugetdm/uget-extension" target="_blank" rel="external">uget-extension</a>插件不再支持<code>uget-chrome-wrapper</code> <strong>请卸载uget-chrome-wrapper并安装uget-integrator</strong></p>
+<p>之前安装过<code>uget-chrome-wrapper</code>需要卸载</p>
+<p>Ubuntu和Linux Mint卸载方法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo apt remove uget</div><div class="line">sudo apt remove uget-chrome-wrapper</div><div class="line">sudo add-apt-repository --remove ppa:slgobinath/uget-chrome-wrapper</div></pre></td></tr></table></figure>
+<p>其他 linux 卸载方法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">wget https://raw.githubusercontent.com/slgobinath/uget-chrome-wrapper/master/build/linux/uninstall_uget_chrome_wrapper.sh</div><div class="line">sudo sh uninstall_uget_chrome_wrapper.sh</div></pre></td></tr></table></figure>
+<p>这时打开浏览器发现<code>uget</code>扩展程序是红色的，点开看到“Unable to connect with uget-integrator”<br><img src="http://t1.aixinxi.net/o_1cd47lr2c8631qj31t11ebc1269a.png-w.jpg" alt="jie"></p>
+<p>原因是缺少<code>uget-integrator</code> 下面是安装教程</p>
+<p>Ubuntu和Linux Mint</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo add-apt-repository ppa:uget-team/ppa</div><div class="line">sudo apt update</div><div class="line">sudo apt install uget-integrator</div></pre></td></tr></table></figure>
+<p>其他Linux</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">wget https://raw.githubusercontent.com/ugetdm/uget-integrator/master/install/linux/install_uget_integrator.sh</div><div class="line">chmod +x install_uget_integrator.sh</div><div class="line">./install_uget_integrator.sh</div></pre></td></tr></table></figure>
+<p>安装完成重启浏览器或者重新开启扩展程序</p>
+<p>如图下，就算是成功了<br><img src="http://t1.aixinxi.net/o_1cd48f1dnc683v71qns1kk1s0da.png-w.jpg" alt="w"></p>
+<p>参考教程：</p>
+<p><a href="http://www.cnblogs.com/EasonJim/p/7119294.html" target="_blank" rel="external">http://www.cnblogs.com/EasonJim/p/7119294.html</a></p>
+<p><a href="https://slgobinath.github.io/uget-chrome-wrapper/#installation" target="_blank" rel="external">https://slgobinath.github.io/uget-chrome-wrapper/#installation</a></p>
 ]]></content>
       
         <categories>

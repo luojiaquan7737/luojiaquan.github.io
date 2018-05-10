@@ -4,6 +4,52 @@
 
     
   <url>
+    <loc>https://www.ijiangjia.com/2017/24648.html</loc>
+    <lastmod>2018-05-10T05:32:02.495Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04安装chromium浏览器以及下载器配置</title>
+        <pubTime>2017-11-23T13:50:35.000Z</pubTime>
+        
+        <tag>chromium</tag>
+         
+        <tag>chrome</tag>
+         
+         
+           
+             
+              <breadCrumb title="Linux" url="https://www.ijiangjia.com/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.ijiangjia.com/2018/60501.html</loc>
+    <lastmod>2018-05-02T14:07:20.389Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu多引导修复</title>
+        <pubTime>2018-04-29T13:22:20.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>Ubuntu</tag>
+         
+        <tag>常见问题</tag>
+         
+         
+           
+             
+              <breadCrumb title="Ubuntu" url="https://www.ijiangjia.com/categories/Ubuntu/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://www.ijiangjia.com/2017/30971.html</loc>
     <lastmod>2018-05-02T14:03:26.711Z</lastmod>
     <data>
@@ -41,30 +87,6 @@
            
              
               <breadCrumb title="树莓派" url="https://www.ijiangjia.com/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://www.ijiangjia.com/2018/60501.html</loc>
-    <lastmod>2018-05-02T14:02:22.938Z</lastmod>
-    <data>
-        <display>
-        <title>ubuntu多引导修复</title>
-        <pubTime>2018-04-29T13:22:20.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>Ubuntu</tag>
-         
-        <tag>常见问题</tag>
-         
-         
-           
-             
-              <breadCrumb title="Ubuntu" url="https://www.ijiangjia.com/categories/Ubuntu/"/>
           
         </display>
     </data>
@@ -281,28 +303,6 @@
            
              
               <breadCrumb title="工具" url="https://www.ijiangjia.com/categories/%E5%B7%A5%E5%85%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://www.ijiangjia.com/2017/24648.html</loc>
-    <lastmod>2018-03-23T05:50:59.042Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04安装chromium浏览器以及下载器配置</title>
-        <pubTime>2017-11-23T13:50:35.000Z</pubTime>
-        
-        <tag>chromium</tag>
-         
-        <tag>chrome</tag>
-         
-         
-           
-             
-              <breadCrumb title="Linux" url="https://www.ijiangjia.com/categories/Linux/"/>
           
         </display>
     </data>
